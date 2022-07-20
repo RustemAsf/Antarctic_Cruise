@@ -1,0 +1,44 @@
+.site-list {
+  @media (min-width: $desktop-width) {
+    list-style-type: none;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 43%;
+  }
+
+  @media (min-width: $tablet-width) {
+    list-style-type: none;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 65%;
+  }
+
+  @media (min-width: $mobile-width) {
+    display: none;
+  }
+}
+
+.site-list__link {
+  @media (min-width: $desktop-width) {
+    font-family: $font-antarctic;
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    align-items: center;
+    color: #f9fbfd;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-family: $font-antarctic;
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #f9fbfd;
+  }
+}

@@ -1,0 +1,41 @@
+.logo-antarctic__desktop {
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: $mobile-width) {
+    display: none;
+  }
+}
+
+.logo-antarctic__tablet {
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+
+  @media (min-width: $mobile-width) {
+    display: none;
+  }
+}
+
+.logo-antarctic__mobile {
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: $mobile-width) {
+    display: block;
+  }
+}
