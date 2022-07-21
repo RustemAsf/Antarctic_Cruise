@@ -21,20 +21,33 @@
 
   &--opened .main-nav__list {
     display: block;
+
+    @media (min-width: $tablet-width) {
+      display: flex;
+      justify-content: space-between;
+    }
   }
 
   &--opened .main-nav__logo {
     display: flex;
     justify-content: space-between;
-    min-height: 62px;
     padding-bottom: 43px;
     background-color: #fff;
     padding-left: 15px;
     padding-right: 15px;
+
+    @media (min-width: $tablet-width) {
+      padding: 0;
+      background: none;
+    }
   }
 
   &--opened .logo-menu__mobile {
-    display: block
+    display: block;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
   }
 
   &--opened .logo-menu__close {
