@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta name="content-type" content="text/html; charset=utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HTML Academy: Antarctic_cruise</title>
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" href="fonts/montserrat.woff2" as="font">
+  <link rel="preload" href="fonts/montserrat.woff" as="font">
+</head>
+
+<body class="page__body">
+  <header class="page-header">
+    <div class="page-header__wrapper">
+      <nav class="main-nav main-nav--closed main-nav--nojs">
+        <div class="main-nav__logo">
+          <a class="main-nav__logo-link logo-antarctic" href="https://htmlacademy.ru/intensive/adaptive">
+            <!-- <svg class="logo-antarctic__desktop" width="70" height="38">
+                  <use xlink:href="img/sprite.svg#logo-desktop"></use>
+                </svg> -->
+            <svg class="logo-antarctic__desktop" width="70" height="38" viewBox="0 0 70 38" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M0.903517 31.125L14.6726 12.5429L18.4395 14.556L27.4026 0L32.9879 6.65881L35.0665 4.95532L43.1199 15.1755L48.8355 8.36191L64.8126 31.125L49.42 11.7689L47.0817 19.8984L49.225 26.3249L35.456 7.35558L35.3069 13.8279L43.1199 31.125L28.5064 4.33574L32.7282 18.8145L26.8181 4.72292L23.5706 14.0916L24.2198 7.97472L16.1013 30.0411L17.0753 20.75L13.6981 17.0338L0.903517 31.125Z"
+                fill="#F9FBFD" />
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M69.4414 34.0314C47.641 16.428 13.7091 40.6289 0 31.2961C15.0723 44.5215 50.3019 22.1644 69.4414 34.0314Z"
+                fill="#F9FBFD" />
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M70 35.4157C52.8956 24.5171 27.4568 39.6838 14.4189 36.1717C28.5467 43.0283 54.8482 27.8361 70 35.4157Z"
+                fill="#F9FBFD" />
+            </svg>
+            <!-- <svg class="logo-antarctic__tablet" width="38" height="20">
+                  <use xlink:href="img/sprite.svg#logo-tablet"></use>
+                </svg> -->
+            <svg class="logo-antarctic__tablet" width="38" height="20" viewBox="0 0 38 20" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M0.49048 16.3816L7.96515 6.60151L10.01 7.66103L14.8757 0L17.9077 3.50464L19.0361 2.60806L23.408 7.98712L26.5107 4.40101L35.184 16.3816L26.828 6.19417L25.5587 10.4729L26.7222 13.8552L19.2475 3.87136L19.1666 7.27784L23.408 16.3816L15.4749 2.28197L17.7668 9.90238L14.5584 2.48574L12.7955 7.41663L13.1479 4.19722L8.74069 15.8111L9.26943 10.9211L7.43612 8.96517L0.49048 16.3816Z"
+                fill="#F9FBFD" />
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M37.6968 17.9112C25.8623 8.64633 7.44206 21.3836 0 16.4716C8.18212 23.4324 27.3068 11.6655 37.6968 17.9112Z"
+                fill="#F9FBFD" />
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M38 18.6398C28.7148 12.9037 14.9051 20.8862 7.82741 19.0377C15.4968 22.6465 29.7747 14.6506 38 18.6398Z"
+                fill="#F9FBFD" />
+            </svg>
+            <!-- <svg class="logo-antarctic__mobile" width="42" height="22">
+                  <use xlink:href="img/sprite.svg#logo-mobile"></use>
+                </svg> -->
+            <svg class="logo-antarctic__mobile" width="42" height="22" viewBox="0 0 42 22" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M0.54211 18.0197L8.80358 7.26166L11.0637 8.42713L16.4415 0L19.7928 3.8551L21.0399 2.86887L25.872 8.78584L29.3013 4.84111L38.8875 18.0197L29.652 6.81358L28.249 11.5202L29.535 15.2407L21.2736 4.25849L21.1842 8.00563L25.872 18.0197L17.1038 2.51017L19.6369 10.8926L16.0909 2.73432L14.1424 8.15829L14.5319 4.61695L9.66076 17.3922L10.2452 12.0132L8.21887 9.86169L0.54211 18.0197Z"
+                fill="#F9FBFD" />
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M41.6649 19.7024C28.5846 9.51096 8.22544 23.522 0 18.1188C9.04339 25.7756 30.1812 12.832 41.6649 19.7024Z"
+                fill="#F9FBFD" />
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M42 20.5038C31.7374 14.1941 16.4741 22.9749 8.65134 20.9415C17.128 24.9111 32.9089 16.1156 42 20.5038Z"
+                fill="#F9FBFD" />
+            </svg>
+          </a>
+          <button class="main-nav__toggle" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+        </div>
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item">
+            <a class="site-list__link" href="#">Преимущества </a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="#">Направления</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="#">Ближайшие круизы</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="#">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="page-header__slogan">
+      <h1 class="page-header__title">Круизы в Антарктику</h1>
+      <span class="page-header__text">
+        Волшебный мир айсбергов и пингвинов
+      </span>
+    </div>
+  </header>
+  <main>
+    <!-- <section class="intro">
+          <div class="container">
+            <h1>Разводящая страницы</h1>
+            <p>На многостраничных сайтах используйте эту страницу для создания списков всех страниц и ссылок на них.</p>
+            <p>Это делается для удобства тестирования и для быстрого доступа к нужно странице.</p>
+            <h2>Пример</h2>
+            <ol>
+              <li>
+                <a href="index.html">Главная — index.html</a>
+              </li>
+              <li>
+                <a href="#">Название страницы (состояние страницы, если отдельное) — ссылка на страницу.</a>
+              </li>
+            </ol>
+          </div>
+        </section> -->
+  </main>
+  <footer>
+    <div class="container"></div>
+  </footer>
+  </div>
+</body>
+
+</html>

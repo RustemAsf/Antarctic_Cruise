@@ -14,6 +14,11 @@
     padding-top: 30px;
     margin-bottom: 230px;
   }
+
+  @media (min-width: $mobile-width) {
+    margin-bottom: 143px;
+    padding-top: 20px;
+  }
 }
 
 .main-nav__toggle {
@@ -31,16 +36,14 @@
     border: 0;
     padding: 0;
     background: none;
+    width: 24px;
+    height: 2px;
+    background-color: #fff;
+    box-shadow: 0 5px 0 0 #fff,0 10px 0 0 #fff;
   }
 }
 
-.main-nav--closed .main-nav__toggle::before {
-  content: "";
-  position: absolute;
-  top: 14px;
-  left: 277px;
-  width: 24px;
-  height: 2px;
-  background-color: #fff;
-  box-shadow: 0 5px 0 0 #fff,0 10px 0 0 #fff;
+.main-nav--closed .main-nav__logo {
+  display: flex;
+  justify-content: space-between;
 }
