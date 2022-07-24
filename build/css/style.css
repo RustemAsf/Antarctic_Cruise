@@ -116,12 +116,38 @@ img {
   overflow: hidden;
 }
 
+.info {
+  padding-left: 103px;
+  padding-right: 103px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.info__block-title {
+  font-size: 28px;
+  line-height: 150%;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: #011c40;
+  margin: 0;
+  margin-bottom: 40px;
+}
+
 .info__block-text {
   font-family: "Montserrat", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   margin: 0;
+}
+
+.info__block {
+  width: 37%;
 }
 
 @media (min-width: 320px) {
@@ -233,6 +259,7 @@ img {
   .page-header {
     background-image: url("../img/content/sky-header-tablet.jpg");
     min-height: 638px;
+    margin-bottom: 100px;
   }
 
   .page-header__wrapper {
@@ -340,9 +367,20 @@ img {
     display: none;
   }
 
+  .info {
+    padding-left: 45px;
+    padding-right: 45px;
+  }
+
   .info__block-title {
     font-size: 26px;
     margin: 0;
+    margin-bottom: 30px;
+  }
+
+  .info__block {
+    width: 42%;
+    margin-right: 30px;
   }
 }
 
@@ -358,6 +396,7 @@ img {
     background-color: #3467a2;
     background-image: url("../img/content/sky-header.jpg");
     min-height: 650px;
+    margin-bottom: 120px;
   }
 
   .page-header__wrapper {
@@ -438,25 +477,6 @@ img {
 
   .logo-antarctic__mobile {
     display: none;
-  }
-
-  .info {
-    padding-left: 103px;
-    padding-right: 103px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-
-  .info__block-title {
-    font-size: 28px;
-    line-height: 150%;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    color: #011c40;
-    margin: 0;
-    margin-bottom: 40px;
   }
 
   .info__block-img {

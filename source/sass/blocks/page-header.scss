@@ -3,6 +3,7 @@
     background-color: #3467a2;
     background-image: url("../img/content/sky-header.jpg");
     min-height: 650px;
+    margin-bottom: 120px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/content/sky-header@2x.jpg");
@@ -13,6 +14,7 @@
   @media (min-width: $tablet-width) {
     background-image: url("../img/content/sky-header-tablet.jpg");
     min-height: 638px;
+    margin-bottom: 100px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/content/sky-header-tablet@2x.jpg");
