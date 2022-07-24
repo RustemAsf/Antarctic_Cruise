@@ -59,8 +59,6 @@
   }
 
   &--opened .main-nav__toggle {
-    width: 15px;
-    height: 2px;
     padding-top: 20px;
     background-color: #011c40;
     border: 0;
@@ -134,12 +132,6 @@
 //   }
 // }
 
-// .main-nav__logo {
-//   @media (min-width: $mobile-width) {
-//     padding-bottom: 43px;
-//     background-color: #fff;
-//   }
-// }
 
 .main-nav__toggle {
   @media (min-width: $desktop-width) {
@@ -149,16 +141,4 @@
   @media (min-width: $tablet-width) {
     display: none;
   }
-
-  // @media (min-width: $mobile-width) {
-  //   display: block;
-  //   cursor: pointer;
-  //   border: 0;
-  //   padding: 0;
-  //   background: none;
-  //   width: 24px;
-  //   height: 2px;
-  //   background-color: #fff;
-  //   box-shadow: 0 5px 0 0 #fff,0 10px 0 0 #fff;
-  // }
 }

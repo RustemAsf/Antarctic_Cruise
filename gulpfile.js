@@ -14,6 +14,7 @@ const del = require('del');
 const webpackStream = require('webpack-stream');
 const webpackConfig = require('./webpack.config.js');
 const gcmq = require('gulp-group-css-media-queries');
+const svgSprite = require('gulp-svg-sprite');
 
 const css = () => {
   return gulp.src('source/sass/style.scss')
@@ -52,12 +53,19 @@ const svgo = () => {
       .pipe(gulp.dest('source/img'));
 };
 
+
 const sprite = () => {
   return gulp.src('source/img/sprite/*.svg')
-      .pipe(svgstore({inlineSvg: true}))
-      .pipe(rename('sprite_auto.svg'))
-      .pipe(gulp.dest('build/img'));
-};
+    .pipe(svgSprite({
+      mode: {
+        stack: {
+          sprite: "../sprite.svg"
+        }
+      },
+    }
+    ))
+    .pipe(gulp.dest("build/icons"));
+}
 
 const copySvg = () => {
   return gulp.src('source/img/**/*.svg', {base: 'source'})
@@ -73,8 +81,10 @@ const copy = () => {
   return gulp.src([
     'source/**.html',
     'source/fonts/**',
+    "source/*.ico",
     'source/img/**',
     'source/favicon/**',
+    "source/manifest.webmanifest",
   ], {
     base: 'source',
   })
@@ -88,7 +98,6 @@ const clean = () => {
 const syncServer = () => {
   server.init({
     server: 'build/',
-    index: 'sitemap.html',
     notify: false,
     open: true,
     cors: true,
@@ -127,14 +136,21 @@ const start = gulp.series(build, syncServer);
 // root = 'content/' - webp добавляются и обновляются только в source/img/content/
 
 const createWebp = () => {
-  const root = '';
-  return gulp.src(`source/img/${root}**/*.{png,jpg}`)
+  return gulp.src(`source/img/**/*.{png,jpg}`)
     .pipe(webp({quality: 90}))
-    .pipe(gulp.dest(`source/img/${root}`));
+    .pipe(gulp.dest(`source/img/`));
 };
 
+// const createWebp = () => {
+//   return gulp.src('source/img/**/*.{png,jpg}')
+//     .pipe(squoosh({
+//       webp: {}
+//     }))
+//     .pipe(gulp.dest('build/img'))
+// }
+
 const optimizeImages = () => {
-  return gulp.src('build/img/**/*.{png,jpg}')
+  return gulp.src('source/img/**/*.{png,jpg}')
       .pipe(imagemin([
         imagemin.optipng({optimizationLevel: 3}),
         imagemin.mozjpeg({quality: 75, progressive: true}),
