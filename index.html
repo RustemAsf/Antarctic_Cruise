@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+  <meta name="content-type" content="text/html; charset=utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HTML Academy: Antarctic_cruise</title>
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" href="fonts/Montserrat-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/Montserrat-Medium.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/Montserrat-Bold.woff2" as="font" type="font/woff2" crossorigin>
+</head>
+
+<body class="page__body">
+  <header class="page-header">
+    <div class="page-header__wrapper">
+      <nav class="main-nav main-nav--closed main-nav--nojs">
+        <div class="main-nav__logo">
+          <a class="main-nav__logo-link logo-antarctic" href="https://htmlacademy.ru/intensive/adaptive">
+            <img class="logo-antarctic__desktop" id="logo-desktop" src="./icons/sprite.svg#logo-desktop" alt="Логотип"
+              width="70" height="38">
+            <img class="logo-antarctic__tablet" id="logo-tablet" src="./icons/sprite.svg#logo-tablet" alt="Логотип"
+              width="38" height="20">
+            <img class="logo-antarctic__mobile" id="logo-mobile" src="./icons/sprite.svg#logo-mobile" alt="Логотип"
+              width="42" height="22">
+            <img class="logo-menu__mobile" id="logo-menu" src="./icons/sprite.svg#logo-menu" alt="Логотип" width="42"
+              height="22">
+          </a>
+          <button class="main-nav__toggle" type="button">
+            <img class="logo-menu__close" id="close-button" src="./icons/sprite.svg#close-button" alt="Кнопка закрытия"
+              width="20" height="20">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+        </div>
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item">
+            <a class="site-list__link" href="#features">Преимущества </a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="#">Направления</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="#cruises">Ближайшие круизы</a>
+          </li>
+          <li class="site-list__item ">
+            <a class="site-list__link site-list__link--contacts" href="#contacts">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="page-header__slogan">
+      <h1 class="page-header__title">Круизы в Антарктику</h1>
+      <span class="page-header__text">
+        Волшебный мир айсбергов и пингвинов
+      </span>
+    </div>
+  </header>
+  <main class="page-main">
+
+    <section class="info">
+      <div class="info__block">
+        <h2 class="info__block-title">Путешествие на край Земли</h2>
+        <p class="info__block-text">
+          Это волшебное путешествие поможет вам познакомиться поближе с удивительным миром Антарктики.
+          Наш круизный лайнер отвезет вас на край Земли, где вы сможете увидеть: ледяные айсберги, несколько видов
+          пингвинов,
+          китов, морских котиков и многое другое.
+        </p>
+      </div>
+      <div class="info__block-img">
+        <!-- <picture>
+            <source type="image/webp" media="(min-width: 1366px)"
+              srcset="img/info-img-desktop.webp 1x, img/info-img-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)"
+              srcset="img/info-img-tablet.webp 1x, img/info-img-tablet@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 320px)"
+              srcset="img/info-img.webp 1x, img/info-img@2x.webp 2x">
+            <source media="(min-width: 1366px)" srcset="img/info-img-desktop.jpg 1x, img/info-img-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/info-img-tablet.jpg 1x, img/info-img-tablet@2x.jpg 2x">
+            <img class="info__block-photo" src="img/info-img.jpg" srcset="img/info-img@2x.jpg 2x" alt="Фото пингвинов">
+          </picture> -->
+        <!-- <picture>
+          <source media="(min-width: 1366px)" type="image/webp"
+            srcset="./img/content/info-img-desktop.webp 1x, ./img/content/info-img-desktop@2x.webp 2x">
+          <source media="(min-width: 768px)" type="image/webp"
+            srcset="./img/content/info-img-tablet.webp 1x , ./img/content/info-img-tablet@2x.webp 2x">
+          <source media="(min-width: 320px)" type="image/webp"
+            srcset="./img/content/info-img-mobile.webp 1x , ./img/content/info-img-mobile@2x.webp 2x">
+          <img src="./img/content/info-img-desktop.jpg" srcset="./img/content/info-img-desktop@2x.jpg 2x"
+            alt="Фото пингвинов" width="560" height="301">
+        </picture> -->
+        <picture>
+          <source media="(min-width: 1366px)" type="image/webp" srcset="./img/content/info-desktop.webp 1x, ./img/content/info-desktop@2x.webp 2x">
+          <source media="(min-width: 768px)" type="image/webp" srcset="./img/content/info-tablet.webp 1x, ./img/content/info-tablet@2x.webp 2x">
+          <source media="(min-width: 320px)" type="image/webp" srcset="./img/content/info-mobile.webp 1x, ./img/content/info-mobile@2x.webp 2x">
+          <img src="./img/content/info-desktop.jpg" srcset="./img/content/info-desktop@2x.jpg 2x" alt="Фото пингвинов" width="560" height="301">
+        </picture>
+      </div>
+
+    </section>
+  </main>
+  <footer>
+    <div class="container"></div>
+  </footer>
+  </div>
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>
