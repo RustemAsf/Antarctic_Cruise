@@ -139,18 +139,30 @@ img {
   background-color: #f9fbfd;
 }
 
-.advantages__item--one {
+.advantages__item--ship {
   padding: 25px 15px 25px 20px;
   margin-bottom: 30px;
 }
 
-.advantages__item--two {
+.advantages__item--ship::before {
+  content: url("../img/sprite/ship-icon.svg");
+}
+
+.advantages__item--check {
   padding: 29px 47px 25px 20px;
   margin-bottom: 30px;
 }
 
-.advantages__item--three {
+.advantages__item--check::before {
+  content: url("../img/sprite/check-icon.svg");
+}
+
+.advantages__item--boat {
   padding: 32px 37px 25px 20px;
+}
+
+.advantages__item--boat::before {
+  content: url("../img/sprite/boat-icon.svg");
 }
 
 .advantages__title {
@@ -192,6 +204,35 @@ img {
   -ms-flex-align: center;
   align-items: center;
   color: #011c40;
+}
+
+.cruises {
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.cruises__title {
+  margin: 0;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.cruises__list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.cruises__img-title {
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 150%;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: #f9fbfd;
 }
 
 @media (min-width: 320px) {
@@ -483,15 +524,15 @@ img {
     margin: 0;
   }
 
-  .advantages__item--one {
+  .advantages__item--ship {
     padding: 25px 16px 25px 20px;
   }
 
-  .advantages__item--two {
+  .advantages__item--check {
     padding: 29px 24px 45px 20px;
   }
 
-  .advantages__item--three {
+  .advantages__item--boat {
     padding: 35px 19px 25px 20px;
   }
 
@@ -503,6 +544,11 @@ img {
 
   .advantages__block-title {
     line-height: 140%;
+  }
+
+  .cruises {
+    padding-left: 118px;
+    padding-right: 118px;
   }
 }
 
@@ -632,21 +678,22 @@ img {
     padding-right: 103px;
     min-height: 562px;
     background-image: url("../img/content/advantages-desktop.jpg");
+    margin-bottom: 120px;
   }
 
   .advantages__item {
     width: 25%;
   }
 
-  .advantages__item--one {
+  .advantages__item--ship {
     padding: 30px 42px 50px 30px;
   }
 
-  .advantages__item--two {
+  .advantages__item--check {
     padding: 35px 50px 50px 30px;
   }
 
-  .advantages__item--three {
+  .advantages__item--boat {
     padding: 38px 34px 30px 30px;
   }
 
@@ -658,6 +705,16 @@ img {
 
   .advantages__block-title {
     line-height: 150%;
+  }
+
+  .cruises {
+    padding-left: 118px;
+    padding-right: 118px;
+  }
+
+  .cruises__img-title {
+    margin-top: -60px;
+    padding-left: 30px;
   }
 }
 

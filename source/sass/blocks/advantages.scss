@@ -4,6 +4,7 @@
    padding-right: 103px;
    min-height: 562px;
    background-image: url("../img/content/advantages-desktop.jpg");
+   margin-bottom: 120px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/content/advantages-desktop@2x.jpg");
@@ -50,32 +51,45 @@
 
 .advantages__item {
   background-color: #f9fbfd;
-  &--one {
+
+  &--ship {
     padding: 25px 15px 25px 20px;
     margin-bottom: 30px;
   }
 
-  &--two {
+  &--ship::before {
+    content: url("../img/sprite/ship-icon.svg");
+  }
+
+  &--check {
     padding: 29px 47px 25px 20px;
     margin-bottom: 30px;
   }
 
-  &--three {
+  &--check::before {
+    content: url("../img/sprite/check-icon.svg");
+  }
+
+  &--boat {
     padding: 32px 37px 25px 20px;
+  }
+
+  &--boat::before {
+    content: url("../img/sprite/boat-icon.svg");
   }
 
   @media (min-width: $desktop-width) {
     width: 25%;
 
-    &--one {
+    &--ship{
       padding: 30px 42px 50px 30px;
     }
 
-    &--two {
+    &--check {
       padding: 35px 50px 50px 30px;
     }
 
-    &--three {
+    &--boat {
       padding: 38px 34px 30px 30px;
     }
   }
@@ -84,15 +98,15 @@
     width: 26%;
     margin: 0;
 
-    &--one {
+    &--ship{
       padding: 25px 16px 25px 20px;
     }
 
-    &--two {
+    &--check {
       padding: 29px 24px 45px 20px;
     }
 
-    &--three {
+    &--boat{
       padding: 35px 19px 25px 20px;
     }
   }

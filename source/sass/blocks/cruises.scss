@@ -1,0 +1,41 @@
+.cruises {
+  padding-left: 25px;
+  padding-right: 25px;
+
+  @media (min-width: $desktop-width) {
+    padding-left: 118px;
+    padding-right: 118px;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-left: 118px;
+    padding-right: 118px;
+  }
+}
+
+.cruises__title {
+  margin: 0;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.cruises__list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.cruises__img-title {
+  font-family: $font-antarctic;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 150%;
+  align-items: center;
+  color: #f9fbfd;
+
+  @media (min-width: $desktop-width) {
+    margin-top: -60px;
+    padding-left: 30px;
+  }
+}
