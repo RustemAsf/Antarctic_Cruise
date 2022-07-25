@@ -34,7 +34,7 @@
     padding-bottom: 43px;
     background-color: #fff;
     padding-left: 15px;
-    padding-right: 25px;
+    padding-right: 12px;
 
     @media (min-width: $tablet-width) {
       padding: 0;
@@ -59,7 +59,7 @@
   }
 
   &--opened .main-nav__toggle {
-    padding-top: 20px;
+    padding-top: 14px;
     background-color: #011c40;
     border: 0;
     background: 0;

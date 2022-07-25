@@ -33,7 +33,7 @@
   padding-bottom: 43px;
   background-color: #fff;
   padding-left: 15px;
-  padding-right: 25px;
+  padding-right: 12px;
 }
 
 .main-nav--opened .logo-menu__mobile {
@@ -49,7 +49,7 @@
 }
 
 .main-nav--opened .main-nav__toggle {
-  padding-top: 20px;
+  padding-top: 14px;
   background-color: #011c40;
   border: 0;
   background: 0;
@@ -116,28 +116,6 @@ img {
   overflow: hidden;
 }
 
-.info {
-  padding-left: 103px;
-  padding-right: 103px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-}
-
-.info__block-title {
-  font-size: 28px;
-  line-height: 150%;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  color: #011c40;
-  margin: 0;
-  margin-bottom: 40px;
-}
-
 .info__block-text {
   font-family: "Montserrat", "Arial", sans-serif;
   font-style: normal;
@@ -148,6 +126,72 @@ img {
 
 .info__block {
   width: 37%;
+}
+
+.advantages__list {
+  padding: 0;
+  margin: 0;
+  display: block;
+  list-style-type: none;
+}
+
+.advantages__item {
+  background-color: #f9fbfd;
+}
+
+.advantages__item--one {
+  padding: 25px 15px 25px 20px;
+  margin-bottom: 30px;
+}
+
+.advantages__item--two {
+  padding: 29px 47px 25px 20px;
+  margin-bottom: 30px;
+}
+
+.advantages__item--three {
+  padding: 32px 37px 25px 20px;
+}
+
+.advantages__title {
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: #011C40;
+  margin: 0;
+  text-align: center;
+  padding-top: 65px;
+  margin-bottom: 40px;
+}
+
+.advantages__block-title {
+  margin: 0;
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-style: normal;
+  font-size: 18px;
+  font-weight: 500;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-top: 25px;
+  color: #011c40;
+  margin-bottom: 20px;
+}
+
+.advantages__block-text {
+  margin: 0;
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 140%;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: #011c40;
 }
 
 @media (min-width: 320px) {
@@ -161,6 +205,7 @@ img {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     min-height: 500px;
+    margin-bottom: 65px;
   }
 
   .page-header__slogan {
@@ -239,18 +284,46 @@ img {
     display: block;
   }
 
+  .info {
+    display: block;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
   .info__block-title {
     font-family: "Montserrat", "Arial", sans-serif;
     font-style: normal;
     font-weight: 600;
-    font-size: 26px;
+    font-size: 24px;
     margin: 0;
+    margin-bottom: 30px;
+  }
+
+  .info__block-text {
+    margin-bottom: 40px;
+  }
+
+  .info__block {
+    width: 100%;
+  }
+
+  .advantages {
+    padding-left: 15px;
+    padding-right: 15px;
+    min-height: 997px;
+    background-color: #d2e0f2;
+    background-image: url("../img/content/advantages-mobile.jpg");
   }
 }
 
 @media (min-width: 320px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 320px) and (-o-min-device-pixel-ratio: 2/1), (min-width: 320px) and (min-resolution: 2dppx) {
   .page-header {
     background-image: url("../img/content/sky-header-mobile@2x.jpg");
+    background-size: 100%, cover;
+  }
+
+  .advantages {
+    background-image: url("../img/content/advantages-mobile@2x.jpg");
     background-size: 100%, cover;
   }
 }
@@ -370,6 +443,12 @@ img {
   .info {
     padding-left: 45px;
     padding-right: 45px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
   }
 
   .info__block-title {
@@ -382,11 +461,59 @@ img {
     width: 42%;
     margin-right: 30px;
   }
+
+  .advantages {
+    padding-left: 45px;
+    padding-right: 45px;
+    min-height: 588px;
+    background-image: url("../img/content/advantages-tablet.jpg");
+  }
+
+  .advantages__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+
+  .advantages__item {
+    width: 26%;
+    margin: 0;
+  }
+
+  .advantages__item--one {
+    padding: 25px 16px 25px 20px;
+  }
+
+  .advantages__item--two {
+    padding: 29px 24px 45px 20px;
+  }
+
+  .advantages__item--three {
+    padding: 35px 19px 25px 20px;
+  }
+
+  .advantages__title {
+    font-size: 26px;
+    margin-bottom: 60px;
+    padding-top: 100px;
+  }
+
+  .advantages__block-title {
+    line-height: 140%;
+  }
 }
 
 @media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 768px) and (-o-min-device-pixel-ratio: 2/1), (min-width: 768px) and (min-resolution: 2dppx) {
   .page-header {
     background-image: url("../img/content/sky-header-tablet@2x.jpg");
+    background-size: 100%, cover;
+  }
+
+  .advantages {
+    background-image: url("../img/content/advantages-tablet@2x.jpg");
     background-size: 100%, cover;
   }
 }
@@ -479,14 +606,69 @@ img {
     display: none;
   }
 
+  .info {
+    padding-left: 103px;
+    padding-right: 103px;
+  }
+
+  .info__block-title {
+    font-size: 28px;
+    line-height: 150%;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    color: #011c40;
+    margin: 0;
+    margin-bottom: 40px;
+    padding-top: 66px;
+  }
+
   .info__block-img {
     min-height: 301px;
+  }
+
+  .advantages {
+    padding-left: 103px;
+    padding-right: 103px;
+    min-height: 562px;
+    background-image: url("../img/content/advantages-desktop.jpg");
+  }
+
+  .advantages__item {
+    width: 25%;
+  }
+
+  .advantages__item--one {
+    padding: 30px 42px 50px 30px;
+  }
+
+  .advantages__item--two {
+    padding: 35px 50px 50px 30px;
+  }
+
+  .advantages__item--three {
+    padding: 38px 34px 30px 30px;
+  }
+
+  .advantages__title {
+    font-size: 28px;
+    margin-bottom: 60px;
+    padding-top: 120px;
+  }
+
+  .advantages__block-title {
+    line-height: 150%;
   }
 }
 
 @media (min-width: 1366px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1366px) and (-o-min-device-pixel-ratio: 2/1), (min-width: 1366px) and (min-resolution: 2dppx) {
   .page-header {
     background-image: url("../img/content/sky-header@2x.jpg");
+    background-size: 100%, cover;
+  }
+
+  .advantages {
+    background-image: url("../img/content/advantages-desktop@2x.jpg");
     background-size: 100%, cover;
   }
 }
