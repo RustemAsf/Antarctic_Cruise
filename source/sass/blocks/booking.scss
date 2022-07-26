@@ -1,0 +1,45 @@
+.booking {
+  @media (min-width: $desktop-width) {
+   padding-left: 163px;
+   padding-right: 163px;
+   min-height: 555px;
+   background-image: url("../img/content/booking-desktop.jpg");
+   margin-bottom: 120px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/content/booking-desktop@2x.jpg");
+      background-size: 100%, cover;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-left: 183px;
+    padding-right: 183px;
+    min-height: 588px;
+    background-image: url("../img/content/booking-tablet.jpg");
+    margin-bottom: 100px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/content/booking-tablet@2x.jpg");
+      background-size: 100%, cover;
+    }
+  }
+
+  @media (min-width: $mobile-width) {
+    padding-left: 15px;
+    padding-right: 15px;
+    min-height: 760px;
+    background-color: #d2e0f2;
+    background-image: url("../img/content/booking-mobile.jpg");
+    margin-bottom: 65px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/content/booking-mobile@2x.jpg");
+      background-size: 100%, cover;
+    }
+  }
+}
+
+
+
+

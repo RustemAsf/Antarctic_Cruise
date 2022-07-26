@@ -239,6 +239,7 @@ img {
 }
 
 .cruises__item {
+  position: relative;
   margin-bottom: 55px;
 }
 
@@ -260,6 +261,7 @@ img {
   -ms-flex-align: center;
   align-items: center;
   color: #f9fbfd;
+  margin-bottom: 15px;
 }
 
 .cruises__page-text {
@@ -272,6 +274,9 @@ img {
   -ms-flex-align: center;
   align-items: center;
   color: #d8d8d9;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 16px;
 }
 
 .cruises__page-list-title {
@@ -291,13 +296,9 @@ img {
   padding: 0;
 }
 
-.cruises__page-text {
-  margin: 0;
-  padding: 0;
-}
-
 .cruises__img-wrapper--back {
   display: none;
+  background: #011c40;
 }
 
 .cruises__img-wrapper img {
@@ -311,6 +312,13 @@ img {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 150%;
+  color: #011c40;
+  text-decoration: none;
+  padding: 14px 51px 15px 52px;
+  background-color: #f9fbfd;
 }
 
 @media (min-width: 320px) {
@@ -434,6 +442,24 @@ img {
     background-image: url("../img/content/advantages-mobile.jpg");
     margin-bottom: 65px;
   }
+
+  .cruises__img-wrapper--back {
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    padding: 25px 25px 35px 25px;
+    height: 313px;
+    width: 81.3%;
+  }
+
+  .booking {
+    padding-left: 15px;
+    padding-right: 15px;
+    min-height: 760px;
+    background-color: #d2e0f2;
+    background-image: url("../img/content/booking-mobile.jpg");
+    margin-bottom: 65px;
+  }
 }
 
 @media (min-width: 320px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 320px) and (-o-min-device-pixel-ratio: 2/1), (min-width: 320px) and (min-resolution: 2dppx) {
@@ -444,6 +470,11 @@ img {
 
   .advantages {
     background-image: url("../img/content/advantages-mobile@2x.jpg");
+    background-size: 100%, cover;
+  }
+
+  .booking {
+    background-image: url("../img/content/booking-mobile@2x.jpg");
     background-size: 100%, cover;
   }
 }
@@ -651,13 +682,41 @@ img {
     margin-bottom: 30px;
   }
 
+  .cruises__page-title {
+    margin-bottom: 15px;
+  }
+
+  .cruises__page-text {
+    margin-bottom: 16px;
+  }
+
   .cruises__img-wrapper--back {
-    display: none;
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    padding: 25px 25px 35px 25px;
+    width: 83.2%;
+    min-height: 325px;
   }
 
   .cruises__img-wrapper img {
     width: 309px;
     height: 386px;
+  }
+
+  .cruises__img-link {
+    text-decoration: none;
+    padding: 14px 73px 15px 73px;
+    background-color: #f9fbfd;
+    margin: 0 auto;
+  }
+
+  .booking {
+    padding-left: 183px;
+    padding-right: 183px;
+    min-height: 588px;
+    background-image: url("../img/content/booking-tablet.jpg");
+    margin-bottom: 100px;
   }
 }
 
@@ -669,6 +728,11 @@ img {
 
   .advantages {
     background-image: url("../img/content/advantages-tablet@2x.jpg");
+    background-size: 100%, cover;
+  }
+
+  .booking {
+    background-image: url("../img/content/booking-tablet@2x.jpg");
     background-size: 100%, cover;
   }
 }
@@ -845,19 +909,21 @@ img {
     margin-bottom: 15px;
   }
 
+  .cruises__page-text {
+    margin-bottom: 16px;
+  }
+
   .cruises__page-list-title {
     margin-bottom: 5px;
   }
 
-  .cruises__page-text {
-    margin-bottom: 20px;
-  }
-
   .cruises__img-wrapper--back {
-    display: none;
-    padding: 35px 25px 35px 25px;
-    background: #011c40;
-    width: 18.6%;
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    padding: 15px 25px 0 25px;
+    width: 79.6%;
+    min-height: 369px;
   }
 
   .cruises__img-wrapper img {
@@ -866,15 +932,17 @@ img {
   }
 
   .cruises__img-link {
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 150%;
-    color: #011c40;
     text-decoration: none;
     padding: 14px 46px 15px 47px;
-    width: 210px;
-    height: 40px;
     background-color: #f9fbfd;
+  }
+
+  .booking {
+    padding-left: 163px;
+    padding-right: 163px;
+    min-height: 555px;
+    background-image: url("../img/content/booking-desktop.jpg");
+    margin-bottom: 120px;
   }
 }
 
@@ -886,6 +954,11 @@ img {
 
   .advantages {
     background-image: url("../img/content/advantages-desktop@2x.jpg");
+    background-size: 100%, cover;
+  }
+
+  .booking {
+    background-image: url("../img/content/booking-desktop@2x.jpg");
     background-size: 100%, cover;
   }
 }
