@@ -218,6 +218,7 @@ img {
 }
 
 .cruises__list {
+  display: block;
   padding: 0;
   margin: 0;
   list-style-type: none;
@@ -233,6 +234,83 @@ img {
   -ms-flex-align: center;
   align-items: center;
   color: #f9fbfd;
+  margin-top: -60px;
+  padding-left: 30px;
+}
+
+.cruises__item {
+  margin-bottom: 55px;
+}
+
+.cruises__page-list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.cruises__page-title {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 150%;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: #f9fbfd;
+}
+
+.cruises__page-text {
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 140%;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: #d8d8d9;
+}
+
+.cruises__page-list-title {
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 150%;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: #f9fbfd;
+}
+
+.cruises__page-list-title {
+  margin: 0;
+  padding: 0;
+}
+
+.cruises__page-text {
+  margin: 0;
+  padding: 0;
+}
+
+.cruises__img-wrapper--back {
+  display: none;
+}
+
+.cruises__img-wrapper img {
+  width: 270px;
+  height: 386px;
+}
+
+.cruises__img-link {
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-style: normal;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 @media (min-width: 320px) {
@@ -354,6 +432,7 @@ img {
     min-height: 997px;
     background-color: #d2e0f2;
     background-image: url("../img/content/advantages-mobile.jpg");
+    margin-bottom: 65px;
   }
 }
 
@@ -508,6 +587,7 @@ img {
     padding-right: 45px;
     min-height: 588px;
     background-image: url("../img/content/advantages-tablet.jpg");
+    margin-bottom: 100px;
   }
 
   .advantages__list {
@@ -547,8 +627,37 @@ img {
   }
 
   .cruises {
-    padding-left: 118px;
-    padding-right: 118px;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  .cruises__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+
+  .cruises__img-title {
+    margin-top: -60px;
+    padding-left: 30px;
+  }
+
+  .cruises__item {
+    margin-bottom: 30px;
+  }
+
+  .cruises__img-wrapper--back {
+    display: none;
+  }
+
+  .cruises__img-wrapper img {
+    width: 309px;
+    height: 386px;
   }
 }
 
@@ -712,9 +821,60 @@ img {
     padding-right: 118px;
   }
 
+  .cruises__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+
   .cruises__img-title {
     margin-top: -60px;
     padding-left: 30px;
+  }
+
+  .cruises__item {
+    margin-bottom: 30px;
+  }
+
+  .cruises__page-title {
+    margin-bottom: 15px;
+  }
+
+  .cruises__page-list-title {
+    margin-bottom: 5px;
+  }
+
+  .cruises__page-text {
+    margin-bottom: 20px;
+  }
+
+  .cruises__img-wrapper--back {
+    display: none;
+    padding: 35px 25px 35px 25px;
+    background: #011c40;
+    width: 18.6%;
+  }
+
+  .cruises__img-wrapper img {
+    width: 260px;
+    height: 386px;
+  }
+
+  .cruises__img-link {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 150%;
+    color: #011c40;
+    text-decoration: none;
+    padding: 14px 46px 15px 47px;
+    width: 210px;
+    height: 40px;
+    background-color: #f9fbfd;
   }
 }
 

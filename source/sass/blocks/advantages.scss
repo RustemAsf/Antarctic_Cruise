@@ -17,6 +17,7 @@
     padding-right: 45px;
     min-height: 588px;
     background-image: url("../img/content/advantages-tablet.jpg");
+    margin-bottom: 100px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/content/advantages-tablet@2x.jpg");
@@ -30,6 +31,7 @@
     min-height: 997px;
     background-color: #d2e0f2;
     background-image: url("../img/content/advantages-mobile.jpg");
+    margin-bottom: 65px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/content/advantages-mobile@2x.jpg");

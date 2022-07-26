@@ -8,8 +8,8 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding-left: 118px;
-    padding-right: 118px;
+    padding-left: 60px;
+    padding-right: 60px;
   }
 }
 
@@ -20,9 +20,22 @@
 }
 
 .cruises__list {
+  display: block;
   padding: 0;
   margin: 0;
   list-style-type: none;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 }
 
 .cruises__img-title {
@@ -33,9 +46,142 @@
   line-height: 150%;
   align-items: center;
   color: #f9fbfd;
+  margin-top: -60px;
+  padding-left: 30px;
 
   @media (min-width: $desktop-width) {
     margin-top: -60px;
     padding-left: 30px;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-top: -60px;
+    padding-left: 30px;
+  }
+}
+
+.cruises__item {
+  margin-bottom: 55px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 30px;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 30px;
+  }
+}
+
+.cruises__page-list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.cruises__page-title {
+  margin: 0;
+  padding: 0;
+  font-family: $font-antarctic;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 150%;
+  align-items: center;
+  color: #f9fbfd;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 15px;
+  }
+}
+
+.cruises__page-text {
+  font-family: $font-antarctic;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 140%;
+  align-items: center;
+  color: #d8d8d9;
+}
+
+.cruises__page-list-title {
+  font-family: $font-antarctic;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 150%;
+  align-items: center;
+  color: #f9fbfd;
+}
+
+.cruises__page-list-title {
+  margin: 0;
+  padding: 0;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 5px;
+  }
+}
+
+.cruises__page-text {
+  margin: 0;
+  padding: 0;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 20px;
+  }
+}
+
+.cruises__img-wrapper {
+  &--back {
+    display: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    &--back {
+      display: none;                                  //Отключение форм!!!
+      padding: 35px 25px 35px 25px;
+      background: #011c40;
+      width: 18.6%;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    &--back {
+      display: none;                                  //Отключение форм!!!
+    }
+  }
+}
+
+.cruises__img-wrapper img {
+    width: 270px;
+    height: 386px;
+
+  @media (min-width: $tablet-width) {
+    width: 309px;
+    height: 386px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 260px;
+    height: 386px;
+  }
+}
+
+.cruises__img-link {
+  font-family: $font-antarctic;
+  font-style: normal;
+  align-items: center;
+
+  @media (min-width: $desktop-width) {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 150%;
+    color: #011c40;
+    text-decoration: none;
+    padding: 14px 46px 15px 47px;
+    width: 210px;
+    height: 40px;
+    background-color: #f9fbfd;
   }
 }
