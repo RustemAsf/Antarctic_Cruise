@@ -372,12 +372,76 @@
         </li>
       </ul>
     </section>
-    <section class="booking">
 
+    <section class="booking">
+      <div class="booking__block">
+        <h2 class="booking__block-title">Раннее бронирование</h2>
+        <p class="booking__block-text">
+          Забронируйте тур за&nbsp;3‑6&nbsp;месяцев до&nbsp;даты&nbsp;выезда и сэкономьте до 50%
+        </p>
+      </div>
+      <div class="booking__form">
+        <h3 class="booking__form-title">
+          Оставьте заявку и&nbsp;мы&nbsp;свяжемся с вами в&nbsp;ближайшее время
+        </h3>
+        <form id="booking-form" action="https://echo.htmlacademy.ru" method="post">
+          <ul class="booking__list">
+            <li class="booking__item">
+              <label for="name"><span class="visually-hidden">Имя</span></label>
+              <input class="booking__field" type="text" name="name-field" id="name" placeholder="Имя" required>
+            </li>
+            <li class="booking__item">
+              <label for="tel"><span class="visually-hidden">Телефон</span></label>
+              <input class="booking__field" type="tel" name="tel-field" id="tel"
+                pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$" placeholder="Телефон" required>
+            </li>
+            <li class="booking__item">
+              <label for="email"><span class="visually-hidden">Email</span></label>
+              <input class="booking__field" type="email" name="email-field" id="email" placeholder="Email" required>
+            </li>
+          </ul>
+          <p class="booking__form-text">
+            <label class="booking__control" for="one-check">
+              <input class="booking__control-block" id="one-check" type="checkbox" checked>
+              <span class="booking__mark"></span>
+            </label>
+            <span class="booking__control-label">Я согласен на обработку<br> моих персональных данных</span>
+          </p>
+          <button class="booking__form-button" id="submit-button" type="submit">Оставить заявку</button>
+        </form>
+      </div>
+    </section>
+    <section class="page__contacts id=" contacts">
+      <h2 class="visually-hidden">Контакты</h2>
+      <div class="page__leveler">
+        <div class="page__contacts-map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003197!2d30.320858716194987!3d59.938719169054025!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1648145331702!5m2!1sru!2sru"
+            width="560" height="306" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        <div class="contacts__content">
+          <p class="contacts__content-text">
+            У вас ещё остались вопросы или сомнения? Приезжайте
+            к нам в офис и мы вам все расскажем.
+          </p>
+          <div class="contacts__content-address">
+            <img class="contacts__address" id="address-icon" src="./icons/sprite.svg#address-icon" alt="Маркер адреса"
+              width="38" height="42">
+            г. Санкт Петербург, ул.&nbsp;Большая&nbsp;Конюшенная, 19/8
+          </div>
+          <div class="contacts__content-phone">
+            <img class="contacts__icon" id="address-icon" src="./icons/sprite.svg#contacts-icon" alt="Маркер адреса"
+              width="38" height="42">
+            <a class="contacts__content-link" href="tel:8-800-200-00-00">8-800-200-00-00</a>
+          </div>
+        </div>
+      </div>
     </section>
   </main>
   <footer>
-    <div class="container"></div>
+    <div class="container">
+
+    </div>
   </footer>
   </div>
   <script src="js/main.min.js"></script>
