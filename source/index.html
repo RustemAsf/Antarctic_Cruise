@@ -10,6 +10,10 @@
   <link rel="preload" href="fonts/Montserrat-Regular.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="fonts/Montserrat-Medium.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="fonts/Montserrat-Bold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="icon" href="img/favicons/icon.svg" sizes="any" type="image/svg+xml">
+  <link rel="icon" href="favicon.ico">
+  <link rel="apple-touch-icon" href="img/favicons/apple-icon-180x180.png">
+  <link rel="manifest" href="manifest.webmanifest" crossorigin="use-credentials">
 </head>
 
 <body class="page__body">
@@ -438,9 +442,48 @@
       </div>
     </section>
   </main>
-  <footer>
-    <div class="container">
-
+  <footer class="page__footer">
+    <div class="page__nav-block">
+      <div class="page__nav-list">
+        <a class="page__logo-link logo-antarctic" href="https://htmlacademy.ru/intensive/adaptive">
+          <img class="logo-antarctic__desktop" id="logo-desktop" src="./icons/sprite.svg#logo-desktop" alt="Логотип"
+            width="70" height="38">
+          <img class="logo-antarctic__tablet" id="logo-tablet" src="./icons/sprite.svg#logo-tablet" alt="Логотип"
+            width="38" height="20">
+          <img class="logo-antarctic__mobile" id="logo-mobile" src="./icons/sprite.svg#logo-mobile" alt="Логотип"
+            width="42" height="22">
+          <img class="logo-menu__mobile" id="logo-menu" src="./icons/sprite.svg#logo-menu" alt="Логотип" width="42"
+            height="22">
+        </a>
+        <ul class="page__list">
+          <li class="page__item">
+            <a class="page__link" href="#features">Преимущества </a>
+          </li>
+          <li class="page__item">
+            <a class="page__link" href="#">Направления</a>
+          </li>
+          <li class="page__item">
+            <a class="page__link" href="#cruises">Ближайшие круизы</a>
+          </li>
+          <li class="page__item">
+            <a class="page__link" href="#contacts">Контакты</a>
+          </li>
+        </ul>
+      </div>
+      <div class="page__social">
+        <ul class="page__social-list">
+          <li class="page__social-item">
+            <a class="page__social-link" href="#"><img class="page__facebook" id="facebook-icon" src="./icons/sprite.svg#facebook-icon" alt="фэйсбук"
+              width="21" height="31"></a>
+          </li>
+          <li class="page__social-item">
+            <a class="page__social-link" href="#"><img id="instagram-icon" src="./icons/sprite.svg#instagram-icon" alt="инстаграмм" width="21" height="20"></a>
+          </li>
+          <li class="page__social-item">
+            <a class="page__social-link" href="#"><img id="twitter-icon" src="./icons/sprite.svg#twitter-icon" alt="твиттер" width="20" height="17"></a>
+          </li>
+        </ul>
+      </div>
     </div>
   </footer>
   </div>

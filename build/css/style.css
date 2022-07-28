@@ -5,6 +5,46 @@
   }
 } */
 
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Medium.woff2") format("woff2"), url("../fonts/Montserrat-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Regular.woff2") format("woff2"), url("../fonts/Montserrat-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-SemiBold.woff2") format("woff2"), url("../fonts/Montserrat-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Bold.woff2") format("woff2"), url("../fonts/Montserrat-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Bold.woff2") format("woff2"), url("../fonts/Montserrat-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
 .page {
   font-size: 18px;
   font-family: "Montserrat", "Arial", sans-serif;
@@ -17,6 +57,61 @@
   margin: 0;
   background-color: #ffffff;
   color: #000000;
+}
+
+.page__footer {
+  padding-left: 15px;
+  padding-right: 15px;
+  min-height: 283px;
+  background: #011c40;
+}
+
+.page__social-list {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  width: 32%;
+}
+
+.page__nav-block {
+  padding-top: 40px;
+}
+
+.page__list {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 5px;
+}
+
+.page__link {
+  text-decoration: none;
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: #f9fbfd;
+  margin: 0;
+  padding: 0;
+}
+
+.page__contacts {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.page__contacts-map iframe {
+  width: 290px;
+  height: 316px;
 }
 
 .main-nav--opened .main-nav__list {
@@ -489,17 +584,24 @@ img {
   padding-bottom: 20px;
 }
 
-.page__contacts {
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
-.page__contacts-map iframe {
-  width: 290px;
-  height: 316px;
-}
-
 @media (min-width: 320px) {
+  .page__leveler {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin-bottom: 65px;
+  }
+
+  .page__contacts-map {
+    -webkit-box-ordinal-group: 3;
+    -ms-flex-order: 2;
+    order: 2;
+  }
+
   .page-header {
     position: relative;
     background-color: #3467a2;
@@ -653,22 +755,6 @@ img {
     -ms-flex-order: 1;
     order: 1;
   }
-
-  .page__leveler {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-  }
-
-  .page__contacts-map {
-    -webkit-box-ordinal-group: 3;
-    -ms-flex-order: 2;
-    order: 2;
-  }
 }
 
 @media (min-width: 320px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 320px) and (-o-min-device-pixel-ratio: 2/1), (min-width: 320px) and (min-resolution: 2dppx) {
@@ -689,6 +775,80 @@ img {
 }
 
 @media (min-width: 768px) {
+  .page__footer {
+    padding-left: 45px;
+    padding-right: 45px;
+    min-height: 120px;
+  }
+
+  .page__social-list {
+    margin: 0;
+    padding: 0;
+    width: 124%;
+  }
+
+  .page__nav-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    width: 77.5%;
+  }
+
+  .page__nav-block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding-top: 50px;
+  }
+
+  .page__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    list-style-type: none;
+    width: 84.4%;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+
+  .page__link {
+    font-size: 12px;
+  }
+
+  .page__contacts {
+    padding-left: 45px;
+    padding-right: 45px;
+  }
+
+  .page__leveler {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+
+  .page__leveler {
+    margin-bottom: 100px;
+  }
+
+  .page__contacts-map iframe {
+    width: 324px;
+    height: 335px;
+  }
+
   .page-header {
     background-image: url("../img/content/sky-header-tablet.jpg");
     min-height: 638px;
@@ -772,7 +932,7 @@ img {
     position: static;
     list-style-type: none;
     margin: 0;
-    width: 65%;
+    width: 72%;
   }
 
   .site-list__link {
@@ -1031,29 +1191,6 @@ img {
     top: 250px;
     left: -11px;
   }
-
-  .page__contacts {
-    padding-left: 45px;
-    padding-right: 45px;
-  }
-
-  .page__leveler {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
-  }
-
-  .page__contacts-map iframe {
-    width: 324px;
-    height: 335px;
-  }
 }
 
 @media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 768px) and (-o-min-device-pixel-ratio: 2/1), (min-width: 768px) and (min-resolution: 2dppx) {
@@ -1074,6 +1211,49 @@ img {
 }
 
 @media (min-width: 1366px) {
+  .page__footer {
+    padding-left: 103px;
+    padding-right: 103px;
+    min-height: 138px;
+  }
+
+  .page__social-list {
+    width: 125%;
+    padding: 0;
+  }
+
+  .page__nav-list {
+    width: 64.5%;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+
+  .page__nav-block {
+    padding-top: 54px;
+  }
+
+  .page__list {
+    padding-top: 5px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 84.4%;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+
+  .page__contacts {
+    padding-left: 103px;
+    padding-right: 103px;
+  }
+
+  .page__contacts-map iframe {
+    width: 560px;
+    height: 306px;
+  }
+
   .page-header {
     background-color: #3467a2;
     background-image: url("../img/content/sky-header.jpg");
@@ -1355,16 +1535,6 @@ img {
 
   .contacts__content-link {
     padding-left: 31px;
-  }
-
-  .page__contacts {
-    padding-left: 103px;
-    padding-right: 103px;
-  }
-
-  .page__contacts-map iframe {
-    width: 560px;
-    height: 306px;
   }
 }
 
