@@ -321,6 +321,184 @@ img {
   background-color: #f9fbfd;
 }
 
+.booking__block-title {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-style: normal;
+  margin-bottom: 16px;
+}
+
+.booking__block-text {
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-style: normal;
+  font-size: 16px;
+  margin: 0;
+  margin-bottom: 40px;
+}
+
+.booking__block {
+  padding-top: 60px;
+  text-align: center;
+}
+
+.booking__form-title {
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 150%;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: #f9fbfd;
+  margin: 0;
+  padding-top: 30px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.booking__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.booking__form {
+  background: #011c40;
+  -webkit-box-shadow: 0px 4px 45px rgba(1, 28, 64, 0.15);
+  box-shadow: 0px 4px 45px rgba(1, 28, 64, 0.15);
+}
+
+.booking__field {
+  width: 91%;
+  height: 43px;
+  margin-bottom: 20px;
+  padding-left: 16px;
+}
+
+.booking__control-label {
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 10px;
+  color: #f9fbfd;
+  padding-left: 30px;
+}
+
+.booking__form-text {
+  margin: 0;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 13px;
+}
+
+.booking__control-block {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.booking__mark {
+  position: absolute;
+  top: -2px;
+  left: 1px;
+  width: 16px;
+  height: 16px;
+  background: #ffffff;
+  border: 2px solid #e5e5e5;
+  border-radius: 1px;
+}
+
+.booking__control-block[type="checkbox"]:checked + .booking__mark::before {
+  position: absolute;
+  top: -3px;
+  left: -1px;
+  content: url("../img/sprite/checkbox-on.svg");
+}
+
+.booking__form-button {
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 150%;
+  color: #011c40;
+  background: #f9fbfd;
+  border: none;
+  padding: 15px 24px 17px 32px;
+  width: 101%;
+}
+
+.contacts__content-text {
+  margin: 0;
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 150%;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: #011c40;
+  margin-bottom: 35px;
+}
+
+.contacts__content-address {
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: #011c40;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 24px;
+}
+
+.contacts__content-link {
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-decoration: none;
+  color: #011c40;
+}
+
+.contacts__content-phone {
+  margin-bottom: 43px;
+}
+
+.contacts__address {
+  padding-bottom: 20px;
+}
+
+.page__contacts {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.page__contacts-map iframe {
+  width: 290px;
+  height: 316px;
+}
+
 @media (min-width: 320px) {
   .page-header {
     position: relative;
@@ -459,6 +637,37 @@ img {
     background-color: #d2e0f2;
     background-image: url("../img/content/booking-mobile.jpg");
     margin-bottom: 65px;
+    background-size: 100%, cover;
+  }
+
+  .booking__form {
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-top: 50px;
+    width: 77.4%;
+    height: 455px;
+  }
+
+  .contacts__content {
+    -webkit-box-ordinal-group: 2;
+    -ms-flex-order: 1;
+    order: 1;
+  }
+
+  .page__leveler {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .page__contacts-map {
+    -webkit-box-ordinal-group: 3;
+    -ms-flex-order: 2;
+    order: 2;
   }
 }
 
@@ -714,9 +923,136 @@ img {
   .booking {
     padding-left: 183px;
     padding-right: 183px;
-    min-height: 588px;
+    min-height: 805px;
     background-image: url("../img/content/booking-tablet.jpg");
     margin-bottom: 100px;
+    background-size: 100%, cover;
+    display: block;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+
+  .booking__block-title {
+    font-size: 34px;
+    margin-bottom: 25px;
+  }
+
+  .booking__block-text {
+    font-weight: 400;
+    line-height: 150%;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    color: #011c40;
+    font-size: 18px;
+    margin-bottom: 60px;
+  }
+
+  .booking__block {
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 100px;
+  }
+
+  .booking__form-title {
+    padding-top: 50px;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .booking__form {
+    padding-left: 30px;
+    padding-right: 50px;
+    margin: 0 auto;
+    margin-top: 50px;
+    width: 69.4%;
+    height: 455px;
+  }
+
+  .booking__field {
+    width: 99%;
+    height: 43px;
+    margin-bottom: 20px;
+    padding-left: 16px;
+  }
+
+  .booking__control-label {
+    padding-top: 5px;
+  }
+
+  .booking__control-label br {
+    display: none;
+  }
+
+  .booking__form-text {
+    margin-bottom: 20px;
+  }
+
+  .booking__form-button {
+    padding: 12px 89px 12px 90px;
+    width: 106%;
+  }
+
+  .contacts__content-text {
+    padding-top: 72px;
+    margin-bottom: 35px;
+  }
+
+  .contacts__content {
+    position: relative;
+    width: 42.1%;
+    -webkit-box-ordinal-group: 3;
+    -ms-flex-order: 2;
+    order: 2;
+  }
+
+  .contacts__content-address {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-left: 32px;
+    margin-bottom: 12px;
+  }
+
+  .contacts__content-phone {
+    padding-left: 32px;
+    margin: 0;
+  }
+
+  .contacts__address {
+    position: absolute;
+    top: 189px;
+    left: -11px;
+  }
+
+  .contacts__icon {
+    position: absolute;
+    top: 250px;
+    left: -11px;
+  }
+
+  .page__contacts {
+    padding-left: 45px;
+    padding-right: 45px;
+  }
+
+  .page__leveler {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+
+  .page__contacts-map iframe {
+    width: 324px;
+    height: 335px;
   }
 }
 
@@ -943,6 +1279,92 @@ img {
     min-height: 555px;
     background-image: url("../img/content/booking-desktop.jpg");
     margin-bottom: 120px;
+    background-size: 100%, cover;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .booking__block-title {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 150%;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    color: #011c40;
+  }
+
+  .booking__block {
+    margin: auto 0;
+  }
+
+  .booking__form-title {
+    padding-top: 40px;
+    margin-bottom: 30px;
+  }
+
+  .booking__form {
+    width: 29.5%;
+    height: 455px;
+  }
+
+  .booking__form-text {
+    margin-bottom: 20px;
+  }
+
+  .booking__form-button {
+    padding: 12px 89px 12px 90px;
+    width: 106%;
+  }
+
+  .contacts__content-text {
+    margin-bottom: 45px;
+    padding-top: 81px;
+  }
+
+  .contacts__content {
+    position: relative;
+    width: 40%;
+    -webkit-box-ordinal-group: 3;
+    -ms-flex-order: 2;
+    order: 2;
+  }
+
+  .contacts__content-address {
+    padding-left: 32px;
+    margin-bottom: 12px;
+  }
+
+  .contacts__content-phone {
+    padding: 0;
+    margin: 0;
+  }
+
+  .contacts__address {
+    position: absolute;
+    top: 182px;
+    left: -11px;
+  }
+
+  .contacts__icon {
+    position: absolute;
+    top: 217px;
+    left: -11px;
+  }
+
+  .contacts__content-link {
+    padding-left: 31px;
+  }
+
+  .page__contacts {
+    padding-left: 103px;
+    padding-right: 103px;
+  }
+
+  .page__contacts-map iframe {
+    width: 560px;
+    height: 306px;
   }
 }
 
