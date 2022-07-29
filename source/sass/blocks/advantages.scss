@@ -55,7 +55,7 @@
   background-color: #f9fbfd;
 
   &--ship {
-    padding: 25px 15px 25px 20px;
+    padding: 25px 22px 25px 20px;
     margin-bottom: 30px;
   }
 
@@ -73,7 +73,7 @@
   }
 
   &--boat {
-    padding: 32px 37px 25px 20px;
+    padding: 32px 20px 30px 20px;
   }
 
   &--boat::before {
@@ -81,7 +81,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 25%;
+    width: 26%;
 
     &--ship{
       padding: 30px 42px 50px 30px;
@@ -145,16 +145,25 @@
   font-size: 18px;
   font-weight: 500;
   align-items: center;
-  padding-top: 25px;
+  padding-top: 13px;
   color: #011c40;
-  margin-bottom: 20px;
+  margin-bottom: 8px;
+  br {
+    display: none;
+  }
 
   @media (min-width: $desktop-width) {
     line-height: 150%;
+    br {
+      display: block;
+    }
   }
 
   @media (min-width: $tablet-width) {
     line-height: 140%;
+     br {
+      display: block;
+    }
   }
 }
 
@@ -167,6 +176,33 @@
   line-height: 140%;
   align-items: center;
   color: #011c40;
+
+  @media (min-width: $tablet-width) {
+    &--ship {
+      width: 154px;
+    }
+    &--check {
+      width: 162px;
+    }
+    &--boat {
+      width: 167px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &--ship {
+      width: 288px;
+    }
+    &--check {
+      width: 280px;
+    }
+    &--boat {
+      width: 241px;
+    }
+    br {
+      display: none;
+    }
+  }
 }
 
 

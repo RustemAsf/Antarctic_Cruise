@@ -12,6 +12,9 @@
   @media (min-width: $desktop-width) {
     margin-bottom: 45px;
     padding-top: 81px;
+    br {
+      display: none;
+    }
   }
 
   @media (min-width: $tablet-width) {
@@ -27,13 +30,13 @@
 
   @media (min-width: $desktop-width) {
     position: relative;
-    width: 40%;
+    width: 43%;
     order: 2;
   }
 
   @media (min-width: $tablet-width) {
     position: relative;
-    width: 42.1%;
+    width: 47.1%;
     order: 2;
   }
 }
@@ -87,7 +90,7 @@
 }
 
 .contacts__address {
-  padding-bottom: 20px;
+  padding-bottom: 36px;
 
   @media (min-width: $desktop-width) {
     position: absolute;

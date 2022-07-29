@@ -62,7 +62,6 @@
 .page__footer {
   padding-left: 15px;
   padding-right: 15px;
-  min-height: 283px;
   background: #011c40;
 }
 
@@ -81,12 +80,18 @@
 
 .page__nav-block {
   padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 .page__list {
   margin: 0;
   padding: 0;
   margin-bottom: 5px;
+  list-style-type: none;
+}
+
+.page__item {
+  margin-bottom: 20px;
 }
 
 .page__link {
@@ -217,10 +222,15 @@ img {
   font-weight: 400;
   font-size: 16px;
   margin: 0;
+  margin-bottom: 40px;
 }
 
-.info__block {
-  width: 37%;
+.info__block-text br {
+  display: none;
+}
+
+.info__block-img {
+  margin-bottom: 65px;
 }
 
 .advantages__list {
@@ -235,7 +245,7 @@ img {
 }
 
 .advantages__item--ship {
-  padding: 25px 15px 25px 20px;
+  padding: 25px 22px 25px 20px;
   margin-bottom: 30px;
 }
 
@@ -253,7 +263,7 @@ img {
 }
 
 .advantages__item--boat {
-  padding: 32px 37px 25px 20px;
+  padding: 32px 20px 30px 20px;
 }
 
 .advantages__item--boat::before {
@@ -283,9 +293,13 @@ img {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding-top: 25px;
+  padding-top: 13px;
   color: #011c40;
-  margin-bottom: 20px;
+  margin-bottom: 8px;
+}
+
+.advantages__block-title br {
+  display: none;
 }
 
 .advantages__block-text {
@@ -581,7 +595,7 @@ img {
 }
 
 .contacts__address {
-  padding-bottom: 20px;
+  padding-bottom: 36px;
 }
 
 @media (min-width: 320px) {
@@ -703,15 +717,7 @@ img {
     font-weight: 600;
     font-size: 24px;
     margin: 0;
-    margin-bottom: 30px;
-  }
-
-  .info__block-text {
-    margin-bottom: 40px;
-  }
-
-  .info__block {
-    width: 100%;
+    margin-bottom: 22px;
   }
 
   .advantages {
@@ -805,6 +811,7 @@ img {
     -ms-flex-pack: justify;
     justify-content: space-between;
     padding-top: 50px;
+    padding-bottom: 0;
   }
 
   .page__list {
@@ -816,6 +823,10 @@ img {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
+  }
+
+  .page__item {
+    margin: 0;
   }
 
   .page__link {
@@ -873,6 +884,10 @@ img {
   .page-header__text {
     font-size: 18px;
     line-height: 22px;
+  }
+
+  .page-header__text br {
+    display: none;
   }
 
   .main-nav {
@@ -969,6 +984,7 @@ img {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
+    margin-bottom: 100px;
   }
 
   .info__block-title {
@@ -977,9 +993,22 @@ img {
     margin-bottom: 30px;
   }
 
+  .info__block-img img {
+    width: 324px;
+    height: 264px;
+  }
+
+  .info__block-text {
+    line-height: 150%;
+    margin: 0;
+  }
+
+  .info__block-img {
+    margin: 0;
+  }
+
   .info__block {
-    width: 42%;
-    margin-right: 30px;
+    width: 48%;
   }
 
   .advantages {
@@ -1024,6 +1053,22 @@ img {
 
   .advantages__block-title {
     line-height: 140%;
+  }
+
+  .advantages__block-title br {
+    display: block;
+  }
+
+  .advantages__block-text--ship {
+    width: 154px;
+  }
+
+  .advantages__block-text--check {
+    width: 162px;
+  }
+
+  .advantages__block-text--boat {
+    width: 167px;
   }
 
   .cruises {
@@ -1095,7 +1140,7 @@ img {
 
   .booking__block-title {
     font-size: 34px;
-    margin-bottom: 25px;
+    margin-bottom: 12px;
   }
 
   .booking__block-text {
@@ -1107,6 +1152,11 @@ img {
     color: #011c40;
     font-size: 18px;
     margin-bottom: 60px;
+    width: 88%;
+  }
+
+  .booking__block-text br {
+    display: none;
   }
 
   .booking__block {
@@ -1117,7 +1167,7 @@ img {
 
   .booking__form-title {
     padding-top: 50px;
-    text-align: center;
+    text-align: left;
     margin-bottom: 30px;
   }
 
@@ -1126,7 +1176,7 @@ img {
     padding-right: 50px;
     margin: 0 auto;
     margin-top: 50px;
-    width: 69.4%;
+    width: 77.4%;
     height: 455px;
   }
 
@@ -1161,7 +1211,7 @@ img {
 
   .contacts__content {
     position: relative;
-    width: 42.1%;
+    width: 47.1%;
     -webkit-box-ordinal-group: 3;
     -ms-flex-order: 2;
     order: 2;
@@ -1231,6 +1281,7 @@ img {
 
   .page__nav-block {
     padding-top: 54px;
+    padding-bottom: 0;
   }
 
   .page__list {
@@ -1279,6 +1330,10 @@ img {
   .page-header__text {
     font-size: 20px;
     line-height: 24px;
+  }
+
+  .page-header__text br {
+    display: none;
   }
 
   .main-nav {
@@ -1344,6 +1399,7 @@ img {
   .info {
     padding-left: 103px;
     padding-right: 103px;
+    margin-bottom: 120px;
   }
 
   .info__block-title {
@@ -1354,12 +1410,34 @@ img {
     align-items: center;
     color: #011c40;
     margin: 0;
-    margin-bottom: 40px;
+    margin-bottom: 23px;
     padding-top: 66px;
+  }
+
+  .info__block-title br {
+    display: none;
+  }
+
+  .info__block-img img {
+    width: 560px;
+    height: 301px;
+  }
+
+  .info__block-text {
+    margin: 0;
+  }
+
+  .info__block-text br {
+    display: none;
   }
 
   .info__block-img {
     min-height: 301px;
+    margin: 0;
+  }
+
+  .info__block {
+    width: 46%;
   }
 
   .advantages {
@@ -1371,7 +1449,7 @@ img {
   }
 
   .advantages__item {
-    width: 25%;
+    width: 26%;
   }
 
   .advantages__item--ship {
@@ -1394,6 +1472,26 @@ img {
 
   .advantages__block-title {
     line-height: 150%;
+  }
+
+  .advantages__block-title br {
+    display: block;
+  }
+
+  .advantages__block-text--ship {
+    width: 288px;
+  }
+
+  .advantages__block-text--check {
+    width: 280px;
+  }
+
+  .advantages__block-text--boat {
+    width: 241px;
+  }
+
+  .advantages__block-text br {
+    display: none;
   }
 
   .cruises {
@@ -1469,10 +1567,18 @@ img {
     font-weight: 700;
     font-size: 40px;
     line-height: 150%;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+    text-align: left;
     color: #011c40;
+    margin: 0;
+  }
+
+  .booking__block-text {
+    text-align: left;
+    width: 53%;
+  }
+
+  .booking__block-text br {
+    display: none;
   }
 
   .booking__block {
@@ -1482,11 +1588,18 @@ img {
   .booking__form-title {
     padding-top: 40px;
     margin-bottom: 30px;
+    text-align: left;
   }
 
   .booking__form {
-    width: 29.5%;
+    width: 30.5%;
     height: 455px;
+    margin: 0;
+    margin-top: 50px;
+  }
+
+  .booking__control-label br {
+    display: none;
   }
 
   .booking__form-text {
@@ -1503,9 +1616,13 @@ img {
     padding-top: 81px;
   }
 
+  .contacts__content-text br {
+    display: none;
+  }
+
   .contacts__content {
     position: relative;
-    width: 40%;
+    width: 43%;
     -webkit-box-ordinal-group: 3;
     -ms-flex-order: 2;
     order: 2;
