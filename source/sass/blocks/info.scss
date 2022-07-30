@@ -10,7 +10,7 @@
     padding-right: 45px;
     display: flex;
     justify-content: space-between;
-    margin-bottom: 100px;
+    margin-bottom: 92px;
   }
 
   @media (min-width: $mobile-width) {
@@ -37,7 +37,8 @@
   @media (min-width: $tablet-width) {
     font-size: 26px;
     margin: 0;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
+    line-height: 140%;
   }
 
   @media (min-width: $mobile-width) {

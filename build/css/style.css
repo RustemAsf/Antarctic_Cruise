@@ -163,6 +163,7 @@
   align-items: center;
   text-decoration: none;
   color: #011c40;
+  padding-left: 28px;
 }
 
 .page__content-phone {
@@ -180,10 +181,6 @@
   position: absolute;
   top: 1px;
   left: -11px;
-}
-
-.page__content-link {
-  padding-left: 28px;
 }
 
 .main-nav--opened .main-nav__list {
@@ -812,7 +809,7 @@ img {
   .page__social-list {
     margin: 0;
     padding: 0;
-    width: 124%;
+    width: 114%;
   }
 
   .page__nav-list {
@@ -822,7 +819,7 @@ img {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    width: 77.5%;
+    width: 75.5%;
   }
 
   .page__nav-block {
@@ -832,7 +829,7 @@ img {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    padding-top: 50px;
+    padding-top: 47px;
     padding-bottom: 0;
   }
 
@@ -841,7 +838,7 @@ img {
     display: -ms-flexbox;
     display: flex;
     list-style-type: none;
-    width: 84.4%;
+    width: 87.4%;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
@@ -874,7 +871,7 @@ img {
   }
 
   .page__leveler {
-    margin-bottom: 100px;
+    margin-bottom: 90px;
   }
 
   .page__contacts-map iframe {
@@ -883,8 +880,8 @@ img {
   }
 
   .page__content-text {
-    padding-top: 72px;
-    margin-bottom: 35px;
+    padding-top: 64px;
+    margin-bottom: 28px;
   }
 
   .page__content {
@@ -899,8 +896,12 @@ img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    padding-left: 32px;
-    margin-bottom: 12px;
+    padding-left: 27px;
+    margin-bottom: 19px;
+  }
+
+  .page__content-link {
+    padding: 0;
   }
 
   .page__content-phone {
@@ -910,20 +911,20 @@ img {
 
   .page__address {
     position: absolute;
-    top: 189px;
+    top: 4px;
     left: -11px;
   }
 
   .page__icon {
     position: absolute;
-    top: 250px;
+    top: 1px;
     left: -11px;
   }
 
   .page-header {
     background-image: url("../img/content/sky-header-tablet.jpg");
     min-height: 638px;
-    margin-bottom: 100px;
+    margin-bottom: 91px;
   }
 
   .page-header__wrapper {
@@ -932,13 +933,13 @@ img {
   }
 
   .page-header__slogan {
-    padding: 0 134px 0 45px;
+    padding: 0 134px 0 56px;
   }
 
   .page-header__title {
-    font-size: 50px;
+    font-size: 54px;
     line-height: 61px;
-    margin-bottom: 29px;
+    margin-bottom: 9px;
   }
 
   .page-header__title br {
@@ -965,7 +966,7 @@ img {
     -ms-flex-align: center;
     align-items: center;
     padding-top: 30px;
-    margin-bottom: 230px;
+    margin-bottom: 218px;
   }
 
   .main-nav--opened .main-nav__list {
@@ -1011,7 +1012,7 @@ img {
     position: static;
     list-style-type: none;
     margin: 0;
-    width: 72%;
+    width: 73%;
   }
 
   .site-list__link {
@@ -1048,13 +1049,14 @@ img {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    margin-bottom: 100px;
+    margin-bottom: 92px;
   }
 
   .info__block-title {
     font-size: 26px;
     margin: 0;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
+    line-height: 140%;
   }
 
   .info__block-img img {
@@ -1080,7 +1082,7 @@ img {
     padding-right: 45px;
     min-height: 588px;
     background-image: url("../img/content/advantages-tablet.jpg");
-    margin-bottom: 100px;
+    margin-bottom: 97px;
   }
 
   .advantages__list {
@@ -1090,10 +1092,7 @@ img {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-  }
-
-  .advantages__item br {
-    display: none;
+    width: 104%;
   }
 
   .advantages__item {
@@ -1101,26 +1100,35 @@ img {
     margin: 0;
   }
 
+  .advantages__item br {
+    display: none;
+  }
+
   .advantages__item--ship {
-    padding: 25px 16px 25px 20px;
+    padding: 19px 16px 25px 20px;
   }
 
   .advantages__item--check {
-    padding: 29px 24px 45px 20px;
+    padding: 27px 21px 45px 20px;
   }
 
   .advantages__item--boat {
-    padding: 35px 19px 25px 20px;
+    padding: 35px 26px 25px 20px;
   }
 
   .advantages__title {
     font-size: 26px;
-    margin-bottom: 60px;
-    padding-top: 100px;
+    margin-bottom: 56px;
+    padding-top: 97px;
   }
 
   .advantages__block-title {
     line-height: 140%;
+    padding-top: 12px;
+  }
+
+  .advantages__block-title--boat {
+    padding-top: 9px;
   }
 
   .advantages__block-title br {
@@ -1146,6 +1154,11 @@ img {
   .cruises {
     padding-left: 60px;
     padding-right: 60px;
+    padding-bottom: 74px;
+  }
+
+  .cruises__title {
+    margin-bottom: 56px;
   }
 
   .cruises__list {
@@ -1161,11 +1174,11 @@ img {
 
   .cruises__img-title {
     margin-top: -60px;
-    padding-left: 30px;
+    padding-left: 39px;
   }
 
   .cruises__item {
-    margin-bottom: 30px;
+    margin-bottom: 36px;
   }
 
   .cruises__page-title {
@@ -1211,8 +1224,10 @@ img {
   }
 
   .booking__block-title {
-    font-size: 34px;
-    margin-bottom: 12px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 150%;
+    margin-bottom: 4px;
   }
 
   .booking__block-text {
@@ -1223,8 +1238,9 @@ img {
     align-items: center;
     color: #011c40;
     font-size: 18px;
-    margin-bottom: 60px;
-    width: 88%;
+    margin: 0;
+    width: 97%;
+    padding-left: 24px;
   }
 
   .booking__block-text br {
@@ -1234,28 +1250,27 @@ img {
   .booking__block {
     margin: 0 auto;
     text-align: center;
-    padding-top: 100px;
+    padding-top: 85px;
   }
 
   .booking__form-title {
     padding-top: 50px;
     text-align: left;
-    margin-bottom: 30px;
+    margin-bottom: 26px;
   }
 
   .booking__form {
-    padding-left: 30px;
-    padding-right: 50px;
-    margin: 0 auto;
-    margin-top: 50px;
+    padding-left: 52px;
+    padding-right: 45px;
+    margin: 50px auto 0;
     width: 77.4%;
     height: 455px;
   }
 
   .booking__field {
-    width: 99%;
+    width: 91%;
     height: 43px;
-    margin-bottom: 20px;
+    margin-bottom: 14px;
     padding-left: 16px;
   }
 
@@ -1273,7 +1288,7 @@ img {
 
   .booking__form-button {
     padding: 12px 89px 12px 90px;
-    width: 106%;
+    width: 98%;
   }
 }
 
@@ -1361,6 +1376,10 @@ img {
     margin-bottom: 12px;
   }
 
+  .page__content-link {
+    padding-left: 31px;
+  }
+
   .page__content-phone {
     padding: 0;
     margin: 0;
@@ -1376,10 +1395,6 @@ img {
     position: absolute;
     top: 217px;
     left: -11px;
-  }
-
-  .page__content-link {
-    padding-left: 31px;
   }
 
   .page-header {

@@ -17,7 +17,7 @@
     padding-right: 45px;
     min-height: 588px;
     background-image: url("../img/content/advantages-tablet.jpg");
-    margin-bottom: 100px;
+    margin-bottom: 97px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/content/advantages-tablet@2x.jpg");
@@ -45,9 +45,11 @@
     margin: 0;
     display: block;
     list-style-type: none;
+
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
+    width: 104%;
   }
 }
 
@@ -79,11 +81,7 @@
   &--boat::before {
     content: url("../img/sprite/boat-icon.svg");
   }
-  @media (min-width: $tablet-width) {
-    br {
-      display: none;
-    }
-  }
+
   @media (min-width: $desktop-width) {
     width: 26%;
 
@@ -104,16 +102,20 @@
     width: 26%;
     margin: 0;
 
-    &--ship{
-      padding: 25px 16px 25px 20px;
+    br {
+      display: none;
+    }
+
+    &--ship {
+      padding: 19px 16px 25px 20px;
     }
 
     &--check {
-      padding: 29px 24px 45px 20px;
+      padding: 27px 21px 45px 20px;
     }
 
     &--boat{
-      padding: 35px 19px 25px 20px;
+      padding: 35px 26px 25px 20px;
     }
   }
 }
@@ -138,8 +140,8 @@
 
    @media (min-width: $tablet-width) {
     font-size: 26px;
-    margin-bottom: 60px;
-    padding-top: 100px;
+    margin-bottom: 56px;
+    padding-top: 97px;
   }
 }
 
@@ -153,6 +155,7 @@
   padding-top: 0;
   color: #011c40;
   margin-bottom: 10px;
+
   &--boat {
     padding-top: 16px;
   }
@@ -166,6 +169,12 @@
 
   @media (min-width: $tablet-width) {
     line-height: 140%;
+    padding-top: 12px;
+
+    &--boat {
+    padding-top: 9px;
+  }
+
      br {
       display: block;
     }
