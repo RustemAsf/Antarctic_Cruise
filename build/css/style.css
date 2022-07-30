@@ -75,12 +75,13 @@
   justify-content: space-between;
   margin: 0;
   padding: 0;
-  width: 32%;
+  width: 31%;
+  padding-top: 15px;
 }
 
 .page__nav-block {
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding-top: 31px;
+  padding-bottom: 49px;
 }
 
 .page__list {
@@ -91,7 +92,7 @@
 }
 
 .page__item {
-  margin-bottom: 20px;
+  margin-bottom: 3px;
 }
 
 .page__link {
@@ -99,7 +100,7 @@
   font-family: "Montserrat", "Arial", sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 12px;
   line-height: 20px;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -119,6 +120,72 @@
   height: 316px;
 }
 
+.page__content-text {
+  margin: 0;
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 150%;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: #011c40;
+  margin-bottom: 27px;
+}
+
+.page__content-address {
+  position: relative;
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: #011c40;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 18px;
+  padding-left: 28px;
+}
+
+.page__content-link {
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-decoration: none;
+  color: #011c40;
+}
+
+.page__content-phone {
+  position: relative;
+  margin-bottom: 37px;
+}
+
+.page__address {
+  position: absolute;
+  top: 1px;
+  left: -11px;
+}
+
+.page__icon {
+  position: absolute;
+  top: 1px;
+  left: -11px;
+}
+
+.page__content-link {
+  padding-left: 28px;
+}
+
 .main-nav--opened .main-nav__list {
   display: block;
 }
@@ -132,20 +199,21 @@
   justify-content: space-between;
   padding-bottom: 43px;
   background-color: #fff;
-  padding-left: 15px;
+  padding-left: 20px;
   padding-right: 12px;
 }
 
-.main-nav--opened .logo-menu__mobile {
+.main-nav--opened .main-nav__logo-menu {
   display: block;
 }
 
-.main-nav--opened .logo-menu__close {
+.main-nav--opened .main-nav__logo-close {
   display: block;
 }
 
 .main-nav--opened .page-header__wrapper {
   padding: 0;
+  width: 280px;
 }
 
 .main-nav--opened .main-nav__toggle {
@@ -156,14 +224,14 @@
 }
 
 .main-nav--closed .main-nav__logo {
-  padding: 20px 15px 0 15px;
+  padding: 25px 15px 0 15px;
 }
 
-.main-nav--closed .logo-menu__mobile {
+.main-nav--closed .main-nav__logo-menu {
   display: none;
 }
 
-.main-nav--closed .logo-menu__close {
+.main-nav--closed .main-nav__logo-close {
   display: none;
 }
 
@@ -222,7 +290,8 @@ img {
   font-weight: 400;
   font-size: 16px;
   margin: 0;
-  margin-bottom: 40px;
+  line-height: 150%;
+  margin-bottom: 33px;
 }
 
 .info__block-text br {
@@ -230,7 +299,7 @@ img {
 }
 
 .info__block-img {
-  margin-bottom: 65px;
+  margin-bottom: 57px;
 }
 
 .advantages__list {
@@ -245,7 +314,7 @@ img {
 }
 
 .advantages__item--ship {
-  padding: 25px 22px 25px 20px;
+  padding: 25px 22px 21px 20px;
   margin-bottom: 30px;
 }
 
@@ -254,8 +323,8 @@ img {
 }
 
 .advantages__item--check {
-  padding: 29px 47px 25px 20px;
-  margin-bottom: 30px;
+  padding: 37px 47px 23px 20px;
+  margin-bottom: 28px;
 }
 
 .advantages__item--check::before {
@@ -263,7 +332,7 @@ img {
 }
 
 .advantages__item--boat {
-  padding: 32px 20px 30px 20px;
+  padding: 26px 20px 18px 20px;
 }
 
 .advantages__item--boat::before {
@@ -274,14 +343,15 @@ img {
   font-family: "Montserrat", "Arial", sans-serif;
   font-style: normal;
   font-weight: 600;
+  font-size: 24px;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
   color: #011C40;
   margin: 0;
   text-align: center;
-  padding-top: 65px;
-  margin-bottom: 40px;
+  padding-top: 61px;
+  margin-bottom: 38px;
 }
 
 .advantages__block-title {
@@ -293,13 +363,13 @@ img {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding-top: 13px;
+  padding-top: 0;
   color: #011c40;
-  margin-bottom: 8px;
+  margin-bottom: 10px;
 }
 
-.advantages__block-title br {
-  display: none;
+.advantages__block-title--boat {
+  padding-top: 16px;
 }
 
 .advantages__block-text {
@@ -318,12 +388,13 @@ img {
 .cruises {
   padding-left: 25px;
   padding-right: 25px;
+  padding-bottom: 35px;
 }
 
 .cruises__title {
   margin: 0;
   text-align: center;
-  margin-bottom: 60px;
+  margin-bottom: 35px;
 }
 
 .cruises__list {
@@ -343,13 +414,13 @@ img {
   -ms-flex-align: center;
   align-items: center;
   color: #f9fbfd;
-  margin-top: -60px;
-  padding-left: 30px;
+  margin-top: -52px;
+  padding-left: 25px;
 }
 
 .cruises__item {
   position: relative;
-  margin-bottom: 55px;
+  margin-bottom: 47px;
 }
 
 .cruises__page-list {
@@ -435,19 +506,20 @@ img {
   padding: 0;
   font-family: "Montserrat", "Arial", sans-serif;
   font-style: normal;
-  margin-bottom: 16px;
+  margin-bottom: 18px;
 }
 
 .booking__block-text {
   font-family: "Montserrat", "Arial", sans-serif;
   font-style: normal;
+  line-height: 140%;
   font-size: 16px;
   margin: 0;
-  margin-bottom: 40px;
+  margin-bottom: 34px;
 }
 
 .booking__block {
-  padding-top: 60px;
+  padding-top: 62px;
   text-align: center;
 }
 
@@ -456,15 +528,15 @@ img {
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
-  line-height: 150%;
+  line-height: 140%;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
   color: #f9fbfd;
   margin: 0;
-  padding-top: 30px;
+  padding-top: 34px;
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 24px;
 }
 
 .booking__list {
@@ -481,7 +553,7 @@ img {
 
 .booking__field {
   width: 91%;
-  height: 43px;
+  height: 40px;
   margin-bottom: 20px;
   padding-left: 16px;
 }
@@ -494,6 +566,7 @@ img {
   line-height: 10px;
   color: #f9fbfd;
   padding-left: 30px;
+  margin-bottom: 14px;
 }
 
 .booking__form-text {
@@ -543,59 +616,8 @@ img {
   color: #011c40;
   background: #f9fbfd;
   border: none;
-  padding: 15px 24px 17px 32px;
+  padding: 10px 24px 10px 32px;
   width: 101%;
-}
-
-.contacts__content-text {
-  margin: 0;
-  font-family: "Montserrat", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 150%;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  color: #011c40;
-  margin-bottom: 35px;
-}
-
-.contacts__content-address {
-  font-family: "Montserrat", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 150%;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  color: #011c40;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-bottom: 24px;
-}
-
-.contacts__content-link {
-  font-family: "Montserrat", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 150%;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  text-decoration: none;
-  color: #011c40;
-}
-
-.contacts__content-phone {
-  margin-bottom: 43px;
-}
-
-.contacts__address {
-  padding-bottom: 36px;
 }
 
 @media (min-width: 320px) {
@@ -607,13 +629,19 @@ img {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    margin-bottom: 65px;
+    margin-bottom: 56px;
   }
 
   .page__contacts-map {
     -webkit-box-ordinal-group: 3;
     -ms-flex-order: 2;
     order: 2;
+  }
+
+  .page__content {
+    -webkit-box-ordinal-group: 2;
+    -ms-flex-order: 1;
+    order: 1;
   }
 
   .page-header {
@@ -626,7 +654,7 @@ img {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     min-height: 500px;
-    margin-bottom: 65px;
+    margin-bottom: 64px;
   }
 
   .page-header__slogan {
@@ -659,13 +687,14 @@ img {
   }
 
   .main-nav {
-    margin-bottom: 143px;
+    margin-bottom: 132px;
   }
 
   .site-list {
+    list-style-type: none;
     position: absolute;
     top: 85px;
-    left: 0px;
+    left: 0;
     width: 100%;
     height: 100%;
     margin: 0;
@@ -690,7 +719,7 @@ img {
   }
 
   .site-list__link--contacts {
-    padding-bottom: 325px;
+    padding-bottom: 235px;
   }
 
   .logo-antarctic__desktop {
@@ -726,7 +755,7 @@ img {
     min-height: 997px;
     background-color: #d2e0f2;
     background-image: url("../img/content/advantages-mobile.jpg");
-    margin-bottom: 65px;
+    margin-bottom: 61px;
   }
 
   .cruises__img-wrapper--back {
@@ -744,22 +773,15 @@ img {
     min-height: 760px;
     background-color: #d2e0f2;
     background-image: url("../img/content/booking-mobile.jpg");
-    margin-bottom: 65px;
+    margin-bottom: 58px;
     background-size: 100%, cover;
   }
 
   .booking__form {
     padding-left: 30px;
     padding-right: 30px;
-    margin-top: 50px;
-    width: 77.4%;
+    width: 79.4%;
     height: 455px;
-  }
-
-  .contacts__content {
-    -webkit-box-ordinal-group: 2;
-    -ms-flex-order: 1;
-    order: 1;
   }
 }
 
@@ -860,6 +882,44 @@ img {
     height: 335px;
   }
 
+  .page__content-text {
+    padding-top: 72px;
+    margin-bottom: 35px;
+  }
+
+  .page__content {
+    position: relative;
+    width: 47.1%;
+    -webkit-box-ordinal-group: 3;
+    -ms-flex-order: 2;
+    order: 2;
+  }
+
+  .page__content-address {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-left: 32px;
+    margin-bottom: 12px;
+  }
+
+  .page__content-phone {
+    padding-left: 32px;
+    margin: 0;
+  }
+
+  .page__address {
+    position: absolute;
+    top: 189px;
+    left: -11px;
+  }
+
+  .page__icon {
+    position: absolute;
+    top: 250px;
+    left: -11px;
+  }
+
   .page-header {
     background-image: url("../img/content/sky-header-tablet.jpg");
     min-height: 638px;
@@ -879,6 +939,10 @@ img {
     font-size: 50px;
     line-height: 61px;
     margin-bottom: 29px;
+  }
+
+  .page-header__title br {
+    display: none;
   }
 
   .page-header__text {
@@ -918,7 +982,7 @@ img {
     background: none;
   }
 
-  .main-nav--opened .logo-menu__mobile {
+  .main-nav--opened .main-nav__logo-menu {
     display: none;
   }
 
@@ -1028,6 +1092,10 @@ img {
     justify-content: space-between;
   }
 
+  .advantages__item br {
+    display: none;
+  }
+
   .advantages__item {
     width: 26%;
     margin: 0;
@@ -1057,6 +1125,10 @@ img {
 
   .advantages__block-title br {
     display: block;
+  }
+
+  .advantages__block-text br {
+    display: none;
   }
 
   .advantages__block-text--ship {
@@ -1203,44 +1275,6 @@ img {
     padding: 12px 89px 12px 90px;
     width: 106%;
   }
-
-  .contacts__content-text {
-    padding-top: 72px;
-    margin-bottom: 35px;
-  }
-
-  .contacts__content {
-    position: relative;
-    width: 47.1%;
-    -webkit-box-ordinal-group: 3;
-    -ms-flex-order: 2;
-    order: 2;
-  }
-
-  .contacts__content-address {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    padding-left: 32px;
-    margin-bottom: 12px;
-  }
-
-  .contacts__content-phone {
-    padding-left: 32px;
-    margin: 0;
-  }
-
-  .contacts__address {
-    position: absolute;
-    top: 189px;
-    left: -11px;
-  }
-
-  .contacts__icon {
-    position: absolute;
-    top: 250px;
-    left: -11px;
-  }
 }
 
 @media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 768px) and (-o-min-device-pixel-ratio: 2/1), (min-width: 768px) and (min-resolution: 2dppx) {
@@ -1305,6 +1339,49 @@ img {
     height: 306px;
   }
 
+  .page__content-text {
+    margin-bottom: 45px;
+    padding-top: 81px;
+  }
+
+  .page__content-text br {
+    display: none;
+  }
+
+  .page__content {
+    position: relative;
+    width: 43%;
+    -webkit-box-ordinal-group: 3;
+    -ms-flex-order: 2;
+    order: 2;
+  }
+
+  .page__content-address {
+    padding-left: 32px;
+    margin-bottom: 12px;
+  }
+
+  .page__content-phone {
+    padding: 0;
+    margin: 0;
+  }
+
+  .page__address {
+    position: absolute;
+    top: 182px;
+    left: -11px;
+  }
+
+  .page__icon {
+    position: absolute;
+    top: 217px;
+    left: -11px;
+  }
+
+  .page__content-link {
+    padding-left: 31px;
+  }
+
   .page-header {
     background-color: #3467a2;
     background-image: url("../img/content/sky-header.jpg");
@@ -1325,6 +1402,10 @@ img {
     font-size: 54px;
     line-height: 66px;
     margin-bottom: 30px;
+  }
+
+  .page-header__title br {
+    display: none;
   }
 
   .page-header__text {
@@ -1404,7 +1485,7 @@ img {
 
   .info__block-title {
     font-size: 28px;
-    line-height: 150%;
+    line-height: 140%;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
@@ -1609,49 +1690,6 @@ img {
   .booking__form-button {
     padding: 12px 89px 12px 90px;
     width: 106%;
-  }
-
-  .contacts__content-text {
-    margin-bottom: 45px;
-    padding-top: 81px;
-  }
-
-  .contacts__content-text br {
-    display: none;
-  }
-
-  .contacts__content {
-    position: relative;
-    width: 43%;
-    -webkit-box-ordinal-group: 3;
-    -ms-flex-order: 2;
-    order: 2;
-  }
-
-  .contacts__content-address {
-    padding-left: 32px;
-    margin-bottom: 12px;
-  }
-
-  .contacts__content-phone {
-    padding: 0;
-    margin: 0;
-  }
-
-  .contacts__address {
-    position: absolute;
-    top: 182px;
-    left: -11px;
-  }
-
-  .contacts__icon {
-    position: absolute;
-    top: 217px;
-    left: -11px;
-  }
-
-  .contacts__content-link {
-    padding-left: 31px;
   }
 }
 

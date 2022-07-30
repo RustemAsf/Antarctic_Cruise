@@ -31,7 +31,7 @@
     min-height: 997px;
     background-color: #d2e0f2;
     background-image: url("../img/content/advantages-mobile.jpg");
-    margin-bottom: 65px;
+    margin-bottom: 61px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/content/advantages-mobile@2x.jpg");
@@ -55,7 +55,7 @@
   background-color: #f9fbfd;
 
   &--ship {
-    padding: 25px 22px 25px 20px;
+    padding: 25px 22px 21px 20px;
     margin-bottom: 30px;
   }
 
@@ -64,8 +64,8 @@
   }
 
   &--check {
-    padding: 29px 47px 25px 20px;
-    margin-bottom: 30px;
+    padding: 37px 47px 23px 20px;
+    margin-bottom: 28px;
   }
 
   &--check::before {
@@ -73,17 +73,21 @@
   }
 
   &--boat {
-    padding: 32px 20px 30px 20px;
+    padding: 26px 20px 18px 20px;
   }
 
   &--boat::before {
     content: url("../img/sprite/boat-icon.svg");
   }
-
+  @media (min-width: $tablet-width) {
+    br {
+      display: none;
+    }
+  }
   @media (min-width: $desktop-width) {
     width: 26%;
 
-    &--ship{
+    &--ship {
       padding: 30px 42px 50px 30px;
     }
 
@@ -118,12 +122,13 @@
   font-family: $font-antarctic;
   font-style: normal;
   font-weight: 600;
+  font-size: 24px;
   align-items: center;
   color: #011C40;
   margin: 0;
   text-align: center;
-  padding-top: 65px;
-  margin-bottom: 40px;
+  padding-top: 61px;
+  margin-bottom: 38px;
 
   @media (min-width: $desktop-width) {
     font-size: 28px;
@@ -145,11 +150,11 @@
   font-size: 18px;
   font-weight: 500;
   align-items: center;
-  padding-top: 13px;
+  padding-top: 0;
   color: #011c40;
-  margin-bottom: 8px;
-  br {
-    display: none;
+  margin-bottom: 10px;
+  &--boat {
+    padding-top: 16px;
   }
 
   @media (min-width: $desktop-width) {
@@ -178,6 +183,9 @@
   color: #011c40;
 
   @media (min-width: $tablet-width) {
+    br {
+      display: none;
+    }
     &--ship {
       width: 154px;
     }

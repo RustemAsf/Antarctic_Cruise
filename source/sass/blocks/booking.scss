@@ -36,7 +36,7 @@
     min-height: 760px;
     background-color: #d2e0f2;
     background-image: url("../img/content/booking-mobile.jpg");
-    margin-bottom: 65px;
+    margin-bottom: 58px;
     background-size: 100%, cover;
 
     @media (min-resolution: 2dppx) {
@@ -51,7 +51,7 @@
   padding: 0;
   font-family: $font-antarctic;
   font-style: normal;
-  margin-bottom: 16px;
+  margin-bottom: 18px;
 
   @media (min-width: $desktop-width) {
     font-weight: 700;
@@ -71,9 +71,10 @@
 .booking__block-text {
   font-family: $font-antarctic;
   font-style: normal;
+  line-height: 140%;
   font-size: 16px;
   margin: 0;
-  margin-bottom: 40px;
+  margin-bottom: 34px;
 
   @media (min-width: $tablet-width) {
     font-weight: 400;
@@ -98,7 +99,7 @@
 }
 
 .booking__block {
-  padding-top: 60px;
+  padding-top: 62px;
   text-align: center;
 
   @media (min-width: $desktop-width) {
@@ -117,13 +118,13 @@
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
-  line-height: 150%;
+  line-height: 140%;
   align-items: center;
   color: #f9fbfd;
   margin: 0;
-  padding-top: 30px;
+  padding-top: 34px;
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 24px;
 
   @media (min-width: $desktop-width) {
     padding-top: 40px;
@@ -167,15 +168,14 @@
   @media (min-width: $mobile-width) {
     padding-left: 30px;
     padding-right: 30px;
-    margin-top: 50px;
-    width: 77.4%;
+    width: 79.4%;
     height: 455px;
   }
 }
 
 .booking__field {
     width: 91%;
-    height: 43px;
+    height: 40px;
     margin-bottom: 20px;
     padding-left: 16px;
 
@@ -195,6 +195,7 @@
   line-height: 10px;
   color: #f9fbfd;
   padding-left: 30px;
+  margin-bottom: 14px;
 
   @media (min-width: $tablet-width) {
     br {
@@ -263,7 +264,7 @@
   color: #011c40;
   background: #f9fbfd;
   border: none;
-  padding: 15px 24px 17px 32px;
+  padding: 10px 24px 10px 32px;
   width: 101%;
 
   @media (min-width: $desktop-width) {

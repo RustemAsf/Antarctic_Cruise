@@ -31,7 +31,7 @@
     background-size: 100%, cover;
     box-sizing: border-box;
     min-height: 500px;
-    margin-bottom: 65px;
+    margin-bottom: 64px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/content/sky-header-mobile@2x.jpg");
@@ -74,12 +74,18 @@
     font-size: 54px;
     line-height: 66px;
     margin-bottom: 30px;
+    br {
+      display: none;
+    }
   }
 
   @media (min-width: $tablet-width) {
     font-size: 50px;
     line-height: 61px;
     margin-bottom: 29px;
+    br {
+      display: none;
+    }
   }
 
   @media (min-width: $mobile-width) {
