@@ -389,9 +389,15 @@ img {
 }
 
 .cruises__title {
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 150%;
+  color: #011C40;
   margin: 0;
   text-align: center;
-  margin-bottom: 35px;
+  margin-bottom: 32px;
 }
 
 .cruises__list {
@@ -503,7 +509,10 @@ img {
   padding: 0;
   font-family: "Montserrat", "Arial", sans-serif;
   font-style: normal;
-  margin-bottom: 18px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 130%;
+  margin-bottom: 14px;
 }
 
 .booking__block-text {
@@ -516,7 +525,7 @@ img {
 }
 
 .booking__block {
-  padding-top: 62px;
+  padding-top: 58px;
   text-align: center;
 }
 
@@ -752,7 +761,7 @@ img {
     min-height: 997px;
     background-color: #d2e0f2;
     background-image: url("../img/content/advantages-mobile.jpg");
-    margin-bottom: 61px;
+    margin-bottom: 56px;
   }
 
   .cruises__img-wrapper--back {
@@ -868,9 +877,6 @@ img {
     -webkit-box-direction: normal;
     -ms-flex-direction: row;
     flex-direction: row;
-  }
-
-  .page__leveler {
     margin-bottom: 90px;
   }
 
@@ -1082,7 +1088,7 @@ img {
     padding-right: 45px;
     min-height: 588px;
     background-image: url("../img/content/advantages-tablet.jpg");
-    margin-bottom: 97px;
+    margin-bottom: 91px;
   }
 
   .advantages__list {
@@ -1092,7 +1098,7 @@ img {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    width: 104%;
+    width: 100%;
   }
 
   .advantages__item {
@@ -1158,7 +1164,8 @@ img {
   }
 
   .cruises__title {
-    margin-bottom: 56px;
+    margin-bottom: 49px;
+    font-size: 26px;
   }
 
   .cruises__list {
@@ -1230,6 +1237,10 @@ img {
     margin-bottom: 4px;
   }
 
+  .booking__block-title br {
+    display: none;
+  }
+
   .booking__block-text {
     font-weight: 400;
     line-height: 150%;
@@ -1260,7 +1271,7 @@ img {
   }
 
   .booking__form {
-    padding-left: 52px;
+    padding-left: 48px;
     padding-right: 45px;
     margin: 50px auto 0;
     width: 77.4%;
@@ -1312,28 +1323,30 @@ img {
 @media (min-width: 1366px) {
   .page__footer {
     padding-left: 103px;
-    padding-right: 103px;
+    padding-right: 126px;
     min-height: 138px;
   }
 
   .page__social-list {
+    padding-top: 10px;
     width: 125%;
     padding: 0;
   }
 
   .page__nav-list {
-    width: 64.5%;
+    width: 61.5%;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
   }
 
   .page__nav-block {
-    padding-top: 54px;
+    padding-top: 50px;
     padding-bottom: 0;
   }
 
   .page__list {
+    margin: 0;
     padding-top: 5px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1344,9 +1357,17 @@ img {
     justify-content: space-between;
   }
 
+  .page__link {
+    font-size: 16px;
+  }
+
   .page__contacts {
     padding-left: 103px;
     padding-right: 103px;
+  }
+
+  .page__leveler {
+    margin-bottom: 112px;
   }
 
   .page__contacts-map iframe {
@@ -1355,8 +1376,8 @@ img {
   }
 
   .page__content-text {
-    margin-bottom: 45px;
-    padding-top: 81px;
+    margin-bottom: 33px;
+    padding-top: 74px;
   }
 
   .page__content-text br {
@@ -1372,8 +1393,8 @@ img {
   }
 
   .page__content-address {
-    padding-left: 32px;
-    margin-bottom: 12px;
+    padding-left: 27px;
+    margin-bottom: 19px;
   }
 
   .page__content-link {
@@ -1387,13 +1408,13 @@ img {
 
   .page__address {
     position: absolute;
-    top: 182px;
+    top: -1px;
     left: -11px;
   }
 
   .page__icon {
     position: absolute;
-    top: 217px;
+    top: 3px;
     left: -11px;
   }
 
@@ -1414,9 +1435,9 @@ img {
   }
 
   .page-header__title {
-    font-size: 54px;
+    font-size: 60px;
     line-height: 66px;
-    margin-bottom: 30px;
+    margin-bottom: 12px;
   }
 
   .page-header__title br {
@@ -1443,7 +1464,7 @@ img {
     -ms-flex-align: center;
     align-items: center;
     padding-top: 35px;
-    margin-bottom: 210px;
+    margin-bottom: 197px;
   }
 
   .main-nav--closed .main-nav__logo {
@@ -1471,7 +1492,7 @@ img {
     position: static;
     list-style-type: none;
     margin: 0;
-    width: 54%;
+    width: 51%;
   }
 
   .site-list__link {
@@ -1495,7 +1516,7 @@ img {
   .info {
     padding-left: 103px;
     padding-right: 103px;
-    margin-bottom: 120px;
+    margin-bottom: 113px;
   }
 
   .info__block-title {
@@ -1507,7 +1528,7 @@ img {
     color: #011c40;
     margin: 0;
     margin-bottom: 23px;
-    padding-top: 66px;
+    padding-top: 59px;
   }
 
   .info__block-title br {
@@ -1541,7 +1562,11 @@ img {
     padding-right: 103px;
     min-height: 562px;
     background-image: url("../img/content/advantages-desktop.jpg");
-    margin-bottom: 120px;
+    margin-bottom: 108px;
+  }
+
+  .advantages__list {
+    width: 100%;
   }
 
   .advantages__item {
@@ -1549,11 +1574,11 @@ img {
   }
 
   .advantages__item--ship {
-    padding: 30px 42px 50px 30px;
+    padding: 22px 17px 50px 30px;
   }
 
   .advantages__item--check {
-    padding: 35px 50px 50px 30px;
+    padding: 35px 15px 50px 30px;
   }
 
   .advantages__item--boat {
@@ -1562,7 +1587,7 @@ img {
 
   .advantages__title {
     font-size: 28px;
-    margin-bottom: 60px;
+    margin-bottom: 53px;
     padding-top: 120px;
   }
 
@@ -1570,8 +1595,20 @@ img {
     line-height: 150%;
   }
 
+  .advantages__block-title--ship {
+    padding-top: 18px;
+  }
+
+  .advantages__block-title--check {
+    padding-top: 18px;
+  }
+
+  .advantages__block-title--boat {
+    padding-top: 14px;
+  }
+
   .advantages__block-title br {
-    display: block;
+    display: none;
   }
 
   .advantages__block-text--ship {
@@ -1593,6 +1630,12 @@ img {
   .cruises {
     padding-left: 118px;
     padding-right: 118px;
+    padding-bottom: 101px;
+  }
+
+  .cruises__title {
+    font-size: 28px;
+    margin-bottom: 54px;
   }
 
   .cruises__list {
@@ -1661,15 +1704,20 @@ img {
 
   .booking__block-title {
     font-weight: 700;
-    font-size: 40px;
+    font-size: 45px;
     line-height: 150%;
     text-align: left;
     color: #011c40;
     margin: 0;
   }
 
+  .booking__block-title br {
+    display: none;
+  }
+
   .booking__block-text {
     text-align: left;
+    padding: 0;
     width: 53%;
   }
 
@@ -1679,19 +1727,29 @@ img {
 
   .booking__block {
     margin: auto 0;
+    padding-top: 14px;
   }
 
   .booking__form-title {
-    padding-top: 40px;
-    margin-bottom: 30px;
+    padding-top: 45px;
+    margin-bottom: 26px;
     text-align: left;
   }
 
   .booking__form {
-    width: 30.5%;
+    width: 31.5%;
     height: 455px;
     margin: 0;
     margin-top: 50px;
+  }
+
+  .booking__field {
+    margin-bottom: 14px;
+  }
+
+  .booking__control-label {
+    margin: 0;
+    margin-bottom: 15px;
   }
 
   .booking__control-label br {
@@ -1704,7 +1762,7 @@ img {
 
   .booking__form-button {
     padding: 12px 89px 12px 90px;
-    width: 106%;
+    width: 97%;
   }
 }
 
