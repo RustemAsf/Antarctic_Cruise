@@ -51,15 +51,21 @@
   padding: 0;
   font-family: $font-antarctic;
   font-style: normal;
-  margin-bottom: 18px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 130%;
+  margin-bottom: 14px;
 
   @media (min-width: $desktop-width) {
     font-weight: 700;
-    font-size: 40px;
+    font-size: 45px;
     line-height: 150%;
     text-align: left;
     color: #011c40;
     margin: 0;
+    br {
+      display: none;
+    }
   }
 
   @media (min-width: $tablet-width) {
@@ -67,6 +73,9 @@
     font-size: 36px;
     line-height: 150%;
     margin-bottom: 4px;
+    br {
+      display: none;
+    }
   }
 }
 
@@ -95,6 +104,7 @@
 
   @media (min-width: $desktop-width) {
     text-align: left;
+    padding: 0;
     width: 53%;
     br {
       display: none;
@@ -103,11 +113,12 @@
 }
 
 .booking__block {
-  padding-top: 62px;
+  padding-top: 58px;
   text-align: center;
 
   @media (min-width: $desktop-width) {
     margin: auto 0;
+    padding-top: 14px;
   }
 
   @media (min-width: $tablet-width) {
@@ -131,8 +142,8 @@
   margin-bottom: 24px;
 
   @media (min-width: $desktop-width) {
-    padding-top: 40px;
-    margin-bottom: 30px;
+    padding-top: 45px;
+    margin-bottom: 26px;
     text-align: left;
   }
 
@@ -154,14 +165,14 @@
   box-shadow: 0px 4px 45px rgba(1, 28, 64, 0.15);
 
   @media (min-width: $desktop-width) {
-    width: 30.5%;
+    width: 31.5%;
     height: 455px;
     margin: 0;
     margin-top: 50px;
   }
 
   @media (min-width: $tablet-width) {
-    padding-left: 52px;
+    padding-left: 48px;
     padding-right: 45px;
     margin: 50px auto 0;
     width: 77.4%;
@@ -188,6 +199,10 @@
     margin-bottom: 14px;
     padding-left: 16px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 14px;
+  }
 }
 
 .booking__control-label {
@@ -208,6 +223,9 @@
   }
 
   @media (min-width: $desktop-width) {
+    margin: 0;
+    margin-bottom: 15px;
+
     br {
       display: none;
     }
@@ -272,7 +290,7 @@
 
   @media (min-width: $desktop-width) {
     padding: 12px 89px 12px 90px;
-    width: 106%;
+    width: 97%;
   }
 
   @media (min-width: $tablet-width) {

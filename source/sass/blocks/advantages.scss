@@ -4,7 +4,7 @@
    padding-right: 103px;
    min-height: 562px;
    background-image: url("../img/content/advantages-desktop.jpg");
-   margin-bottom: 120px;
+   margin-bottom: 108px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/content/advantages-desktop@2x.jpg");
@@ -17,7 +17,7 @@
     padding-right: 45px;
     min-height: 588px;
     background-image: url("../img/content/advantages-tablet.jpg");
-    margin-bottom: 97px;
+    margin-bottom: 91px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/content/advantages-tablet@2x.jpg");
@@ -31,7 +31,7 @@
     min-height: 997px;
     background-color: #d2e0f2;
     background-image: url("../img/content/advantages-mobile.jpg");
-    margin-bottom: 61px;
+    margin-bottom: 56px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/content/advantages-mobile@2x.jpg");
@@ -49,7 +49,11 @@
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
-    width: 104%;
+    width: 100%;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
   }
 }
 
@@ -86,11 +90,11 @@
     width: 26%;
 
     &--ship {
-      padding: 30px 42px 50px 30px;
+      padding: 22px 17px 50px 30px;
     }
 
     &--check {
-      padding: 35px 50px 50px 30px;
+      padding: 35px 15px 50px 30px;
     }
 
     &--boat {
@@ -134,7 +138,7 @@
 
   @media (min-width: $desktop-width) {
     font-size: 28px;
-    margin-bottom: 60px;
+    margin-bottom: 53px;
     padding-top: 120px;
   }
 
@@ -162,8 +166,17 @@
 
   @media (min-width: $desktop-width) {
     line-height: 150%;
+    &--ship {
+      padding-top: 18px;
+    }
+    &--check {
+      padding-top: 18px;
+    }
+    &--boat {
+      padding-top: 14px;
+    }
     br {
-      display: block;
+      display: none;
     }
   }
 

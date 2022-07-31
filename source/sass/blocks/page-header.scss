@@ -71,9 +71,10 @@
 
 .page-header__title {
   @media (min-width: $desktop-width) {
-    font-size: 54px;
+    font-size: 60px;
     line-height: 66px;
-    margin-bottom: 30px;
+    margin-bottom: 12px;
+
     br {
       display: none;
     }

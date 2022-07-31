@@ -6,6 +6,7 @@
   @media (min-width: $desktop-width) {
     padding-left: 118px;
     padding-right: 118px;
+    padding-bottom: 101px;
   }
 
   @media (min-width: $tablet-width) {
@@ -16,12 +17,24 @@
 }
 
 .cruises__title {
+  font-family: $font-antarctic;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 150%;
+  color: #011C40;
   margin: 0;
   text-align: center;
-  margin-bottom: 35px;
+  margin-bottom: 32px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 56px;
+    margin-bottom: 49px;
+    font-size: 26px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 28px;
+    margin-bottom: 54px;
   }
 }
 
