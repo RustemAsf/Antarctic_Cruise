@@ -76,17 +76,17 @@
     display: none;
   }
 
-   @media (min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     margin: 0;
     br {
       display: none;
     }
-   }
+  }
 
-   @media (min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     line-height: 150%;
     margin: 0;
-   }
+  }
 }
 
 .info__block-img {
@@ -111,5 +111,3 @@
     width: 46%;
   }
 }
-
-

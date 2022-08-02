@@ -1,4 +1,9 @@
 .main-nav {
+  &--opened {
+    width: 90%;
+    padding-left: 32px;
+  }
+
   @media (min-width: $desktop-width) {
     display: flex;
     justify-content: space-between;

@@ -1,12 +1,12 @@
 .booking {
   @media (min-width: $desktop-width) {
-   padding-left: 163px;
-   padding-right: 163px;
-   min-height: 555px;
-   background-image: url("../img/content/booking-desktop.jpg");
-   margin-bottom: 120px;
-   background-size: 100%, cover;
-   display: flex;
+    padding-left: 163px;
+    padding-right: 163px;
+    min-height: 555px;
+    background-image: url("../img/content/booking-desktop.jpg");
+    margin-bottom: 120px;
+    background-size: 100%, cover;
+    display: flex;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/content/booking-desktop@2x.jpg");

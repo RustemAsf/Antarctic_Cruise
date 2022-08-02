@@ -1,10 +1,10 @@
 .advantages {
   @media (min-width: $desktop-width) {
-   padding-left: 103px;
-   padding-right: 103px;
-   min-height: 562px;
-   background-image: url("../img/content/advantages-desktop.jpg");
-   margin-bottom: 108px;
+    padding-left: 103px;
+    padding-right: 103px;
+    min-height: 562px;
+    background-image: url("../img/content/advantages-desktop.jpg");
+    margin-bottom: 108px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/content/advantages-desktop@2x.jpg");
@@ -142,7 +142,7 @@
     padding-top: 120px;
   }
 
-   @media (min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     font-size: 26px;
     margin-bottom: 56px;
     padding-top: 97px;
@@ -188,7 +188,7 @@
     padding-top: 9px;
   }
 
-     br {
+    br {
       display: block;
     }
   }
@@ -234,5 +234,3 @@
     }
   }
 }
-
-
