@@ -69,7 +69,7 @@
   }
 }
 
-.page-header__title {
+.page-header__slogan h1 {
   @media (min-width: $desktop-width) {
     font-size: 60px;
     line-height: 66px;
@@ -101,7 +101,7 @@
   }
 }
 
-.page-header__text {
+.page-header__slogan span {
   @media (min-width: $desktop-width) {
     font-size: 20px;
     line-height: 24px;

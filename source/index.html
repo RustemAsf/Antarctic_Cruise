@@ -21,7 +21,7 @@
     <div class="page-header__wrapper">
       <nav class="main-nav main-nav--closed main-nav--nojs">
         <div class="main-nav__logo">
-          <a class="main-nav__logo-link logo-antarctic" href="https://htmlacademy.ru/intensive/adaptive">
+          <a class="main-nav__logo-link logo-antarctic" href="#">
             <img class="logo-antarctic__desktop" id="logo-desktop" src="./icons/sprite.svg#logo-desktop" alt="Логотип"
               width="70" height="38">
             <img class="logo-antarctic__tablet" id="logo-tablet" src="./icons/sprite.svg#logo-tablet" alt="Логотип"
@@ -54,8 +54,8 @@
       </nav>
     </div>
     <div class="page-header__slogan">
-      <h1 class="page-header__title">Круизы <br>в Антарктику</h1>
-      <span class="page-header__text">
+      <h1>Круизы <br>в Антарктику</h1>
+      <span>
         Волшебный мир <br>айсбергов и пингвинов
       </span>
     </div>
@@ -64,8 +64,8 @@
 
     <section class="info">
       <div class="info__block">
-        <h2 class="info__block-title">Путешествие<br> на край Земли</h2>
-        <p class="info__block-text">
+        <h2>Путешествие<br> на край Земли</h2>
+        <p>
           Это волшебное путешествие поможет вам познакомиться поближе<br>
           с удивительным миром Антарктики. Наш круизный лайнер отвезет вас<br>
           на край Земли, где вы сможете<br> увидеть: ледяные айсберги,&nbsp; несколько видов пингвинов, китов,
@@ -80,13 +80,14 @@
             srcset="./img/content/info-tablet.webp 1x, ./img/content/info-tablet@2x.webp 2x">
           <source media="(min-width: 320px)" type="image/webp"
             srcset="./img/content/info-mobile.webp 1x, ./img/content/info-mobile@2x.webp 2x">
+          <!-- 1x:1366px , 2x: 2732px -->
           <img src="./img/content/info-desktop.jpg" srcset="./img/content/info-desktop@2x.jpg 2x" alt="Фото пингвинов"
             width="560" height="301">
         </picture>
       </div>
     </section>
     <section class="advantages">
-      <h2 class="advantages__title">Преимущества</h2>
+      <h2>Преимущества</h2>
       <div class="advantages__block">
         <ul class="advantages__list">
           <li class="advantages__item advantages__item--ship">
@@ -110,14 +111,15 @@
       </div>
     </section>
     <section class="cruises">
-      <h2 class="cruises__title">Ближайшие круизы</h2>
+      <h2>Ближайшие круизы</h2>
       <ul class="cruises__list">
         <li class="cruises__item">
-          <article class="cruises__item" tabindex="0">
+          <article class="cruises__item-block" tabindex="0">
             <div class="cruises__img-wrapper cruises__img-wrapper--front">
               <picture>
                 <source srcset="./img/content/astoria-desktop.webp 1x, ./img/content/astoria-desktop@2x.webp 2x"
                   type="image/webp">
+                <!-- 1x: 320px, 2x: 640px -->
                 <img class="cruises__image" src="./img/content/astoria-desktop.jpg"
                   srcset="./img/content/astoria-desktop@2x.jpg 2x" alt="фото пейзажа" width="260" height="386">
               </picture>
@@ -148,11 +150,12 @@
           </article>
         </li>
         <li class="cruises__item">
-          <article class="cruises__item" tabindex="0">
+          <article class="cruises__item-block" tabindex="0">
             <div class="cruises__img-wrapper cruises__img-wrapper--front">
               <picture>
                 <source srcset="./img/content/leonor-desktop.webp 1x, ./img/content/leonor-desktop@2x.webp 2x"
                   type="image/webp">
+                <!-- 1x: 260px, 2x: 520px -->
                 <img class="cruises__image" src="./img/content/leonor-desktop.jpg"
                   srcset="./img/content/leonor-desktop@2x.jpg 2x" alt="фото пейзажа" width="260" height="386">
               </picture>
@@ -183,11 +186,12 @@
           </article>
         </li>
         <li class="cruises__item">
-          <article class="cruises__item" tabindex="0">
+          <article class="cruises__item-block" tabindex="0">
             <div class="cruises__img-wrapper cruises__img-wrapper--front">
               <picture>
                 <source srcset="./img/content/atlantic-desktop.webp 1x, ./img/content/atlantic-desktop@2x.webp 2x"
                   type="image/webp">
+                <!-- 1x: 260px, 2x: 520px -->
                 <img class="cruises__image" src="./img/content/atlantic-desktop.jpg"
                   srcset="./img/content/atlantic-desktop@2x.jpg 2x" alt="фото пейзажа" width="260" height="386">
               </picture>
@@ -218,11 +222,12 @@
           </article>
         </li>
         <li class="cruises__item">
-          <article class="cruises__item" tabindex="0">
+          <article class="cruises__item-block" tabindex="0">
             <div class="cruises__img-wrapper cruises__img-wrapper--front">
               <picture>
                 <source srcset="./img/content/odysseus-desktop.webp 1x, ./img/content/odysseus-desktop@2x.webp 2x"
                   type="image/webp">
+                <!-- 1x: 260px, 2x: 520px -->
                 <img class="cruises__image" src="./img/content/odysseus-desktop.jpg"
                   srcset="./img/content/odysseus-desktop@2x.jpg 2x" alt="фото пейзажа" width="260" height="386">
               </picture>
@@ -253,11 +258,12 @@
           </article>
         </li>
         <li class="cruises__item">
-          <article class="cruises__item" tabindex="0">
+          <article class="cruises__item-block" tabindex="0">
             <div class="cruises__img-wrapper cruises__img-wrapper--front">
               <picture>
                 <source srcset="./img/content/olympia-desktop.webp 1x, ./img/content/olympia-desktop@2x.webp 2x"
                   type="image/webp">
+                <!-- 1x: 260px, 2x: 520px -->
                 <img class="cruises__image" src="./img/content/astoria-desktop.jpg"
                   srcset="./img/content/olympia-desktop@2x.jpg 2x" alt="фото пейзажа" width="260" height="386">
               </picture>
@@ -288,11 +294,12 @@
           </article>
         </li>
         <li class="cruises__item">
-          <article class="cruises__item" tabindex="0">
+          <article class="cruises__item-block" tabindex="0">
             <div class="cruises__img-wrapper cruises__img-wrapper--front">
               <picture>
                 <source srcset="./img/content/avrora-desktop.webp 1x, ./img/content/avrora-desktop@2x.webp 2x"
                   type="image/webp">
+                <!-- 1x: 260px, 2x: 520px -->
                 <img class="cruises__image" src="./img/content/avrora-desktop.jpg"
                   srcset="./img/content/avrora-desktop@2x.jpg 2x" alt="фото пейзажа" width="260" height="386">
               </picture>
@@ -323,11 +330,12 @@
           </article>
         </li>
         <li class="cruises__item">
-          <article class="cruises__item" tabindex="0">
+          <article class="cruises__item-block" tabindex="0">
             <div class="cruises__img-wrapper cruises__img-wrapper--front">
               <picture>
                 <source srcset="./img/content/leonor-desktop.webp 1x, ./img/content/leonor-desktop@2x.webp 2x"
                   type="image/webp">
+                <!-- 1x: 260px, 2x: 520px -->
                 <img class="cruises__image" src="./img/content/leonor-desktop.jpg"
                   srcset="./img/content/leonor-desktop@2x.jpg 2x" alt="фото озера" width="260" height="386">
               </picture>
@@ -358,11 +366,12 @@
           </article>
         </li>
         <li class="cruises__item">
-          <article class="cruises__item" tabindex="0">
+          <article class="cruises__item-block" tabindex="0">
             <div class="cruises__img-wrapper cruises__img-wrapper--front">
               <picture>
                 <source srcset="./img/content/minion-desktop.webp 1x, ./img/content/minion-desktop@2x.webp 2x"
                   type="image/webp">
+                <!-- 1x: 260px, 2x: 520px -->
                 <img class="cruises__image" src="./img/content/minion-desktop.jpg"
                   srcset="./img/content/minion-desktop@2x.jpg 2x" alt="фото пейзажа" width="260" height="386">
               </picture>
@@ -397,34 +406,34 @@
 
     <section class="booking">
       <div class="booking__block">
-        <h2 class="booking__block-title">Раннее<br> бронирование</h2>
-        <p class="booking__block-text">
+        <h2>Раннее<br> бронирование</h2>
+        <p>
           Забронируйте тур<br> за 3‑6 месяцев до даты выезда<br> и сэкономьте до 50%
         </p>
       </div>
       <div class="booking__form">
-        <h3 class="booking__form-title">
+        <h3>
           Оставьте заявку и&nbsp;мы&nbsp;свяжемся с вами в&nbsp;ближайшее время
         </h3>
         <form id="booking-form" action="https://echo.htmlacademy.ru" method="post">
-          <ul class="booking__list">
-            <li class="booking__item">
+          <ul>
+            <li>
               <label for="name"><span class="visually-hidden">Имя</span></label>
-              <input class="booking__field" type="text" name="name-field" id="name" placeholder="Имя" required>
+              <input type="text" name="name-field" id="name" placeholder="Имя" required>
             </li>
-            <li class="booking__item">
+            <li>
               <label for="tel"><span class="visually-hidden">Телефон</span></label>
-              <input class="booking__field" type="tel" name="tel-field" id="tel"
+              <input type="tel" name="tel-field" id="tel"
                 pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$" placeholder="Телефон" required>
             </li>
-            <li class="booking__item">
+            <li>
               <label for="email"><span class="visually-hidden">Email</span></label>
-              <input class="booking__field" type="email" name="email-field" id="email" placeholder="Email" required>
+              <input type="email" name="email-field" id="email" placeholder="Email" required>
             </li>
           </ul>
-          <p class="booking__form-text">
+          <p>
             <label class="booking__control" for="one-check">
-              <input class="booking__control-block" id="one-check" type="checkbox" checked>
+              <input id="one-check" type="checkbox" checked>
               <span class="booking__mark"></span>
             </label>
             <span class="booking__control-label">Я согласен на обработку<br> моих персональных данных</span>
@@ -442,7 +451,7 @@
             width="560" height="306" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </div>
         <div class="page__content">
-          <p class="page__content-text">
+          <p>
             У вас ещё остались вопросы или сомнения? Приезжайте&nbsp;
             к нам в офис и мы вам все расскажем.
           </p>
@@ -452,7 +461,7 @@
             г. Санкт Петербург, ул.&nbsp;Большая&nbsp;Конюшенная, 19/8
           </div>
           <div class="page__content-phone">
-            <img class="page__icon" id="contacts-icon" src="./icons/sprite.svg#contacts-icon" alt="Маркер адреса"
+            <img class="page__icon" id="contacts-icon" src="./icons/sprite.svg#contacts-icon" alt="Маркер контакта"
               width="38" height="42">
             <a class="page__content-link" href="tel:8-800-200-00-00">8-800-200-00-00</a>
           </div>
@@ -463,7 +472,7 @@
   <footer class="page__footer">
     <div class="page__nav-block">
       <div class="page__nav-list">
-        <a class="page__logo-link logo-antarctic" href="https://htmlacademy.ru/intensive/adaptive">
+        <a class="page__logo-link logo-antarctic" href="#">
           <img class="logo-antarctic__desktop" id="logo-desktop-page" src="./icons/sprite.svg#logo-desktop"
             alt="Логотип" width="70" height="38">
           <img class="logo-antarctic__tablet" id="logo-tablet-page" src="./icons/sprite.svg#logo-tablet" alt="Логотип"
@@ -473,32 +482,32 @@
           <img class="page__logo-mobile" id="logo-menu-page" src="./icons/sprite.svg#logo-menu" alt="Логотип" width="42"
             height="22">
         </a>
-        <ul class="page__list">
-          <li class="page__item">
+        <ul>
+          <li>
             <a class="page__link" href="#features">Преимущества </a>
           </li>
-          <li class="page__item">
+          <li>
             <a class="page__link" href="#">Направления</a>
           </li>
-          <li class="page__item">
+          <li>
             <a class="page__link" href="#cruises">Ближайшие круизы</a>
           </li>
-          <li class="page__item">
+          <li>
             <a class="page__link" href="#contacts">Контакты</a>
           </li>
         </ul>
       </div>
       <div class="page__social">
-        <ul class="page__social-list">
-          <li class="page__social-item">
+        <ul>
+          <li>
             <a class="page__social-link" href="#"><img class="page__facebook" id="facebook-icon"
                 src="./icons/sprite.svg#facebook-icon" alt="фэйсбук" width="29" height="38"></a>
           </li>
-          <li class="page__social-item">
+          <li>
             <a class="page__social-link" href="#"><img id="instagram-icon" src="./icons/sprite.svg#instagram-icon"
                 alt="инстаграмм" width="29" height="29"></a>
           </li>
-          <li class="page__social-item">
+          <li>
             <a class="page__social-link" href="#"><img id="twitter-icon" src="./icons/sprite.svg#twitter-icon"
                 alt="твиттер" width="29" height="26"></a>
           </li>
@@ -508,4 +517,5 @@
   </footer>
   <script src="js/main.min.js"></script>
 </body>
+
 </html>

@@ -30,7 +30,7 @@
   }
 }
 
-.page__social-list {
+.page__social ul {
     list-style-type: none;
     display: flex;
     justify-content: space-between;
@@ -82,7 +82,7 @@
   }
 }
 
-.page__list {
+.page__nav-list ul {
   margin: 0;
   padding: 0;
   margin-bottom: 5px;
@@ -104,7 +104,7 @@
   }
 }
 
-.page__item {
+.page__nav-list li {
   margin-bottom: 3px;
 
   @media (min-width: $tablet-width) {
@@ -188,7 +188,7 @@
   }
 }
 
-.page__content-text {
+.page__content p {
   margin: 0;
   font-family: $font-antarctic;
   font-style: normal;

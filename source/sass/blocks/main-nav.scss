@@ -130,14 +130,30 @@
   display: flex;
   justify-content: space-between;
 }
-//Открывающееся меню
 
-// .main-nav {
-//   &--nojs .main-nav__toggle {
-//     display: none;
-//   }
-// }
+.main-nav {
+  &--nojs .main-nav__toggle {
+    display: none;
+  }
 
+  &--nojs .main-nav__list {
+    display: block;
+  }
+
+  &--nojs .main-nav__logo {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 43px;
+    background-color: #fff;
+    padding-left: 20px;
+    padding-right: 12px;
+
+    @media (min-width: $tablet-width) {
+      padding: 0;
+      background: none;
+    }
+  }
+}
 
 .main-nav__toggle {
   @media (min-width: $desktop-width) {

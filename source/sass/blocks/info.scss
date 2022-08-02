@@ -20,7 +20,7 @@
   }
 }
 
-.info__block-title {
+.info__block h2 {
   @media (min-width: $desktop-width) {
     font-size: 28px;
     line-height: 140%;
@@ -64,7 +64,7 @@
   }
 }
 
-.info__block-text {
+.info__block p {
   font-family: $font-antarctic;
   font-style: normal;
   font-weight: 400;

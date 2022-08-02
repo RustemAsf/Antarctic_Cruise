@@ -46,7 +46,7 @@
   }
 }
 
-.booking__block-title {
+.booking__block h2 {
   margin: 0;
   padding: 0;
   font-family: $font-antarctic;
@@ -79,7 +79,7 @@
   }
 }
 
-.booking__block-text {
+.booking__block p {
   font-family: $font-antarctic;
   font-style: normal;
   line-height: 140%;
@@ -128,7 +128,7 @@
   }
 }
 
-.booking__form-title {
+.booking__form h3 {
   font-family: $font-antarctic;
   font-style: normal;
   font-weight: 500;
@@ -154,7 +154,7 @@
   }
 }
 
-.booking__list {
+.booking__form ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -187,7 +187,7 @@
   }
 }
 
-.booking__field {
+.booking__form input {
     width: 91%;
     height: 40px;
     margin-bottom: 20px;
@@ -232,7 +232,7 @@
   }
 }
 
-.booking__form-text {
+.booking__form p {
   margin: 0;
   position: relative;
   display: flex;
@@ -247,7 +247,7 @@
   }
 }
 
-.booking__control-block {
+.booking__control input {
   position: absolute;
   width: 1px;
   height: 1px;
