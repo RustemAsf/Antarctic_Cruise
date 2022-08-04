@@ -176,16 +176,21 @@
   left: -11px;
 }
 
+.main-nav__logo img {
+  max-width: none;
+  width: 42px;
+}
+
 .main-nav--opened {
-  width: 90%;
-  padding-left: 32px;
+  padding-left: 35px;
+  width: calc(100% - 35px);
 }
 
 .main-nav--opened .main-nav__list {
   display: block;
 }
 
-.main-nav--opened .main-nav__logo {
+.main-nav--opened .main-nav__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -212,14 +217,20 @@
 }
 
 .main-nav--opened .main-nav__toggle {
-  padding-top: 14px;
+  padding-top: 41px;
   background-color: #011c40;
   border: 0;
   background: 0;
 }
 
-.main-nav--closed .main-nav__logo {
-  padding: 25px 15px 0 15px;
+.main-nav--closed .main-nav__wrapper {
+  padding: 17px 15px 0 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .main-nav--closed .main-nav__logo-menu {
@@ -234,26 +245,9 @@
   display: none;
 }
 
-.main-nav--closed .main-nav__toggle {
+.main-nav--closed .main-nav__logo-open {
   display: block;
   cursor: pointer;
-  border: 0;
-  padding: 0;
-  background: none;
-  width: 24px;
-  height: 2px;
-  background-color: #fff;
-  -webkit-box-shadow: 0 5px 0 0 #fff,0 10px 0 0 #fff;
-  box-shadow: 0 5px 0 0 #fff,0 10px 0 0 #fff;
-}
-
-.main-nav--closed .main-nav__logo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
 }
 
 .main-nav--nojs .main-nav__toggle {
@@ -264,7 +258,7 @@
   display: block;
 }
 
-.main-nav--nojs .main-nav__logo {
+.main-nav--nojs .main-nav__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -275,6 +269,13 @@
   background-color: #fff;
   padding-left: 20px;
   padding-right: 12px;
+}
+
+.main-nav__toggle {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background: none;
 }
 
 .site-list__link--contacts {
@@ -314,15 +315,26 @@ img {
   display: none;
 }
 
+.info__block-image {
+  width: 100%;
+}
+
 .info__block-img {
   margin-bottom: 57px;
 }
 
 .advantages__list {
-  padding: 0;
+  list-style: none;
   margin: 0;
-  display: block;
-  list-style-type: none;
+  padding: 0;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto;
+  grid-template-columns: auto auto auto;
+  gap: 40px;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .advantages__item {
@@ -331,7 +343,6 @@ img {
 
 .advantages__item--ship {
   padding: 25px 22px 21px 20px;
-  margin-bottom: 30px;
 }
 
 .advantages__item--ship::before {
@@ -340,7 +351,6 @@ img {
 
 .advantages__item--check {
   padding: 37px 47px 23px 20px;
-  margin-bottom: 28px;
 }
 
 .advantages__item--check::before {
@@ -752,9 +762,10 @@ img {
   .site-list {
     list-style-type: none;
     position: absolute;
+    background-size: cover;
     top: 85px;
-    left: 32px;
-    width: 90%;
+    left: 35px;
+    width: calc(100% - 35px);
     height: 100%;
     margin: 0;
     padding: 0;
@@ -763,7 +774,7 @@ img {
 
   .site-list__link {
     display: block;
-    padding: 10px 70px 18px 25px;
+    padding: 10px 44px 18px 25px;
     font-family: "Montserrat", "Arial", sans-serif;
     font-style: normal;
     font-weight: 500;
@@ -779,18 +790,6 @@ img {
 
   .site-list__link--contacts {
     padding-bottom: 235px;
-  }
-
-  .logo-antarctic__desktop {
-    display: none;
-  }
-
-  .logo-antarctic__tablet {
-    display: none;
-  }
-
-  .logo-antarctic__mobile {
-    display: block;
   }
 
   .info {
@@ -811,9 +810,10 @@ img {
   .advantages {
     padding-left: 15px;
     padding-right: 15px;
-    min-height: 997px;
     background-color: #d2e0f2;
     background-image: url("../img/content/advantages-mobile.jpg");
+    padding-bottom: 65px;
+    background-repeat: no-repeat;
     margin-bottom: 56px;
   }
 
@@ -986,11 +986,6 @@ img {
     margin-bottom: 91px;
   }
 
-  .page-header__wrapper {
-    padding-left: 45px;
-    padding-right: 45px;
-  }
-
   .page-header__slogan {
     padding: 0 134px 0 56px;
   }
@@ -1012,6 +1007,11 @@ img {
 
   .page-header__slogan span br {
     display: none;
+  }
+
+  .main-nav {
+    padding-left: 45px;
+    padding-right: 45px;
   }
 
   .main-nav {
@@ -1037,7 +1037,7 @@ img {
     justify-content: space-between;
   }
 
-  .main-nav--opened .main-nav__logo {
+  .main-nav--opened .main-nav__wrapper {
     padding: 0;
     background: none;
   }
@@ -1046,7 +1046,7 @@ img {
     display: none;
   }
 
-  .main-nav--closed .main-nav__logo {
+  .main-nav--closed .main-nav__wrapper {
     padding: 0;
   }
 
@@ -1059,11 +1059,11 @@ img {
     justify-content: space-between;
   }
 
-  .main-nav--closed .main-nav__toggle {
+  .main-nav--closed .main-nav__logo-open {
     display: none;
   }
 
-  .main-nav--nojs .main-nav__logo {
+  .main-nav--nojs .main-nav__wrapper {
     padding: 0;
     background: none;
   }
@@ -1090,18 +1090,6 @@ img {
     font-size: 14px;
     line-height: 17px;
     color: #f9fbfd;
-  }
-
-  .logo-antarctic__desktop {
-    display: none;
-  }
-
-  .logo-antarctic__tablet {
-    display: block;
-  }
-
-  .logo-antarctic__mobile {
-    display: none;
   }
 
   .info {
@@ -1144,23 +1132,12 @@ img {
   .advantages {
     padding-left: 45px;
     padding-right: 45px;
-    min-height: 588px;
     background-image: url("../img/content/advantages-tablet.jpg");
     margin-bottom: 91px;
-  }
-
-  .advantages__list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    width: 100%;
+    padding-bottom: 100px;
   }
 
   .advantages__item {
-    width: 26%;
     margin: 0;
   }
 
@@ -1483,11 +1460,6 @@ img {
     margin-bottom: 120px;
   }
 
-  .page-header__wrapper {
-    padding-left: 103px;
-    padding-right: 103px;
-  }
-
   .page-header__slogan {
     padding: 0 532px 0 198px;
   }
@@ -1512,6 +1484,11 @@ img {
   }
 
   .main-nav {
+    padding-left: 103px;
+    padding-right: 103px;
+  }
+
+  .main-nav {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1525,7 +1502,7 @@ img {
     margin-bottom: 197px;
   }
 
-  .main-nav--closed .main-nav__logo {
+  .main-nav--closed .main-nav__wrapper {
     padding: 0;
   }
 
@@ -1538,7 +1515,7 @@ img {
     justify-content: space-between;
   }
 
-  .main-nav--closed .main-nav__toggle {
+  .main-nav--closed .main-nav__logo-open {
     display: none;
   }
 
@@ -1557,18 +1534,6 @@ img {
     font-style: normal;
     font-size: 16px;
     line-height: 20px;
-  }
-
-  .logo-antarctic__desktop {
-    display: block;
-  }
-
-  .logo-antarctic__tablet {
-    display: none;
-  }
-
-  .logo-antarctic__mobile {
-    display: none;
   }
 
   .info {
@@ -1618,17 +1583,9 @@ img {
   .advantages {
     padding-left: 103px;
     padding-right: 103px;
-    min-height: 562px;
     background-image: url("../img/content/advantages-desktop.jpg");
     margin-bottom: 108px;
-  }
-
-  .advantages__list {
-    width: 100%;
-  }
-
-  .advantages__item {
-    width: 26%;
+    padding-bottom: 120px;
   }
 
   .advantages__item--ship {
@@ -1838,5 +1795,34 @@ img {
   .booking {
     background-image: url("../img/content/booking-desktop@2x.jpg");
     background-size: 100%, cover;
+  }
+}
+
+@media (max-width: 1366px) {
+  .main-nav__logo img {
+    max-width: none;
+    width: 70px;
+  }
+}
+
+@media (max-width: 768px) {
+  .main-nav__logo img {
+    max-width: none;
+    width: 38px;
+  }
+
+  .advantages__list {
+    gap: 30px;
+    justify-items: center;
+    -ms-grid-columns: none;
+    grid-template-columns: none;
+  }
+}
+
+@media (max-width: 320px) {
+  .advantages__list {
+    -ms-grid-columns: none;
+    grid-template-columns: none;
+    justify-items: center;
   }
 }
