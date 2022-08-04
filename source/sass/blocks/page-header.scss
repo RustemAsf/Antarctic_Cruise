@@ -40,21 +40,6 @@
   }
 }
 
-.page-header__wrapper {
-  @media (min-width: $desktop-width) {
-    padding-left: 103px;
-    padding-right: 103px;
-  }
-
-  @media (min-width: $tablet-width) {
-    padding-left: 45px;
-    padding-right: 45px;
-  }
-
-  @media (min-width: $mobile-width) {
-  }
-}
-
 .page-header__slogan {
   @media (min-width: $desktop-width) {
     padding: 0 532px 0 198px;

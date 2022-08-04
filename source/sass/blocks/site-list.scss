@@ -16,9 +16,10 @@
   @media (min-width: $mobile-width) {
     list-style-type: none;
     position: absolute;
+    background-size: cover;
     top: 85px;
-    left: 32px;
-    width: 90%;
+    left: 35px;
+    width: calc(100% - 35px);
     height: 100%;
     margin: 0;
     padding: 0;
@@ -29,7 +30,7 @@
 .site-list__link {
   @media (min-width: $mobile-width) {
     display: block;
-    padding: 10px 70px 18px 25px;
+    padding: 10px 44px 18px 25px;
     font-family: $font-antarctic;
     font-style: normal;
     font-weight: 500;

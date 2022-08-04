@@ -18,41 +18,45 @@
 
 <body class="page__body">
   <header class="page-header">
-    <div class="page-header__wrapper">
-      <nav class="main-nav main-nav--closed main-nav--nojs">
+    <nav class="main-nav main-nav--closed main-nav--nojs">
+      <div class="main-nav__wrapper">
         <div class="main-nav__logo">
-          <a class="main-nav__logo-link logo-antarctic" href="#">
-            <img class="logo-antarctic__desktop" id="logo-desktop" src="./icons/sprite.svg#logo-desktop" alt="Логотип"
-              width="70" height="38">
-            <img class="logo-antarctic__tablet" id="logo-tablet" src="./icons/sprite.svg#logo-tablet" alt="Логотип"
-              width="38" height="20">
-            <img class="logo-antarctic__mobile" id="logo-mobile" src="./icons/sprite.svg#logo-mobile" alt="Логотип"
-              width="42" height="22">
-            <img class="main-nav__logo-menu" id="logo-menu" src="./icons/sprite.svg#logo-menu" alt="Логотип" width="42"
-              height="22">
-          </a>
-          <button class="main-nav__toggle" type="button">
-            <img class="main-nav__logo-close" id="close-button" src="./icons/sprite.svg#close-button"
-              alt="Кнопка закрытия" width="20" height="20">
-            <span class="visually-hidden">Открыть меню</span>
-          </button>
+          <picture>
+          <!-- <a class="main-nav__logo-link" href="#"> -->
+          <!-- <img class="logo-antarctic__desktop" id="logo-desktop" src="./icons/sprite.svg#logo-desktop" alt="Логотип"
+            width="70" height="38">
+          <img class="logo-antarctic__tablet" id="logo-tablet" src="./icons/sprite.svg#logo-tablet" alt="Логотип"
+            width="38" height="20"> -->
+          <img class="logo-blue" id="logo-mobile" src="./icons/sprite.svg#logo-blue" alt="Логотип" width="42"
+            height="22">
+          <img class="main-nav__logo-menu" id="logo-menu" src="./icons/sprite.svg#logo-menu" alt="Логотип" width="42"
+            height="22">
+          </picture>
+          <!-- </a> -->
         </div>
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item">
-            <a class="site-list__link" href="#features">Преимущества </a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="#">Направления</a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="#cruises">Ближайшие круизы</a>
-          </li>
-          <li class="site-list__item ">
-            <a class="site-list__link site-list__link--contacts" href="#contacts">Контакты</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
+        <button class="main-nav__toggle" type="button">
+          <img class="main-nav__logo-close" id="close-button" src="./icons/sprite.svg#close-button"
+            alt="Кнопка закрытия" width="20" height="20">
+          <img class="main-nav__logo-open" id="open-button" src="./icons/sprite.svg#open-button" alt="Кнопка открытия"
+            width="24" height="12">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+      </div>
+      <ul class="main-nav__list site-list">
+        <li class="site-list__item">
+          <a class="site-list__link" href="#features">Преимущества </a>
+        </li>
+        <li class="site-list__item">
+          <a class="site-list__link" href="#">Направления</a>
+        </li>
+        <li class="site-list__item">
+          <a class="site-list__link" href="#cruises">Ближайшие круизы</a>
+        </li>
+        <li class="site-list__item ">
+          <a class="site-list__link site-list__link--contacts" href="#contacts">Контакты</a>
+        </li>
+      </ul>
+    </nav>
     <div class="page-header__slogan">
       <h1>Круизы <br>в Антарктику</h1>
       <span>
@@ -81,7 +85,7 @@
           <source media="(min-width: 320px)" type="image/webp"
             srcset="./img/content/info-mobile.webp 1x, ./img/content/info-mobile@2x.webp 2x">
           <!-- 1x:1366px , 2x: 2732px -->
-          <img src="./img/content/info-desktop.jpg" srcset="./img/content/info-desktop@2x.jpg 2x" alt="Фото пингвинов"
+          <img class="info__block-image"src="./img/content/info-desktop.jpg" srcset="./img/content/info-desktop@2x.jpg 2x" alt="Фото пингвинов"
             width="560" height="301">
         </picture>
       </div>
@@ -423,8 +427,8 @@
             </li>
             <li>
               <label for="tel"><span class="visually-hidden">Телефон</span></label>
-              <input type="tel" name="tel-field" id="tel"
-                pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$" placeholder="Телефон" required>
+              <input type="tel" name="tel-field" id="tel" pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$"
+                placeholder="Телефон" required>
             </li>
             <li>
               <label for="email"><span class="visually-hidden">Email</span></label>
@@ -433,7 +437,7 @@
           </ul>
           <p>
             <label class="booking__control" for="one-check">
-              <input id="one-check" type="checkbox" checked>
+              <input class="booking__control-block" id="one-check" type="checkbox" checked>
               <span class="booking__mark"></span>
             </label>
             <span class="booking__control-label">Я согласен на обработку<br> моих персональных данных</span>
