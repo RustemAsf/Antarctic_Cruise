@@ -71,28 +71,15 @@
     padding: 25px 22px 21px 20px;
   }
 
-  &--ship::before {
-    content: url("../img/sprite/ship-icon.svg");
-  }
-
   &--check {
     padding: 37px 47px 23px 20px;
-  }
-
-  &--check::before {
-    content: url("../img/sprite/check-icon.svg");
   }
 
   &--boat {
     padding: 26px 20px 18px 20px;
   }
 
-  &--boat::before {
-    content: url("../img/sprite/boat-icon.svg");
-  }
-
   @media (min-width: $desktop-width) {
-
     &--ship {
       padding: 22px 17px 50px 30px;
     }
@@ -133,7 +120,7 @@
   font-weight: 600;
   font-size: 24px;
   align-items: center;
-  color: #011C40;
+  color: #011c40;
   margin: 0;
   text-align: center;
   padding-top: 61px;
@@ -169,15 +156,19 @@
 
   @media (min-width: $desktop-width) {
     line-height: 150%;
+
     &--ship {
       padding-top: 18px;
     }
+
     &--check {
       padding-top: 18px;
     }
+
     &--boat {
       padding-top: 14px;
     }
+
     br {
       display: none;
     }
@@ -188,8 +179,8 @@
     padding-top: 12px;
 
     &--boat {
-    padding-top: 9px;
-  }
+      padding-top: 9px;
+    }
 
     br {
       display: block;
@@ -211,12 +202,15 @@
     br {
       display: none;
     }
+
     &--ship {
       width: 154px;
     }
+
     &--check {
       width: 162px;
     }
+
     &--boat {
       width: 167px;
     }
@@ -226,12 +220,15 @@
     &--ship {
       width: 288px;
     }
+
     &--check {
       width: 280px;
     }
+
     &--boat {
       width: 241px;
     }
+
     br {
       display: none;
     }

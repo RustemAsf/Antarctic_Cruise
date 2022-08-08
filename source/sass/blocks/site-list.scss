@@ -47,8 +47,8 @@
   }
 
   @media (min-width: $tablet-width) {
-    background-color: none;
     background: none;
+    background-color: none;
     padding: 0;
     font-family: $font-antarctic;
     font-style: normal;
@@ -63,11 +63,5 @@
     font-style: normal;
     font-size: 16px;
     line-height: 20px;
-  }
-}
-
-.site-list__link {
-  &--contacts {
-    padding-bottom: 50px;
   }
 }

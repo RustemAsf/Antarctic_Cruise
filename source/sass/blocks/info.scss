@@ -72,12 +72,14 @@
   margin: 0;
   line-height: 150%;
   margin-bottom: 33px;
+
   br {
     display: none;
   }
 
   @media (min-width: $desktop-width) {
     margin: 0;
+
     br {
       display: none;
     }

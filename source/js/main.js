@@ -62,7 +62,6 @@ const onInputCheckboxChange = () => {
   } else {
     buttonSubmit.disabled = false;
   }
-
 };
 
 const addFormListeners = () => {

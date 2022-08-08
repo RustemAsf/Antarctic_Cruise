@@ -22,7 +22,7 @@
   font-weight: 600;
   font-size: 24px;
   line-height: 150%;
-  color: #011C40;
+  color: #011c40;
   margin: 0;
   text-align: center;
   margin-bottom: 32px;
@@ -63,8 +63,6 @@
   font-weight: 500;
   font-size: 18px;
   line-height: 150%;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
   color: #f9fbfd;
   margin-top: -52px;
@@ -150,9 +148,6 @@
   line-height: 150%;
   align-items: center;
   color: #f9fbfd;
-}
-
-.cruises__page-list-title {
   margin: 0;
   padding: 0;
 
@@ -160,13 +155,12 @@
     margin-bottom: 5px;
   }
 }
+
 .cruises__img-wrapper {
   &--front {
     z-index: 1;
   }
-}
 
-.cruises__img-wrapper {
   &--back {
     background: #011c40;
     overflow-y: scroll;
@@ -208,10 +202,10 @@
 }
 
 .cruises__img-wrapper img {
-    object-fit: cover;
-    min-width: 271px;
-    height: 386px;
-    width: 100%;
+  object-fit: cover;
+  min-width: 271px;
+  height: 386px;
+  width: 100%;
 
   @media (min-width: $tablet-width) {
     min-width: 309px;
@@ -237,6 +231,7 @@
   text-decoration: none;
   padding: 12px 51px 12px 52px;
   background-color: #f9fbfd;
+
   &:hover {
     opacity: 0.8;
   }

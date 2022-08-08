@@ -21,20 +21,18 @@
     <nav class="main-nav main-nav--closed main-nav--nojs">
       <div class="main-nav__wrapper">
         <div class="main-nav__logo">
-          <picture>
-            <svg class="logo-blue" alt="Логотип" width="42" height="20">
-              <use xlink:href="./icons/sprite.svg#logo-blue"></use>
-            </svg>
-            <svg class="main-nav__logo-menu" alt="Логотип" width="42" height="22">
-              <use xlink:href="./icons/sprite.svg#logo-menu"></use>
-            </svg>
-          </picture>
+          <svg class="logo-blue" width="42" height="20">
+            <use xlink:href="./icons/sprite.svg#logo-blue"></use>
+          </svg>
+          <svg class="main-nav__logo-menu" width="42" height="22">
+            <use xlink:href="./icons/sprite.svg#logo-menu"></use>
+          </svg>
         </div>
         <button class="main-nav__toggle" type="button">
-          <svg class="main-nav__logo-close" alt="Кнопка закрытия" width="13" height="13">
+          <svg class="main-nav__logo-close" width="13" height="13">
             <use xlink:href="./icons/sprite.svg#close-button"></use>
           </svg>
-          <svg class="main-nav__logo-open" alt="Кнопка открытия" width="24" height="12">
+          <svg class="main-nav__logo-open" width="24" height="12">
             <use xlink:href="./icons/sprite.svg#open-button"></use>
           </svg>
           <span class="visually-hidden">Открыть меню</span>
@@ -83,7 +81,7 @@
           <source media="(min-width: 320px)" type="image/webp"
             srcset="./img/content/info-mobile.webp 1x, ./img/content/info-mobile@2x.webp 2x">
           <!-- 1x:1366px , 2x: 2732px -->
-          <img class="info__block-image" s rc="./img/content/info-desktop.jpg"
+          <img class="info__block-image" src="./img/content/info-desktop.jpg"
             srcset="./img/content/info-desktop@2x.jpg 2x" alt="Фото пингвинов" width="560" height="301">
         </picture>
       </div>
@@ -92,17 +90,26 @@
       <h2>Преимущества</h2>
       <ul class="advantages__list">
         <li class="advantages__item advantages__item--ship">
+          <svg width="21" height="26">
+            <use xlink:href="./icons/sprite.svg#ship-icon"></use>
+          </svg>
           <h3 class="advantages__block-title advantages__block-title--ship">Небольшой<br> круизный лайнер</h3>
           <p class="advantages__block-text advantages__block-text--ship">Круизный лайнер, рассчитанный всего лишь на
             300 гостей, поможет избежать
             шума <br>и очередей и даст возможность насладиться видами и природой.</p>
         </li>
         <li class="advantages__item advantages__item--check">
+          <svg width="33" height="19">
+            <use xlink:href="./icons/sprite.svg#check-icon"></use>
+          </svg>
           <h3 class="advantages__block-title advantages__block-title--check">Система<br> все включено</h3>
           <p class="advantages__block-text advantages__block-text--check">Все наши круизы работают
             по системе “Все Включено”. Великолепные блюда <br>и безлимитный бар доступны для вас 24 часа.</p>
         </li>
         <li class="advantages__item advantages__item--boat">
+          <svg width="38" height="13">
+            <use xlink:href="./icons/sprite.svg#boat-icon"></use>
+          </svg>
           <h3 class="advantages__block-title advantages__block-title--boat">Экскурсионные<br> туры на Zodiac</h3>
           <p class="advantages__block-text advantages__block-text--boat">Экскурсионные туры к берегам Антарктиды
             совершаются<br> на оборудованных&nbsp;&nbsp;
@@ -432,8 +439,8 @@
             </li>
           </ul>
           <p>
-            <label class="booking__control" for="one-check">
-              <input class="booking__control-block" id="one-check" type="checkbox" checked>
+            <label class="booking__control" for="checkbox">
+              <input class="booking__control-block" id="checkbox" type="checkbox" checked>
               <span class="booking__mark"></span>
             </label>
             <span class="booking__control-label">Я согласен на обработку<br> моих персональных данных</span>
@@ -456,13 +463,13 @@
             к нам в офис и мы вам все расскажем.
           </p>
           <div class="page__content-address">
-            <svg class="page__address" alt="Маркер адреса" width="18" height="22">
+            <svg class="page__address" width="18" height="22">
               <use xlink:href="./icons/sprite.svg#address-icon"></use>
             </svg>
             г. Санкт Петербург, ул.&nbsp;Большая&nbsp;Конюшенная, 19/8
           </div>
           <div class="page__content-phone">
-            <svg class="page__icon" alt="Маркер контакта" width="18" height="18">
+            <svg class="page__icon" width="18" height="18">
               <use xlink:href="./icons/sprite.svg#contacts-icon"></use>
             </svg>
             <a class="page__content-link" href="tel:8-800-200-00-00">8-800-200-00-00</a>
@@ -475,7 +482,7 @@
     <div class="page__nav-block">
       <div class="page__nav-list">
         <a class="page__logo-link" href="#">
-          <svg class="logo-blue__footer" alt="Логотип" width="42" height="22">
+          <svg class="page__logo-blue" width="42" height="22">
             <use xlink:href="./icons/sprite.svg#logo-blue"></use>
           </svg>
         </a>
@@ -497,22 +504,21 @@
       <div class="page__social">
         <ul>
           <li>
-            <a class="page__social-link" alt="Логотип" href="#">
+            <a class="page__social-link" href="#">
               <svg class="page__facebook" width="11" height="20">
                 <use xlink:href="./icons/sprite.svg#facebook-icon"></use>
               </svg>
             </a>
-
           </li>
           <li>
-            <a class="page__social-link" alt="Логотип" href="#">
+            <a class="page__social-link" href="#">
               <svg width="21" height="20">
                 <use xlink:href="./icons/sprite.svg#instagram-icon"></use>
               </svg>
             </a>
           </li>
           <li>
-            <a class="page__social-link" alt="Логотип" href="#">
+            <a class="page__social-link" href="#">
               <svg width="20" height="17">
                 <use xlink:href="./icons/sprite.svg#twitter-icon"></use>
               </svg>

@@ -69,6 +69,7 @@
     font-size: 54px;
     line-height: 61px;
     margin-bottom: 9px;
+
     br {
       display: none;
     }
@@ -90,6 +91,7 @@
   @media (min-width: $desktop-width) {
     font-size: 20px;
     line-height: 24px;
+
     br {
       display: none;
     }
@@ -98,6 +100,7 @@
   @media (min-width: $tablet-width) {
     font-size: 18px;
     line-height: 22px;
+
     br {
       display: none;
     }

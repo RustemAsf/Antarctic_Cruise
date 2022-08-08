@@ -1,14 +1,9 @@
 .logo-blue {
   padding-top: 5px;
+
   @media (min-width: $desktop-width) {
     width: 70px;
     height: 38px;
   }
 }
 
-.logo-blue__footer {
-  @media (min-width: $desktop-width) {
-    width: 70px;
-    height: 38px;
-  }
-}
