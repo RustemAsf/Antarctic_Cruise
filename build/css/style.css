@@ -58,6 +58,10 @@
   background: #011c40;
 }
 
+.page__social {
+  width: 31%;
+}
+
 .page__social ul {
   list-style-type: none;
   display: -webkit-box;
@@ -68,12 +72,11 @@
   justify-content: space-between;
   margin: 0;
   padding: 0;
-  width: 35%;
   padding-top: 15px;
 }
 
 .page__nav-block {
-  padding-top: 31px;
+  padding-top: 42px;
   padding-bottom: 49px;
 }
 
@@ -85,7 +88,7 @@
 }
 
 .page__nav-list li {
-  margin-bottom: 3px;
+  margin-bottom: 5px;
 }
 
 .page__link {
@@ -167,13 +170,13 @@
 .page__address {
   position: absolute;
   top: 1px;
-  left: -11px;
+  left: -2px;
 }
 
 .page__icon {
   position: absolute;
   top: 1px;
-  left: -11px;
+  left: 0;
 }
 
 .main-nav__logo img {
@@ -217,7 +220,7 @@
 }
 
 .main-nav--opened .main-nav__toggle {
-  padding-top: 41px;
+  padding-top: 34px;
   background-color: #011c40;
   border: 0;
   background: 0;
@@ -689,6 +692,10 @@ img {
   width: 101%;
 }
 
+.logo-blue {
+  padding-top: 5px;
+}
+
 @media (min-width: 320px) {
   .page__leveler {
     display: -webkit-box;
@@ -812,6 +819,7 @@ img {
     padding-right: 15px;
     background-color: #d2e0f2;
     background-image: url("../img/content/advantages-mobile.jpg");
+    background-size: 100%, cover;
     padding-bottom: 65px;
     background-repeat: no-repeat;
     margin-bottom: 56px;
@@ -869,10 +877,14 @@ img {
     min-height: 120px;
   }
 
+  .page__social {
+    width: 12%;
+  }
+
   .page__social ul {
     margin: 0;
     padding: 0;
-    width: 114%;
+    padding-top: 7px;
   }
 
   .page__nav-list {
@@ -882,7 +894,7 @@ img {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    width: 75.5%;
+    width: 74.5%;
   }
 
   .page__nav-block {
@@ -893,7 +905,6 @@ img {
     -ms-flex-pack: justify;
     justify-content: space-between;
     padding-top: 47px;
-    padding-bottom: 0;
   }
 
   .page__nav-list ul {
@@ -901,7 +912,7 @@ img {
     display: -ms-flexbox;
     display: flex;
     list-style-type: none;
-    width: 87.4%;
+    width: 87%;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
@@ -1026,7 +1037,7 @@ img {
     -ms-flex-align: center;
     align-items: center;
     padding-top: 30px;
-    margin-bottom: 218px;
+    margin-bottom: 204px;
   }
 
   .main-nav--opened .main-nav__list {
@@ -1134,8 +1145,9 @@ img {
     padding-left: 45px;
     padding-right: 45px;
     background-image: url("../img/content/advantages-tablet.jpg");
+    background-size: 100%, cover;
     margin-bottom: 91px;
-    padding-bottom: 100px;
+    padding-bottom: 69px;
   }
 
   .advantages__item {
@@ -1362,9 +1374,12 @@ img {
     min-height: 138px;
   }
 
+  .page__social {
+    width: 9%;
+  }
+
   .page__social ul {
     padding-top: 10px;
-    width: 125%;
     padding: 0;
   }
 
@@ -1382,7 +1397,6 @@ img {
 
   .page__nav-list ul {
     margin: 0;
-    padding-top: 5px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1584,6 +1598,7 @@ img {
     padding-left: 103px;
     padding-right: 103px;
     background-image: url("../img/content/advantages-desktop.jpg");
+    background-size: 100%, cover;
     margin-bottom: 108px;
     padding-bottom: 120px;
   }
@@ -1778,6 +1793,16 @@ img {
     padding: 12px 89px 12px 90px;
     width: 97%;
   }
+
+  .logo-blue {
+    width: 70px;
+    height: 38px;
+  }
+
+  .logo-blue__footer {
+    width: 70px;
+    height: 38px;
+  }
 }
 
 @media (min-width: 1366px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1366px) and (-o-min-device-pixel-ratio: 2/1), (min-width: 1366px) and (min-resolution: 2dppx) {
@@ -1809,7 +1834,9 @@ img {
     max-width: none;
     width: 38px;
   }
+}
 
+@media (max-width: 767px) {
   .advantages__list {
     gap: 30px;
     -ms-grid-columns: none;
@@ -1821,5 +1848,6 @@ img {
   .advantages__list {
     -ms-grid-columns: none;
     grid-template-columns: none;
+    justify-items: center;
   }
 }

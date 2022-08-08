@@ -3,6 +3,7 @@
     padding-left: 103px;
     padding-right: 103px;
     background-image: url("../img/content/advantages-desktop.jpg");
+    background-size: 100%, cover;
     margin-bottom: 108px;
     padding-bottom: 120px;
 
@@ -16,8 +17,9 @@
     padding-left: 45px;
     padding-right: 45px;
     background-image: url("../img/content/advantages-tablet.jpg");
+    background-size: 100%, cover;
     margin-bottom: 91px;
-    padding-bottom: 100px;
+    padding-bottom: 69px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/content/advantages-tablet@2x.jpg");
@@ -30,6 +32,7 @@
     padding-right: 15px;
     background-color: #d2e0f2;
     background-image: url("../img/content/advantages-mobile.jpg");
+    background-size: 100%, cover;
     padding-bottom: 65px;
     background-repeat: no-repeat;
     margin-bottom: 56px;
@@ -50,13 +53,14 @@
   gap: 40px;
   justify-content: center;
 
-  @media (max-width: $tablet-width) {
+  @media (max-width: 767px) {
     gap: 30px;
     grid-template-columns: none;
   }
 
   @media (max-width: $mobile-width) {
     grid-template-columns: none;
+    justify-items: center;
   }
 }
 
