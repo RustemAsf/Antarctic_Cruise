@@ -201,7 +201,7 @@
   -ms-flex-pack: justify;
   justify-content: space-between;
   padding-bottom: 43px;
-  background-color: #fff;
+  background-color: #ffffff;
   padding-left: 20px;
   padding-right: 12px;
 }
@@ -221,7 +221,6 @@
 
 .main-nav--opened .main-nav__toggle {
   padding-top: 34px;
-  background-color: #011c40;
   border: 0;
   background: 0;
 }
@@ -269,7 +268,7 @@
   -ms-flex-pack: justify;
   justify-content: space-between;
   padding-bottom: 43px;
-  background-color: #fff;
+  background-color: #ffffff;
   padding-left: 20px;
   padding-right: 12px;
 }
@@ -279,10 +278,6 @@
   border: 0;
   padding: 0;
   background: none;
-}
-
-.site-list__link--contacts {
-  padding-bottom: 50px;
 }
 
 img {
@@ -348,24 +343,12 @@ img {
   padding: 25px 22px 21px 20px;
 }
 
-.advantages__item--ship::before {
-  content: url("../img/sprite/ship-icon.svg");
-}
-
 .advantages__item--check {
   padding: 37px 47px 23px 20px;
 }
 
-.advantages__item--check::before {
-  content: url("../img/sprite/check-icon.svg");
-}
-
 .advantages__item--boat {
   padding: 26px 20px 18px 20px;
-}
-
-.advantages__item--boat::before {
-  content: url("../img/sprite/boat-icon.svg");
 }
 
 .advantages h2 {
@@ -376,7 +359,7 @@ img {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  color: #011C40;
+  color: #011c40;
   margin: 0;
   text-align: center;
   padding-top: 61px;
@@ -426,7 +409,7 @@ img {
   font-weight: 600;
   font-size: 24px;
   line-height: 150%;
-  color: #011C40;
+  color: #011c40;
   margin: 0;
   text-align: center;
   margin-bottom: 32px;
@@ -504,9 +487,6 @@ img {
   -ms-flex-align: center;
   align-items: center;
   color: #f9fbfd;
-}
-
-.cruises__page-list-title {
   margin: 0;
   padding: 0;
 }
@@ -619,8 +599,8 @@ img {
 
 .booking__form {
   background: #011c40;
-  -webkit-box-shadow: 0px 4px 45px rgba(1, 28, 64, 0.15);
-  box-shadow: 0px 4px 45px rgba(1, 28, 64, 0.15);
+  -webkit-box-shadow: 0 4px 45px rgba(1, 28, 64, 0.15);
+  box-shadow: 0 4px 45px rgba(1, 28, 64, 0.15);
 }
 
 .booking__form input {
@@ -1022,11 +1002,6 @@ img {
   }
 
   .main-nav {
-    padding-left: 45px;
-    padding-right: 45px;
-  }
-
-  .main-nav {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1038,6 +1013,9 @@ img {
     align-items: center;
     padding-top: 30px;
     margin-bottom: 204px;
+    padding-left: 45px;
+    padding-right: 45px;
+    width: 90%;
   }
 
   .main-nav--opened .main-nav__list {
@@ -1092,8 +1070,8 @@ img {
   }
 
   .site-list__link {
-    background-color: none;
     background: none;
+    background-color: none;
     padding: 0;
     font-family: "Montserrat", "Arial", sans-serif;
     font-style: normal;
@@ -1379,8 +1357,8 @@ img {
   }
 
   .page__social ul {
-    padding-top: 10px;
     padding: 0;
+    padding-top: 10px;
   }
 
   .page__nav-list {
@@ -1467,6 +1445,11 @@ img {
     left: -11px;
   }
 
+  .page__logo-blue {
+    width: 70px;
+    height: 38px;
+  }
+
   .page-header {
     background-color: #3467a2;
     background-image: url("../img/content/sky-header.jpg");
@@ -1498,11 +1481,6 @@ img {
   }
 
   .main-nav {
-    padding-left: 103px;
-    padding-right: 103px;
-  }
-
-  .main-nav {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1514,6 +1492,8 @@ img {
     align-items: center;
     padding-top: 35px;
     margin-bottom: 197px;
+    padding-left: 103px;
+    padding-right: 103px;
   }
 
   .main-nav--closed .main-nav__wrapper {
@@ -1795,11 +1775,6 @@ img {
   }
 
   .logo-blue {
-    width: 70px;
-    height: 38px;
-  }
-
-  .logo-blue__footer {
     width: 70px;
     height: 38px;
   }
