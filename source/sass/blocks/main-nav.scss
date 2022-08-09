@@ -17,6 +17,10 @@
   &--opened {
     padding-left: 35px;
     width: calc(100% - 35px);
+
+    @media (min-width: $tablet-width) {
+      width: 88%;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -24,7 +28,7 @@
     justify-content: space-between;
     align-items: center;
     padding-top: 35px;
-    margin-bottom: 197px;
+    margin-bottom: 183px;
     padding-left: 103px;
     padding-right: 103px;
   }
@@ -33,11 +37,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 30px;
+    padding-top: 24px;
     margin-bottom: 204px;
     padding-left: 45px;
     padding-right: 45px;
-    width: 90%;
   }
 
   @media (min-width: $mobile-width) {
