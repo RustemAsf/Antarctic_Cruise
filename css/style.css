@@ -85,6 +85,7 @@
   padding: 0;
   margin-bottom: 5px;
   list-style-type: none;
+  padding-top: 12px;
 }
 
 .page__nav-list li {
@@ -329,7 +330,7 @@ img {
   display: grid;
   -ms-grid-columns: auto auto auto;
   grid-template-columns: auto auto auto;
-  gap: 40px;
+  gap: 30px;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
@@ -340,11 +341,11 @@ img {
 }
 
 .advantages__item--ship {
-  padding: 25px 22px 21px 20px;
+  padding: 31px 22px 21px 20px;
 }
 
 .advantages__item--check {
-  padding: 37px 47px 23px 20px;
+  padding: 26px 47px 20px 20px;
 }
 
 .advantages__item--boat {
@@ -382,6 +383,10 @@ img {
 
 .advantages__block-title--boat {
   padding-top: 16px;
+}
+
+.advantages__block-title--check {
+  padding-top: 15px;
 }
 
 .advantages__block-text {
@@ -864,7 +869,7 @@ img {
   .page__social ul {
     margin: 0;
     padding: 0;
-    padding-top: 7px;
+    padding-top: 23px;
   }
 
   .page__nav-list {
@@ -884,7 +889,7 @@ img {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    padding-top: 47px;
+    padding-top: 29px;
   }
 
   .page__nav-list ul {
@@ -896,6 +901,7 @@ img {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
+    padding-top: 19px;
   }
 
   .page__nav-list li {
@@ -972,6 +978,10 @@ img {
     left: -11px;
   }
 
+  .page__logo-blue {
+    padding-top: 22px;
+  }
+
   .page-header {
     background-image: url("../img/content/sky-header-tablet.jpg");
     min-height: 638px;
@@ -1001,6 +1011,10 @@ img {
     display: none;
   }
 
+  .main-nav--opened {
+    width: 88%;
+  }
+
   .main-nav {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1011,11 +1025,10 @@ img {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    padding-top: 30px;
+    padding-top: 24px;
     margin-bottom: 204px;
     padding-left: 45px;
     padding-right: 45px;
-    width: 90%;
   }
 
   .main-nav--opened .main-nav__list {
@@ -1125,7 +1138,7 @@ img {
     background-image: url("../img/content/advantages-tablet.jpg");
     background-size: 100%, cover;
     margin-bottom: 91px;
-    padding-bottom: 69px;
+    padding-bottom: 96px;
   }
 
   .advantages__item {
@@ -1137,7 +1150,7 @@ img {
   }
 
   .advantages__item--ship {
-    padding: 19px 16px 25px 20px;
+    padding: 19px 10px 25px 20px;
   }
 
   .advantages__item--check {
@@ -1358,7 +1371,7 @@ img {
 
   .page__social ul {
     padding: 0;
-    padding-top: 10px;
+    padding-top: 30px;
   }
 
   .page__nav-list {
@@ -1369,7 +1382,7 @@ img {
   }
 
   .page__nav-block {
-    padding-top: 50px;
+    padding-top: 30px;
     padding-bottom: 0;
   }
 
@@ -1491,7 +1504,7 @@ img {
     -ms-flex-align: center;
     align-items: center;
     padding-top: 35px;
-    margin-bottom: 197px;
+    margin-bottom: 183px;
     padding-left: 103px;
     padding-right: 103px;
   }
@@ -1736,7 +1749,7 @@ img {
 
   .booking__block {
     margin: auto 0;
-    padding-top: 14px;
+    padding-top: 59px;
   }
 
   .booking__form h3 {
