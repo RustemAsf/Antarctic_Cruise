@@ -74,13 +74,25 @@
       </div>
       <div class="info__block-img">
         <picture>
+          <!-- 1x:560px , 2x: 1120px -->
           <source media="(min-width: 1366px)" type="image/webp"
             srcset="./img/content/info-desktop.webp 1x, ./img/content/info-desktop@2x.webp 2x">
+          <!-- 1x:324 , 2x: 648px -->
           <source media="(min-width: 768px)" type="image/webp"
             srcset="./img/content/info-tablet.webp 1x, ./img/content/info-tablet@2x.webp 2x">
+          <!-- 1x:290px , 2x: 580px -->
           <source media="(min-width: 320px)" type="image/webp"
             srcset="./img/content/info-mobile.webp 1x, ./img/content/info-mobile@2x.webp 2x">
-          <!-- 1x:1366px , 2x: 2732px -->
+          <!-- 1x:560px , 2x: 1120px -->
+          <source media="(min-width: 1366px)" type="image/webp"
+            srcset="./img/content/info-desktop.jpg 1x, ./img/content/info-desktop@2x.jpg 2x">
+          <!-- 1x:324 , 2x: 648px -->
+          <source media="(min-width: 768px)" type="image/webp"
+            srcset="./img/content/info-tablet.jpg 1x, ./img/content/info-tablet@2x.jpg 2x">
+          <!-- 1x:290px , 2x: 580px -->
+          <source media="(min-width: 320px)" type="image/webp"
+            srcset="./img/content/info-mobile.jpg 1x, ./img/content/info-mobile@2x.jpg 2x">
+          <!-- 1x:560px , 2x: 1120px -->
           <img class="info__block-image" src="./img/content/info-desktop.jpg"
             srcset="./img/content/info-desktop@2x.jpg 2x" alt="Фото пингвинов" width="560" height="301">
         </picture>
@@ -89,29 +101,29 @@
     <section class="advantages">
       <h2>Преимущества</h2>
       <ul class="advantages__list">
-        <li class="advantages__item advantages__item--ship">
+        <li class="advantages__item">
           <svg width="21" height="26">
             <use xlink:href="./icons/sprite.svg#ship-icon"></use>
           </svg>
-          <h3 class="advantages__block-title advantages__block-title--ship">Небольшой<br> круизный лайнер</h3>
-          <p class="advantages__block-text advantages__block-text--ship">Круизный лайнер, рассчитанный всего лишь на
+          <h3 class="advantages__block-title">Небольшой<br> круизный лайнер</h3>
+          <p class="advantages__block-text">Круизный лайнер, рассчитанный всего лишь на
             300 гостей, поможет избежать
             шума <br>и очередей и даст возможность насладиться видами и природой.</p>
         </li>
-        <li class="advantages__item advantages__item--check">
+        <li class="advantages__item">
           <svg width="33" height="19">
             <use xlink:href="./icons/sprite.svg#check-icon"></use>
           </svg>
-          <h3 class="advantages__block-title advantages__block-title--check">Система<br> все включено</h3>
-          <p class="advantages__block-text advantages__block-text--check">Все наши круизы работают
+          <h3 class="advantages__block-title">Система<br> все включено</h3>
+          <p class="advantages__block-text">Все наши круизы работают
             по системе “Все Включено”. Великолепные блюда <br>и безлимитный бар доступны для вас 24 часа.</p>
         </li>
-        <li class="advantages__item advantages__item--boat">
+        <li class="advantages__item">
           <svg width="38" height="13">
             <use xlink:href="./icons/sprite.svg#boat-icon"></use>
           </svg>
-          <h3 class="advantages__block-title advantages__block-title--boat">Экскурсионные<br> туры на Zodiac</h3>
-          <p class="advantages__block-text advantages__block-text--boat">Экскурсионные туры к берегам Антарктиды
+          <h3 class="advantages__block-title">Экскурсионные<br> туры на Zodiac</h3>
+          <p class="advantages__block-text">Экскурсионные туры к берегам Антарктиды
             совершаются<br> на оборудованных&nbsp;&nbsp;
             лодках<br> типа Zodiac в сопровождении опытных экскурсоводов.</p>
         </li>
@@ -124,9 +136,25 @@
           <article class="cruises__item-block" tabindex="0">
             <div class="cruises__img-wrapper cruises__img-wrapper--front">
               <picture>
+                <!-- 1x: 260px, 2x: 520px -->
                 <source srcset="./img/content/astoria-desktop.webp 1x, ./img/content/astoria-desktop@2x.webp 2x"
                   type="image/webp">
-                <!-- 1x: 320px, 2x: 640px -->
+                <!-- 1x: 309px, 2x: 618px -->
+                <source srcset="./img/content/astoria-tablet.webp 1x, ./img/content/astoria-tablet@2x.webp 2x"
+                  type="image/webp">
+                <!-- 1x: 270px, 2x: 540px -->
+                <source srcset="./img/content/astoria-mobile.webp 1x, ./img/content/astoria-mobile@2x.webp 2x"
+                  type="image/webp">
+                <!-- 1x: 260px, 2x: 520px -->
+                <source srcset="./img/content/astoria-desktop.jpg 1x, ./img/content/astoria-desktop@2x.jpg 2x"
+                  type="image/webp">
+                <!-- 1x: 309px, 2x: 618px -->
+                <source srcset="./img/content/astoria-tablet.jpg 1x, ./img/content/astoria-tablet@2x.jpg 2x"
+                  type="image/webp">
+                <!-- 1x: 270px, 2x: 540px -->
+                <source srcset="./img/content/astoria-mobile.jpg 1x, ./img/content/astoria-mobile@2x.jpg 2x"
+                  type="image/webp">
+                <!-- 1x: 260px, 2x: 520px -->
                 <img class="cruises__image" src="./img/content/astoria-desktop.jpg"
                   srcset="./img/content/astoria-desktop@2x.jpg 2x" alt="фото пейзажа" width="260" height="386">
               </picture>
@@ -160,7 +188,23 @@
           <article class="cruises__item-block" tabindex="0">
             <div class="cruises__img-wrapper cruises__img-wrapper--front">
               <picture>
+                <!-- 1x: 260px, 2x: 520px -->
                 <source srcset="./img/content/leonor-desktop.webp 1x, ./img/content/leonor-desktop@2x.webp 2x"
+                  type="image/webp">
+                <!-- 1x: 309px, 2x: 618px -->
+                <source srcset="./img/content/leonor-tablet.webp 1x, ./img/content/leonor-tablet@2x.webp 2x"
+                  type="image/webp">
+                <!-- 1x: 270px, 2x: 540px -->
+                <source srcset="./img/content/leonor-mobile.webp 1x, ./img/content/leonor-mobile@2x.webp 2x"
+                  type="image/webp">
+                <!-- 1x: 260px, 2x: 520px -->
+                <source srcset="./img/content/leonor-desktop.jpg 1x, ./img/content/leonor-desktop@2x.jpg 2x"
+                  type="image/webp">
+                <!-- 1x: 309px, 2x: 618px -->
+                <source srcset="./img/content/leonor-tablet.jpg 1x, ./img/content/leonor-tablet@2x.jpg 2x"
+                  type="image/webp">
+                <!-- 1x: 270px, 2x: 540px -->
+                <source srcset="./img/content/leonor-mobile.jpg 1x, ./img/content/leonor-mobile@2x.jpg 2x"
                   type="image/webp">
                 <!-- 1x: 260px, 2x: 520px -->
                 <img class="cruises__image" src="./img/content/leonor-desktop.jpg"
@@ -196,7 +240,23 @@
           <article class="cruises__item-block" tabindex="0">
             <div class="cruises__img-wrapper cruises__img-wrapper--front">
               <picture>
+                <!-- 1x: 260px, 2x: 520px -->
                 <source srcset="./img/content/atlantic-desktop.webp 1x, ./img/content/atlantic-desktop@2x.webp 2x"
+                  type="image/webp">
+                <!-- 1x: 309px, 2x: 618px -->
+                <source srcset="./img/content/atlantic-tablet.webp 1x, ./img/content/atlantic-tablet@2x.webp 2x"
+                  type="image/webp">
+                <!-- 1x: 270px, 2x: 540px -->
+                <source srcset="./img/content/atlantic-mobile.webp 1x, ./img/content/atlantic-mobile@2x.webp 2x"
+                  type="image/webp">
+                <!-- 1x: 260px, 2x: 520px -->
+                <source srcset="./img/content/atlantic-desktop.jpg 1x, ./img/content/atlantic-desktop@2x.jpg 2x"
+                  type="image/webp">
+                <!-- 1x: 309px, 2x: 618px -->
+                <source srcset="./img/content/atlantic-tablet.jpg 1x, ./img/content/atlantic-tablet@2x.jpg 2x"
+                  type="image/webp">
+                <!-- 1x: 270px, 2x: 540px -->
+                <source srcset="./img/content/atlantic-mobile.jpg 1x, ./img/content/atlantic-mobile@2x.jpg 2x"
                   type="image/webp">
                 <!-- 1x: 260px, 2x: 520px -->
                 <img class="cruises__image" src="./img/content/atlantic-desktop.jpg"
@@ -232,7 +292,23 @@
           <article class="cruises__item-block" tabindex="0">
             <div class="cruises__img-wrapper cruises__img-wrapper--front">
               <picture>
+                <!-- 1x: 260px, 2x: 520px -->
                 <source srcset="./img/content/odysseus-desktop.webp 1x, ./img/content/odysseus-desktop@2x.webp 2x"
+                  type="image/webp">
+                <!-- 1x: 309px, 2x: 618px -->
+                <source srcset="./img/content/odysseus-tablet.webp 1x, ./img/content/odysseus-tablet@2x.webp 2x"
+                  type="image/webp">
+                <!-- 1x: 270px, 2x: 540px -->
+                <source srcset="./img/content/odysseus-mobile.webp 1x, ./img/content/odysseus-mobile@2x.webp 2x"
+                  type="image/webp">
+                <!-- 1x: 260px, 2x: 520px -->
+                <source srcset="./img/content/odysseus-desktop.jpg 1x, ./img/content/odysseus-desktop@2x.jpg 2x"
+                  type="image/webp">
+                <!-- 1x: 309px, 2x: 618px -->
+                <source srcset="./img/content/odysseus-tablet.jpg 1x, ./img/content/odysseus-tablet@2x.jpg 2x"
+                  type="image/webp">
+                <!-- 1x: 270px, 2x: 540px -->
+                <source srcset="./img/content/odysseus-mobile.jpg 1x, ./img/content/odysseus-mobile@2x.jpg 2x"
                   type="image/webp">
                 <!-- 1x: 260px, 2x: 520px -->
                 <img class="cruises__image" src="./img/content/odysseus-desktop.jpg"
@@ -268,11 +344,27 @@
           <article class="cruises__item-block" tabindex="0">
             <div class="cruises__img-wrapper cruises__img-wrapper--front">
               <picture>
-                <source srcset="./img/content/olympia-desktop.webp 1x, ./img/content/olympia-desktop@2x.webp 2x"
+                <!-- 1x: 260px, 2x: 520px -->
+                <source srcset="./img/content/astoria-desktop.webp 1x, ./img/content/astoria-desktop@2x.webp 2x"
+                  type="image/webp">
+                <!-- 1x: 309px, 2x: 618px -->
+                <source srcset="./img/content/astoria-tablet.webp 1x, ./img/content/astoria-tablet@2x.webp 2x"
+                  type="image/webp">
+                <!-- 1x: 270px, 2x: 540px -->
+                <source srcset="./img/content/astoria-mobile.webp 1x, ./img/content/astoria-mobile@2x.webp 2x"
+                  type="image/webp">
+                <!-- 1x: 260px, 2x: 520px -->
+                <source srcset="./img/content/astoria-desktop.jpg 1x, ./img/content/astoria-desktop@2x.jpg 2x"
+                  type="image/webp">
+                <!-- 1x: 309px, 2x: 618px -->
+                <source srcset="./img/content/astoria-tablet.jpg 1x, ./img/content/astoria-tablet@2x.jpg 2x"
+                  type="image/webp">
+                <!-- 1x: 270px, 2x: 540px -->
+                <source srcset="./img/content/astoria-mobile.jpg 1x, ./img/content/astoria-mobile@2x.jpg 2x"
                   type="image/webp">
                 <!-- 1x: 260px, 2x: 520px -->
                 <img class="cruises__image" src="./img/content/astoria-desktop.jpg"
-                  srcset="./img/content/olympia-desktop@2x.jpg 2x" alt="фото пейзажа" width="260" height="386">
+                  srcset="./img/content/astoria-desktop@2x.jpg 2x" alt="фото пейзажа" width="260" height="386">
               </picture>
               <h3 class="cruises__img-title">Круиз "Олимпия"</h3>
             </div>
@@ -304,7 +396,23 @@
           <article class="cruises__item-block" tabindex="0">
             <div class="cruises__img-wrapper cruises__img-wrapper--front">
               <picture>
+                <!-- 1x: 260px, 2x: 520px -->
                 <source srcset="./img/content/avrora-desktop.webp 1x, ./img/content/avrora-desktop@2x.webp 2x"
+                  type="image/webp">
+                <!-- 1x: 309px, 2x: 618px -->
+                <source srcset="./img/content/avrora-tablet.webp 1x, ./img/content/avrora-tablet@2x.webp 2x"
+                  type="image/webp">
+                <!-- 1x: 270px, 2x: 540px -->
+                <source srcset="./img/content/avrora-mobile.webp 1x, ./img/content/avrora-mobile@2x.webp 2x"
+                  type="image/webp">
+                <!-- 1x: 260px, 2x: 520px -->
+                <source srcset="./img/content/avrora-desktop.jpg 1x, ./img/content/avrora-desktop@2x.jpg 2x"
+                  type="image/webp">
+                <!-- 1x: 309px, 2x: 618px -->
+                <source srcset="./img/content/avrora-tablet.jpg 1x, ./img/content/avrora-tablet@2x.jpg 2x"
+                  type="image/webp">
+                <!-- 1x: 270px, 2x: 540px -->
+                <source srcset="./img/content/avrora-mobile.jpg 1x, ./img/content/avrora-mobile@2x.jpg 2x"
                   type="image/webp">
                 <!-- 1x: 260px, 2x: 520px -->
                 <img class="cruises__image" src="./img/content/avrora-desktop.jpg"
@@ -340,11 +448,27 @@
           <article class="cruises__item-block" tabindex="0">
             <div class="cruises__img-wrapper cruises__img-wrapper--front">
               <picture>
+                <!-- 1x: 260px, 2x: 520px -->
                 <source srcset="./img/content/leonor-desktop.webp 1x, ./img/content/leonor-desktop@2x.webp 2x"
+                  type="image/webp">
+                <!-- 1x: 309px, 2x: 618px -->
+                <source srcset="./img/content/leonor-tablet.webp 1x, ./img/content/leonor-tablet@2x.webp 2x"
+                  type="image/webp">
+                <!-- 1x: 270px, 2x: 540px -->
+                <source srcset="./img/content/leonor-mobile.webp 1x, ./img/content/leonor-mobile@2x.webp 2x"
+                  type="image/webp">
+                <!-- 1x: 260px, 2x: 520px -->
+                <source srcset="./img/content/leonor-desktop.jpg 1x, ./img/content/leonor-desktop@2x.jpg 2x"
+                  type="image/webp">
+                <!-- 1x: 309px, 2x: 618px -->
+                <source srcset="./img/content/leonor-tablet.jpg 1x, ./img/content/leonor-tablet@2x.jpg 2x"
+                  type="image/webp">
+                <!-- 1x: 270px, 2x: 540px -->
+                <source srcset="./img/content/leonor-mobile.jpg 1x, ./img/content/leonor-mobile@2x.jpg 2x"
                   type="image/webp">
                 <!-- 1x: 260px, 2x: 520px -->
                 <img class="cruises__image" src="./img/content/leonor-desktop.jpg"
-                  srcset="./img/content/leonor-desktop@2x.jpg 2x" alt="фото озера" width="260" height="386">
+                  srcset="./img/content/leonor-desktop@2x.jpg 2x" alt="фото пейзажа" width="260" height="386">
               </picture>
               <h3 class="cruises__img-title">Круиз “Леонор”</h3>
             </div>
@@ -376,7 +500,23 @@
           <article class="cruises__item-block" tabindex="0">
             <div class="cruises__img-wrapper cruises__img-wrapper--front">
               <picture>
+                <!-- 1x: 260px, 2x: 520px -->
                 <source srcset="./img/content/minion-desktop.webp 1x, ./img/content/minion-desktop@2x.webp 2x"
+                  type="image/webp">
+                <!-- 1x: 309px, 2x: 618px -->
+                <source srcset="./img/content/minion-tablet.webp 1x, ./img/content/minion-tablet@2x.webp 2x"
+                  type="image/webp">
+                <!-- 1x: 270px, 2x: 540px -->
+                <source srcset="./img/content/minion-mobile.webp 1x, ./img/content/minion-mobile@2x.webp 2x"
+                  type="image/webp">
+                <!-- 1x: 260px, 2x: 520px -->
+                <source srcset="./img/content/minion-desktop.jpg 1x, ./img/content/minion-desktop@2x.jpg 2x"
+                  type="image/webp">
+                <!-- 1x: 309px, 2x: 618px -->
+                <source srcset="./img/content/minion-tablet.jpg 1x, ./img/content/minion-tablet@2x.jpg 2x"
+                  type="image/webp">
+                <!-- 1x: 270px, 2x: 540px -->
+                <source srcset="./img/content/minion-mobile.jpg 1x, ./img/content/minion-mobile@2x.jpg 2x"
                   type="image/webp">
                 <!-- 1x: 260px, 2x: 520px -->
                 <img class="cruises__image" src="./img/content/minion-desktop.jpg"
@@ -415,7 +555,7 @@
       <div class="booking__block">
         <h2>Раннее<br> бронирование</h2>
         <p>
-          Забронируйте тур<br> за 3‑6 месяцев до даты выезда<br> и сэкономьте до 50%
+          Забронируйте тур<br> за 3-6 месяцев до даты выезда<br> и сэкономьте до 50%
         </p>
       </div>
       <div class="booking__form">
