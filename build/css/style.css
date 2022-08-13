@@ -419,7 +419,7 @@ img {
   -ms-flex-align: center;
   align-items: center;
   color: #f9fbfd;
-  margin-top: -52px;
+  margin-top: -53px;
   padding-left: 25px;
 }
 
@@ -483,7 +483,6 @@ img {
 
 .cruises__img-wrapper--back {
   background: #011c40;
-  overflow-y: scroll;
   overflow-x: hidden;
   z-index: -1;
 }
@@ -507,12 +506,14 @@ img {
   line-height: 150%;
   color: #011c40;
   cursor: pointer;
+  width: 100%;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
   text-decoration: none;
-  padding: 12px 51px 12px 52px;
+  padding: 12px 0 12px 0;
+  text-align: center;
   background-color: #f9fbfd;
 }
 
@@ -697,6 +698,10 @@ img {
     box-sizing: border-box;
     min-height: 500px;
     margin-bottom: 64px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 36% auto;
+    grid-template-rows: 36% auto;
   }
 
   .page-header__slogan {
@@ -728,10 +733,6 @@ img {
     color: #f9fbfd;
   }
 
-  .main-nav {
-    margin-bottom: 132px;
-  }
-
   .site-list {
     list-style-type: none;
     position: absolute;
@@ -739,7 +740,6 @@ img {
     top: 85px;
     left: 35px;
     width: calc(100% - 35px);
-    height: 100%;
     margin: 0;
     padding: 0;
     z-index: 10;
@@ -794,11 +794,21 @@ img {
   .cruises__img-wrapper--back {
     position: absolute;
     background-size: cover;
-    width: calc(100% - 35px);
-    top: 1px;
+    width: calc(100% - 50px);
+    top: 0px;
     left: 0;
-    padding: 25px 10px 35px 25px;
-    height: 325px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    min-height: 344px;
+    padding: 21px 25px;
   }
 
   .booking {
@@ -967,6 +977,10 @@ img {
     background-image: url("../img/content/sky-header-tablet.jpg");
     min-height: 638px;
     margin-bottom: 91px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 42% auto;
+    grid-template-rows: 42% auto;
   }
 
   .page-header__slogan {
@@ -1170,11 +1184,11 @@ img {
     -webkit-column-gap: 30px;
     -moz-column-gap: 30px;
     column-gap: 30px;
-    row-gap: 37px;
+    row-gap: 30px;
   }
 
   .cruises__img-title {
-    margin-top: -60px;
+    margin-top: -53px;
     padding-left: 39px;
   }
 
@@ -1188,10 +1202,10 @@ img {
 
   .cruises__img-wrapper--back {
     position: absolute;
-    top: 1px;
-    left: 1px;
-    padding: 25px 9px 35px 25px;
-    min-height: 325px;
+    top: 0;
+    left: 0;
+    padding: 21px 25px;
+    min-height: 344px;
   }
 
   .cruises__img-wrapper img {
@@ -1201,9 +1215,9 @@ img {
 
   .cruises__img-link {
     text-decoration: none;
-    padding: 14px 73px 15px 73px;
+    padding: 12px 0 12px 0;
     background-color: #f9fbfd;
-    margin: 0 auto;
+    width: 100%;
   }
 
   .booking {
@@ -1419,6 +1433,10 @@ img {
     background-image: url("../img/content/sky-header.jpg");
     min-height: 650px;
     margin-bottom: 120px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 41% auto;
+    grid-template-rows: 41% auto;
   }
 
   .page-header__slogan {
@@ -1593,7 +1611,7 @@ img {
   }
 
   .cruises__img-title {
-    margin-top: -60px;
+    margin-top: -55px;
     padding-left: 30px;
   }
 
@@ -1611,10 +1629,10 @@ img {
 
   .cruises__img-wrapper--back {
     position: absolute;
-    top: 1px;
-    left: 1px;
-    padding: 15px 9px 0 25px;
-    min-height: 369px;
+    top: 0;
+    left: 0;
+    padding: 12px 25px;
+    height: 362px;
   }
 
   .cruises__img-wrapper img {
@@ -1624,8 +1642,8 @@ img {
 
   .cruises__img-link {
     text-decoration: none;
-    padding: 14px 46px 15px 47px;
     background-color: #f9fbfd;
+    width: 100%;
   }
 
   .booking {

@@ -4,6 +4,8 @@
     background-image: url("../img/content/sky-header.jpg");
     min-height: 650px;
     margin-bottom: 120px;
+    display: grid;
+    grid-template-rows: 41% auto;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/content/sky-header@2x.jpg");
@@ -15,6 +17,8 @@
     background-image: url("../img/content/sky-header-tablet.jpg");
     min-height: 638px;
     margin-bottom: 91px;
+    display: grid;
+    grid-template-rows: 42% auto;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/content/sky-header-tablet@2x.jpg");
@@ -32,6 +36,8 @@
     box-sizing: border-box;
     min-height: 500px;
     margin-bottom: 64px;
+    display: grid;
+    grid-template-rows: 36% auto;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/content/sky-header-mobile@2x.jpg");
