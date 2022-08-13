@@ -5,7 +5,7 @@
     min-height: 650px;
     margin-bottom: 120px;
     display: grid;
-    grid-template-rows: 41% auto;
+    grid-template-rows: 10% auto;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/content/sky-header@2x.jpg");
@@ -18,7 +18,8 @@
     min-height: 638px;
     margin-bottom: 91px;
     display: grid;
-    grid-template-rows: 42% auto;
+    row-gap: 213px;
+    grid-template-rows: 9% auto;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/content/sky-header-tablet@2x.jpg");

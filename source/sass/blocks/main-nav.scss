@@ -28,7 +28,6 @@
     justify-content: space-between;
     align-items: center;
     padding-top: 35px;
-    margin-bottom: 183px;
     padding-left: 103px;
     padding-right: 103px;
   }
@@ -38,13 +37,8 @@
     justify-content: space-between;
     align-items: center;
     padding-top: 24px;
-    margin-bottom: 211px;
     padding-left: 45px;
     padding-right: 45px;
-  }
-
-  @media (min-width: $mobile-width) {
-    // margin-bottom: 132px;
   }
 
   &--opened .main-nav__list {
@@ -94,12 +88,14 @@
   }
 
   &--closed .main-nav__wrapper {
-    padding: 17px 15px 0 15px;
-    display: flex;
-    justify-content: space-between;
+    padding: 17px 15px 0;
+    display: grid;
+    grid-template-columns: 15% 9%;
+    column-gap: 77%;
 
     @media (min-width: $tablet-width) {
       padding: 0;
+      grid-template-columns: auto 80%;
     }
 
     @media (min-width: $desktop-width) {
