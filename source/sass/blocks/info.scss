@@ -52,18 +52,6 @@
   }
 }
 
-.info__block-img img {
-  @media (min-width: $tablet-width) {
-    width: 324px;
-    height: 264px;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 560px;
-    height: 301px;
-  }
-}
-
 .info__block p {
   font-family: $font-antarctic;
   font-style: normal;
@@ -98,13 +86,9 @@
 .info__block-img {
   margin-bottom: 57px;
 
-  @media (min-width: $desktop-width) {
-    min-height: 301px;
-    margin: 0;
-  }
-
   @media (min-width: $tablet-width) {
     margin: 0;
+    width: 48%;
   }
 }
 

@@ -15,11 +15,20 @@
 
 .main-nav {
   &--opened {
-    padding-left: 35px;
-    width: calc(100% - 35px);
+    display: grid;
+    width: calc(100% - 65px);
+    background-size: cover;
+    grid-template-columns: 15% 8%;
+    column-gap: auto;
+    justify-content: space-between;
+    padding: 20px 15px 41px 15px;
+    background-color: #ffffff;
+    height: 22px;
+    margin-left: auto;
 
     @media (min-width: $tablet-width) {
       width: 88%;
+      background: none;
     }
   }
 
@@ -50,17 +59,28 @@
     }
   }
 
-  &--opened .main-nav__wrapper {
-    display: flex;
+  &--nojs {
+    display: grid;
+    width: calc(100% - 65px);
+    background-size: cover;
+    grid-template-columns: 15% 8%;
+    column-gap: auto;
     justify-content: space-between;
-    padding-bottom: 43px;
+    padding: 20px 15px 41px 15px;
     background-color: #ffffff;
-    padding-left: 20px;
-    padding-right: 12px;
+    height: 22px;
+    margin-left: auto;
 
     @media (min-width: $tablet-width) {
-      padding: 0;
-      background: none;
+      background-color: none;
+    }
+  }
+
+  &--opened .logo-blue {
+    display: none;
+
+    @media (min-width: $tablet-width) {
+      display: block;
     }
   }
 
@@ -82,24 +102,31 @@
   }
 
   &--opened .main-nav__toggle {
-    padding-top: 34px;
     border: 0;
     background: 0;
+    padding-top: 4px;
   }
 
-  &--closed .main-nav__wrapper {
-    padding: 17px 15px 0;
+  &--closed {
     display: grid;
-    grid-template-columns: 15% 9%;
-    column-gap: 77%;
+    grid-template-columns: 15% 8%;
+    height: 35px;
+    column-gap: auto;
+    justify-content: space-between;
+    padding: 20px 15px 0 15px;
 
     @media (min-width: $tablet-width) {
-      padding: 0;
-      grid-template-columns: auto 80%;
+      grid-template-columns: 15% 70%;
+      column-gap: 137px;
+      padding: 23px 45px 0 45px;
+      justify-content: space-between;
     }
 
     @media (min-width: $desktop-width) {
-      padding: 0;
+      grid-template-columns: 15% 70%;
+      column-gap: 496px;
+      padding: 35px 103px 0 103px;
+      justify-content: space-between;
     }
   }
 
@@ -144,20 +171,6 @@
 
   &--nojs .main-nav__list {
     display: block;
-  }
-
-  &--nojs .main-nav__wrapper {
-    display: flex;
-    justify-content: space-between;
-    padding-bottom: 43px;
-    background-color: #ffffff;
-    padding-left: 20px;
-    padding-right: 12px;
-
-    @media (min-width: $tablet-width) {
-      padding: 0;
-      background: none;
-    }
   }
 }
 
