@@ -107,6 +107,57 @@
   padding: 0;
 }
 
+.page__link:hover {
+  color: #b4b4c7;
+}
+
+.page__link:focus {
+  color: #9898c6;
+}
+
+.page__link:active {
+  opacity: 0.3;
+}
+
+.page__facebook:hover {
+  opacity: 0.5;
+  color: #b4b4c7;
+}
+
+.page__facebook:focus {
+  color: #9898c6;
+}
+
+.page__facebook:active {
+  opacity: 0.3;
+}
+
+.page__instagramm:hover {
+  opacity: 0.5;
+  color: #b4b4c7;
+}
+
+.page__instagramm:focus {
+  color: #9898c6;
+}
+
+.page__instagramm:active {
+  opacity: 0.3;
+}
+
+.page__twitter:hover {
+  opacity: 0.5;
+  color: #b4b4c7;
+}
+
+.page__twitter:focus {
+  color: #9898c6;
+}
+
+.page__twitter:active {
+  opacity: 0.3;
+}
+
 .page__contacts {
   padding-left: 15px;
   padding-right: 15px;
@@ -180,6 +231,19 @@
   left: 0;
 }
 
+.page__logo-blue:hover {
+  opacity: 0.5;
+  color: #b4b4c7;
+}
+
+.page__logo-blue:focus {
+  color: #9898c6;
+}
+
+.page__logo-blue:active {
+  opacity: 0.3;
+}
+
 .main-nav__logo img {
   max-width: none;
   width: 42px;
@@ -198,9 +262,9 @@
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  padding: 20px 15px 41px 15px;
+  padding: 20px 15px 31px 15px;
   background-color: #ffffff;
-  height: 22px;
+  height: 32px;
   margin-left: auto;
 }
 
@@ -613,7 +677,7 @@ img {
   padding-left: 16px;
 }
 
-.booking__control-label {
+.booking__control {
   font-family: "Montserrat", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -657,7 +721,7 @@ img {
 
 .booking__control-block[type="checkbox"]:checked + .booking__mark::before {
   position: absolute;
-  top: -3px;
+  top: 1px;
   left: -1px;
   content: url("../img/sprite/checkbox-on.svg");
 }
@@ -675,8 +739,39 @@ img {
   width: 101%;
 }
 
+.booking__form-button:hover {
+  background: #b4b4c7;
+}
+
+.booking__form-button:focus {
+  color: #9898c6;
+}
+
+.booking__form-button:active {
+  opacity: 0.3;
+}
+
+.booking__form-button:disabled {
+  cursor: auto;
+  opacity: 0.2;
+}
+
 .logo-blue {
   padding-top: 5px;
+  cursor: pointer;
+}
+
+.logo-blue:hover {
+  opacity: 0.5;
+  color: #b4b4c7;
+}
+
+.logo-blue:focus {
+  color: #9898c6;
+}
+
+.logo-blue:active {
+  opacity: 0.3;
 }
 
 @media (min-width: 320px) {
@@ -779,6 +874,18 @@ img {
 
   .site-list__link--contacts {
     padding-bottom: 235px;
+  }
+
+  .site-list__link:hover {
+    color: #b4b4c7;
+  }
+
+  .site-list__link:focus {
+    color: #9898c6;
+  }
+
+  .site-list__link:active {
+    opacity: 0.3;
   }
 
   .info {
@@ -1307,11 +1414,11 @@ img {
     padding-left: 16px;
   }
 
-  .booking__control-label {
+  .booking__control {
     padding-top: 5px;
   }
 
-  .booking__control-label br {
+  .booking__control br {
     display: none;
   }
 
@@ -1719,12 +1826,12 @@ img {
     margin-bottom: 14px;
   }
 
-  .booking__control-label {
+  .booking__control {
     margin: 0;
     margin-bottom: 15px;
   }
 
-  .booking__control-label br {
+  .booking__control br {
     display: none;
   }
 
