@@ -18,9 +18,8 @@
     display: grid;
     width: calc(100% - 65px);
     background-size: cover;
-    grid-template-columns: 15% 8%;
-    column-gap: auto;
-    justify-content: space-between;
+    grid-template-columns: 15% 10%;
+    column-gap: 75%;
     padding: 20px 15px 31px 15px;
     background-color: #ffffff;
     height: 32px;
@@ -59,23 +58,6 @@
     }
   }
 
-  &--nojs {
-    display: grid;
-    width: calc(100% - 65px);
-    background-size: cover;
-    grid-template-columns: 15% 8%;
-    column-gap: auto;
-    justify-content: space-between;
-    padding: 20px 15px 41px 15px;
-    background-color: #ffffff;
-    height: 22px;
-    margin-left: auto;
-
-    @media (min-width: $tablet-width) {
-      background-color: none;
-    }
-  }
-
   &--opened .logo-blue {
     display: none;
 
@@ -109,24 +91,21 @@
 
   &--closed {
     display: grid;
-    grid-template-columns: 15% 8%;
+    grid-template-columns: 15% 10%;
     height: 35px;
-    column-gap: auto;
-    justify-content: space-between;
+    column-gap: 75%;
     padding: 20px 15px 0 15px;
 
     @media (min-width: $tablet-width) {
       grid-template-columns: 15% 70%;
       column-gap: 137px;
       padding: 23px 45px 0 45px;
-      justify-content: space-between;
     }
 
     @media (min-width: $desktop-width) {
       grid-template-columns: 15% 70%;
       column-gap: 496px;
       padding: 35px 103px 0 103px;
-      justify-content: space-between;
     }
   }
 
@@ -156,6 +135,19 @@
     display: block;
     cursor: pointer;
 
+    &:hover {
+    opacity: 0.5;
+    color: #b4b4c7;
+  }
+
+  &:focus {
+    color: #9898c6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
     @media (min-width: $desktop-width) {
       display: none;
     }
@@ -165,12 +157,49 @@
     }
   }
 
-  &--nojs .main-nav__toggle {
+  &--nojs .main-nav__list {
+    display: block;
+  }
+
+  &--nojs .main-nav__logo-close {
+    display: block;
+  }
+
+  &--nojs .logo-blue {
+    display: none;
+
+    @media (min-width: $tablet-width) {
+      display: block;
+    }
+  }
+
+  &--nojs .main-nav__logo-open {
     display: none;
   }
 
-  &--nojs .main-nav__list {
+  &--nojs .main-nav__logo-menu {
     display: block;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+  }
+
+  &--nojs {
+    display: grid;
+    width: calc(100% - 65px);
+    background-size: cover;
+    grid-template-columns: 15% 8%;
+    column-gap: auto;
+    padding: 20px 15px 31px 15px;
+    background-color: #ffffff;
+    height: 32px;
+    margin-left: auto;
+
+    @media (min-width: $tablet-width) {
+      width: 88%;
+      background: none;
+    }
   }
 }
 

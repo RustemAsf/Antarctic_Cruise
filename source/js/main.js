@@ -24,7 +24,6 @@ if (navToggle) {
   });
 }
 
-
 const onInputNameChange = () => {
   const valueNameInput = inputName.value;
 
@@ -70,10 +69,18 @@ const onInputCheckboxChange = () => {
 };
 
 const addFormListeners = () => {
-  inputName.addEventListener('change', onInputNameChange);
-  inputTel.addEventListener('change', onInputTelChange);
-  inputMail.addEventListener('change', onInputMailChange);
-  inputCheckbox.addEventListener('change', onInputCheckboxChange);
+  if (inputName) {
+    inputName.addEventListener('change', onInputNameChange);
+  }
+  if (inputTel) {
+    inputTel.addEventListener('change', onInputTelChange);
+  }
+  if (inputMail) {
+    inputMail.addEventListener('change', onInputMailChange);
+  }
+  if (inputCheckbox) {
+    inputCheckbox.addEventListener('change', onInputCheckboxChange);
+  }
 };
 
 addFormListeners();

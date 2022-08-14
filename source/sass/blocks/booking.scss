@@ -2,7 +2,7 @@
   @media (min-width: $desktop-width) {
     padding-left: 163px;
     padding-right: 163px;
-    padding-bottom: 50px;
+    padding-bottom: 45px;
     background-image: url("../img/content/booking-desktop.jpg");
     margin-bottom: 120px;
     background-size: 100%, cover;
@@ -16,7 +16,7 @@
 
   @media (min-width: $tablet-width) {
     padding-left: 183px;
-    padding-right: 183px;
+    padding-right: 182px;
     padding-bottom: 100px;
     background-image: url("../img/content/booking-tablet.jpg");
     margin-bottom: 100px;
@@ -33,7 +33,7 @@
   @media (min-width: $mobile-width) {
     padding-left: 15px;
     padding-right: 15px;
-    padding-bottom: 65px;
+    padding-bottom: 71px;
     background-color: #d2e0f2;
     background-image: url("../img/content/booking-mobile.jpg");
     margin-bottom: 58px;
@@ -168,7 +168,7 @@
   box-shadow: 0 4px 45px rgba(1, 28, 64, 0.15);
 
   @media (min-width: $desktop-width) {
-    width: 31.5%;
+    width: 30%;
     height: 455px;
     margin: 0;
     margin-top: 50px;
@@ -178,7 +178,7 @@
     padding-left: 48px;
     padding-right: 45px;
     margin: 50px auto 0;
-    width: 77.4%;
+    width: 75%;
     height: 455px;
   }
 
@@ -195,6 +195,19 @@
   height: 40px;
   margin-bottom: 20px;
   padding-left: 16px;
+
+  &:hover {
+    opacity: 0.5;
+    color: #b4b4c7;
+  }
+
+  &:focus {
+    color: #9898c6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 
   @media (min-width: $tablet-width) {
     width: 91%;
@@ -215,20 +228,18 @@
   font-size: 10px;
   line-height: 10px;
   color: #f9fbfd;
-  padding-left: 30px;
-  margin-bottom: 14px;
+  padding-left: 25px;
+  margin-bottom: 15px;
 
   @media (min-width: $tablet-width) {
+    margin: 0;
     br {
       display: none;
     }
-    padding-top: 5px;
   }
 
   @media (min-width: $desktop-width) {
     margin: 0;
-    margin-bottom: 15px;
-
     br {
       display: none;
     }
@@ -270,6 +281,19 @@
   background: #ffffff;
   border: 2px solid #e5e5e5;
   border-radius: 1px;
+
+  &:hover {
+    opacity: 0.5;
+    color: #b4b4c7;
+  }
+
+  &:focus {
+    color: #9898c6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .booking__control-block[type="checkbox"]:checked + .booking__mark::before {
@@ -309,12 +333,10 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 12px 89px 12px 90px;
     width: 97%;
   }
 
   @media (min-width: $tablet-width) {
-    padding: 12px 89px 12px 90px;
     width: 98%;
   }
 }
