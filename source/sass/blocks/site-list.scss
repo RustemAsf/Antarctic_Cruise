@@ -43,6 +43,18 @@
     &--contacts {
       padding-bottom: 235px;
     }
+
+    &:hover {
+      color: #b4b4c7;
+    }
+
+    &:focus {
+      color: #9898c6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 
   @media (min-width: $tablet-width) {

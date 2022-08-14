@@ -98,7 +98,7 @@
     </section>
     <section class="advantages">
       <h2>Преимущества</h2>
-      <ul class="advantages__list">
+      <ul id="features" class="advantages__list">
         <li class="advantages__item">
           <svg width="21" height="26">
             <use xlink:href="./icons/sprite.svg#ship-icon"></use>
@@ -129,7 +129,7 @@
     </section>
     <section class="cruises">
       <h2>Ближайшие круизы</h2>
-      <ul class="cruises__list">
+      <ul id="cruises" class="cruises__list">
         <li class="cruises__item">
           <article class="cruises__item-block" tabindex="0">
             <div class="cruises__img-wrapper cruises__img-wrapper--front">
@@ -577,11 +577,10 @@
             </li>
           </ul>
           <p>
-            <label class="booking__control" for="checkbox">
+            <label class="booking__control" for="checkbox">Я согласен на обработку<br> моих персональных данных
               <input class="booking__control-block" id="checkbox" type="checkbox" checked>
               <span class="booking__mark"></span>
             </label>
-            <span class="booking__control-label">Я согласен на обработку<br> моих персональных данных</span>
           </p>
           <button class="booking__form-button" id="submit-button" type="submit">Оставить заявку</button>
         </form>
@@ -650,14 +649,14 @@
           </li>
           <li>
             <a class="page__social-link" href="#">
-              <svg width="21" height="20">
+              <svg class="page__instagramm" width="21" height="20">
                 <use xlink:href="./icons/sprite.svg#instagram-icon"></use>
               </svg>
             </a>
           </li>
           <li>
             <a class="page__social-link" href="#">
-              <svg width="20" height="17">
+              <svg class="page__twitter" width="20" height="17">
                 <use xlink:href="./icons/sprite.svg#twitter-icon"></use>
               </svg>
             </a>
