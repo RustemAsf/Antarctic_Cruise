@@ -982,6 +982,7 @@ img {
     padding-bottom: 71px;
     background-color: #d2e0f2;
     background-image: url("../img/content/booking-mobile.jpg");
+    background-repeat: no-repeat;
     margin-bottom: 58px;
     background-size: 100%, cover;
   }
@@ -1140,11 +1141,11 @@ img {
 
   .page-header {
     background-image: url("../img/content/sky-header-tablet.jpg");
-    min-height: 638px;
+    min-height: 649px;
     margin-bottom: 91px;
     display: -ms-grid;
     display: grid;
-    row-gap: 213px;
+    row-gap: 224px;
     -ms-grid-rows: 9% auto;
     grid-template-rows: 9% auto;
   }
@@ -1173,17 +1174,17 @@ img {
   }
 
   .main-nav--opened {
-    width: 88%;
     background: none;
+    -ms-grid-columns: 7% 100%;
+    grid-template-columns: 7% 100%;
+    -webkit-column-gap: 137px;
+    -moz-column-gap: 137px;
+    column-gap: 137px;
+    width: calc(100% - 90px);
+    margin: 0;
   }
 
   .main-nav {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
@@ -1193,12 +1194,10 @@ img {
   }
 
   .main-nav--opened .main-nav__list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto auto auto auto;
+    grid-template-columns: auto auto auto auto;
   }
 
   .main-nav--opened .logo-blue {
@@ -1210,21 +1209,19 @@ img {
   }
 
   .main-nav--closed {
-    -ms-grid-columns: 15% 70%;
-    grid-template-columns: 15% 70%;
+    -ms-grid-columns: 7% 100%;
+    grid-template-columns: 7% 100%;
     -webkit-column-gap: 137px;
     -moz-column-gap: 137px;
     column-gap: 137px;
-    padding: 23px 45px 0 45px;
+    padding: 36px 45px 0 45px;
   }
 
   .main-nav--closed .main-nav__list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto auto auto auto;
+    grid-template-columns: auto auto auto auto;
   }
 
   .main-nav--closed .main-nav__logo-open {
@@ -1427,8 +1424,7 @@ img {
     color: #011c40;
     font-size: 18px;
     margin: 0;
-    width: 97%;
-    padding-left: 24px;
+    margin-bottom: 50px;
   }
 
   .booking__block p br {
@@ -1448,15 +1444,12 @@ img {
   }
 
   .booking__form {
-    padding-left: 48px;
+    padding-left: 45px;
     padding-right: 45px;
-    margin: 50px auto 0;
-    width: 75%;
-    height: 455px;
+    width: 78%;
   }
 
   .booking__form input {
-    width: 91%;
     height: 43px;
     margin-bottom: 14px;
     padding-left: 16px;
@@ -1464,6 +1457,7 @@ img {
 
   .booking__control {
     margin: 0;
+    padding-top: 5px;
   }
 
   .booking__control br {
@@ -1608,6 +1602,7 @@ img {
     margin-bottom: 120px;
     display: -ms-grid;
     display: grid;
+    row-gap: 204px;
     -ms-grid-rows: 10% auto;
     grid-template-rows: 10% auto;
   }
@@ -1635,13 +1630,17 @@ img {
     display: none;
   }
 
+  .main-nav--opened {
+    -ms-grid-columns: 6% 100%;
+    grid-template-columns: 6% 100%;
+    -webkit-column-gap: 496px;
+    -moz-column-gap: 496px;
+    column-gap: 496px;
+    width: calc(100% - 206px);
+    height: 52px;
+  }
+
   .main-nav {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
@@ -1651,21 +1650,13 @@ img {
   }
 
   .main-nav--closed {
-    -ms-grid-columns: 15% 70%;
-    grid-template-columns: 15% 70%;
+    -ms-grid-columns: 6% 100%;
+    grid-template-columns: 6% 100%;
     -webkit-column-gap: 496px;
     -moz-column-gap: 496px;
     column-gap: 496px;
+    height: 52px;
     padding: 35px 103px 0 103px;
-  }
-
-  .main-nav--closed .main-nav__list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
   }
 
   .main-nav--closed .main-nav__logo-open {
