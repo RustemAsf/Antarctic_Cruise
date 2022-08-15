@@ -26,14 +26,22 @@
     margin-left: auto;
 
     @media (min-width: $tablet-width) {
-      width: 88%;
       background: none;
+      grid-template-columns: 7% 100%;
+      column-gap: 137px;
+      width: calc(100% - 90px);
+      margin: 0;
+    }
+
+    @media (min-width: $desktop-width) {
+      grid-template-columns: 6% 100%;
+      column-gap: 496px;
+      width: calc(100% - 206px);
+      height: 52px;
     }
   }
 
   @media (min-width: $desktop-width) {
-    display: flex;
-    justify-content: space-between;
     align-items: center;
     padding-top: 35px;
     padding-left: 103px;
@@ -41,8 +49,6 @@
   }
 
   @media (min-width: $tablet-width) {
-    display: flex;
-    justify-content: space-between;
     align-items: center;
     padding-top: 24px;
     padding-left: 45px;
@@ -53,8 +59,8 @@
     display: block;
 
     @media (min-width: $tablet-width) {
-      display: flex;
-      justify-content: space-between;
+      display: grid;
+      grid-template-columns: auto auto auto auto;
     }
   }
 
@@ -97,14 +103,15 @@
     padding: 20px 15px 0 15px;
 
     @media (min-width: $tablet-width) {
-      grid-template-columns: 15% 70%;
+      grid-template-columns: 7% 100%;
       column-gap: 137px;
-      padding: 23px 45px 0 45px;
+      padding: 36px 45px 0 45px;
     }
 
     @media (min-width: $desktop-width) {
-      grid-template-columns: 15% 70%;
+      grid-template-columns: 6% 100%;
       column-gap: 496px;
+      height: 52px;
       padding: 35px 103px 0 103px;
     }
   }
@@ -121,13 +128,8 @@
     display: none;
 
     @media (min-width: $tablet-width) {
-      display: flex;
-      justify-content: space-between;
-    }
-
-    @media (min-width: $desktop-width) {
-      display: flex;
-      justify-content: space-between;
+      display: grid;
+      grid-template-columns: auto auto auto auto;
     }
   }
 
@@ -136,17 +138,17 @@
     cursor: pointer;
 
     &:hover {
-    opacity: 0.5;
-    color: #b4b4c7;
-  }
+      opacity: 0.5;
+      color: #b4b4c7;
+    }
 
-  &:focus {
-    color: #9898c6;
-  }
+    &:focus {
+      color: #9898c6;
+    }
 
-  &:active {
-    opacity: 0.3;
-  }
+    &:active {
+      opacity: 0.3;
+    }
 
     @media (min-width: $desktop-width) {
       display: none;
