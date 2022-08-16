@@ -33,13 +33,12 @@
     background-color: #3467a2;
     background-image: url("../img/content/sky-header-mobile.jpg");
     background-repeat: no-repeat;
-    background-position: -14px -1px;
-    background-size: 105%, cover;
+    background-size: cover;
     box-sizing: border-box;
     min-height: 500px;
     margin-bottom: 64px;
     display: grid;
-    grid-template-rows: 36% auto;
+    grid-template-rows: 34% auto;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/content/sky-header-mobile@2x.jpg");
@@ -87,7 +86,7 @@
     font-family: $font-antarctic;
     font-style: normal;
     font-weight: 700;
-    font-size: 36px;
+    font-size: 40px;
     line-height: 125%;
     align-items: center;
     color: #f9fbfd;

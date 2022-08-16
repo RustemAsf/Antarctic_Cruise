@@ -523,12 +523,6 @@ img {
   position: relative;
 }
 
-.cruises__page-list {
-  padding: 0;
-  margin: 0;
-  list-style-type: none;
-}
-
 .cruises__page-title {
   margin: 0;
   padding: 0;
@@ -542,6 +536,7 @@ img {
   align-items: center;
   color: #f9fbfd;
   margin-bottom: 4px;
+  padding-top: 25px;
 }
 
 .cruises__page-text {
@@ -583,6 +578,12 @@ img {
   z-index: -1;
 }
 
+.cruises__page-list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
 .cruises__img-wrapper img {
   -o-object-fit: cover;
   object-fit: cover;
@@ -594,15 +595,11 @@ img {
 .cruises__img-link {
   font-family: "Montserrat", "Arial", sans-serif;
   font-style: normal;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
   font-weight: 600;
   font-size: 14px;
   line-height: 150%;
   color: #011c40;
   cursor: pointer;
-  width: 100%;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -845,16 +842,15 @@ img {
     background-color: #3467a2;
     background-image: url("../img/content/sky-header-mobile.jpg");
     background-repeat: no-repeat;
-    background-position: -14px -1px;
-    background-size: 105%, cover;
+    background-size: cover;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     min-height: 500px;
     margin-bottom: 64px;
     display: -ms-grid;
     display: grid;
-    -ms-grid-rows: 36% auto;
-    grid-template-rows: 36% auto;
+    -ms-grid-rows: 34% auto;
+    grid-template-rows: 34% auto;
   }
 
   .page-header__slogan {
@@ -865,7 +861,7 @@ img {
     font-family: "Montserrat", "Arial", sans-serif;
     font-style: normal;
     font-weight: 700;
-    font-size: 36px;
+    font-size: 40px;
     line-height: 125%;
     -webkit-box-align: center;
     -ms-flex-align: center;
@@ -958,8 +954,8 @@ img {
 
   .cruises__img-wrapper--back {
     position: absolute;
-    background-size: cover;
     width: calc(100% - 50px);
+    background-size: cover;
     top: 0;
     left: 0;
     display: -webkit-box;
@@ -969,11 +965,8 @@ img {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    min-height: 344px;
-    padding: 21px 25px;
+    min-height: 386px;
+    padding: 0 25px;
   }
 
   .booking {
@@ -1375,8 +1368,8 @@ img {
     position: absolute;
     top: 0;
     left: 0;
-    padding: 21px 25px;
-    min-height: 344px;
+    min-height: 386px;
+    padding: 0 25px;
   }
 
   .cruises__img-wrapper img {
@@ -1775,6 +1768,7 @@ img {
 
   .cruises__page-title {
     margin-bottom: 4px;
+    padding-top: 15px;
   }
 
   .cruises__page-text {
@@ -1789,8 +1783,7 @@ img {
     position: absolute;
     top: 0;
     left: 0;
-    padding: 12px 25px;
-    height: 362px;
+    padding: 0 25px;
   }
 
   .cruises__img-wrapper img {
