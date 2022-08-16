@@ -103,16 +103,16 @@
     padding: 20px 15px 0 15px;
 
     @media (min-width: $tablet-width) {
-      grid-template-columns: 7% 100%;
+      grid-template-columns: 7% 105%;
       column-gap: 137px;
-      padding: 36px 45px 0 45px;
+      padding: 24px 45px 0 45px;
     }
 
     @media (min-width: $desktop-width) {
-      grid-template-columns: 6% 100%;
+      grid-template-columns: 6% 105%;
       column-gap: 496px;
       height: 52px;
-      padding: 35px 103px 0 103px;
+      padding: 29px 103px 0 103px;
     }
   }
 
