@@ -765,6 +765,11 @@ img {
   content: url("../img/sprite/checkbox-on.svg");
 }
 
+.booking__control-block[type="checkbox"]:focus + .booking__mark {
+  -webkit-box-shadow: 0 0 0 3px #9898c6;
+  box-shadow: 0 0 0 3px #9898c6;
+}
+
 .booking__form-button {
   font-family: "Montserrat", "Arial", sans-serif;
   font-style: normal;
@@ -1046,6 +1051,8 @@ img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
     list-style-type: none;
     width: 87%;
     -webkit-box-pack: justify;
