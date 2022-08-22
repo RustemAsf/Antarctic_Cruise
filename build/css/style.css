@@ -89,7 +89,7 @@
 }
 
 .page__nav-list li {
-  margin-bottom: 5px;
+  margin-bottom: 4px;
 }
 
 .page__link {
@@ -431,7 +431,7 @@ img {
 
 .advantages__item {
   background-color: #f9fbfd;
-  padding: 25px 15px 28px 20px;
+  padding: 25px 15px 22px 20px;
 }
 
 .advantages h2 {
@@ -460,7 +460,7 @@ img {
   align-items: center;
   color: #011c40;
   margin-bottom: 5px;
-  padding-top: 12px;
+  padding-top: 7px;
 }
 
 .advantages__block-text {
@@ -469,17 +469,25 @@ img {
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
-  line-height: 140%;
+  line-height: 145%;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
   color: #011c40;
 }
 
+.advantages__item-check {
+  margin-bottom: 8px;
+}
+
+.advantages__item-boat {
+  margin-bottom: 14px;
+}
+
 .cruises {
   padding-left: 25px;
   padding-right: 25px;
-  padding-bottom: 62px;
+  padding-bottom: 64px;
 }
 
 .cruises h2 {
@@ -535,8 +543,8 @@ img {
   -ms-flex-align: center;
   align-items: center;
   color: #f9fbfd;
-  margin-bottom: 4px;
-  padding-top: 25px;
+  margin-bottom: 15px;
+  padding-top: 27px;
 }
 
 .cruises__page-text {
@@ -551,7 +559,7 @@ img {
   color: #d8d8d9;
   margin: 0;
   padding: 0;
-  margin-bottom: 16px;
+  margin-bottom: 12px;
 }
 
 .cruises__page-list-title {
@@ -582,6 +590,7 @@ img {
   padding: 0;
   margin: 0;
   list-style-type: none;
+  margin-bottom: 12px;
 }
 
 .cruises__img-wrapper img {
@@ -605,7 +614,7 @@ img {
   -ms-user-select: none;
   user-select: none;
   text-decoration: none;
-  padding: 12px 0 12px 0;
+  padding: 11px 0 8px 0;
   text-align: center;
   background-color: #f9fbfd;
 }
@@ -686,7 +695,7 @@ img {
 .booking__form input {
   width: 91%;
   height: 40px;
-  margin-bottom: 20px;
+  margin-bottom: 18px;
   padding-left: 16px;
 }
 
@@ -720,7 +729,7 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 13px;
+  margin-bottom: 15px;
 }
 
 .booking__control input {
@@ -780,7 +789,7 @@ img {
   background: #f9fbfd;
   border: none;
   padding: 10px 24px 10px 32px;
-  width: 101%;
+  width: 100%;
 }
 
 .booking__form-button:hover {
@@ -952,7 +961,7 @@ img {
     background-color: #d2e0f2;
     background-image: url("../img/content/advantages-mobile.jpg");
     background-size: 100%, cover;
-    padding-bottom: 58px;
+    padding-bottom: 63px;
     background-repeat: no-repeat;
     margin-bottom: 56px;
   }
@@ -977,7 +986,7 @@ img {
   .booking {
     padding-left: 15px;
     padding-right: 15px;
-    padding-bottom: 71px;
+    padding-bottom: 67px;
     background-color: #d2e0f2;
     background-image: url("../img/content/booking-mobile.jpg");
     background-repeat: no-repeat;
@@ -989,7 +998,7 @@ img {
     padding-left: 30px;
     padding-right: 30px;
     width: 79.4%;
-    height: 455px;
+    height: 459px;
   }
 }
 
@@ -1141,17 +1150,18 @@ img {
 
   .page-header {
     background-image: url("../img/content/sky-header-tablet.jpg");
-    min-height: 639px;
+    min-height: 650px;
     margin-bottom: 91px;
     display: -ms-grid;
     display: grid;
-    row-gap: 211px;
+    row-gap: 223px;
     -ms-grid-rows: 9% auto;
     grid-template-rows: 9% auto;
   }
 
   .page-header__slogan {
-    padding: 0 134px 0 56px;
+    padding: 0;
+    padding-left: 56px;
   }
 
   .page-header__slogan h1 {
@@ -1209,12 +1219,12 @@ img {
   }
 
   .main-nav--closed {
-    -ms-grid-columns: 7% 105%;
-    grid-template-columns: 7% 105%;
-    -webkit-column-gap: 137px;
-    -moz-column-gap: 137px;
-    column-gap: 137px;
-    padding: 24px 45px 0 45px;
+    -ms-grid-columns: 7% 106%;
+    grid-template-columns: 7% 106%;
+    -webkit-column-gap: 131px;
+    -moz-column-gap: 131px;
+    column-gap: 131px;
+    padding: 35px 45px 0 45px;
   }
 
   .main-nav--closed .main-nav__list {
@@ -1266,8 +1276,8 @@ img {
   }
 
   .info {
-    padding-left: 45px;
-    padding-right: 45px;
+    padding-left: 47px;
+    padding-right: 40px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1289,9 +1299,14 @@ img {
     margin: 0;
   }
 
+  .info__block p br {
+    display: block;
+  }
+
   .info__block-img {
     margin: 0;
-    width: 48%;
+    padding-top: 9px;
+    width: 47.9%;
   }
 
   .info__block {
@@ -1304,7 +1319,7 @@ img {
     background-image: url("../img/content/advantages-tablet.jpg");
     background-size: 100%, cover;
     margin-bottom: 91px;
-    padding-bottom: 101px;
+    padding-bottom: 95px;
   }
 
   .advantages__list {
@@ -1336,6 +1351,14 @@ img {
 
   .advantages__block-text br {
     display: none;
+  }
+
+  .advantages__item-check {
+    margin: 0;
+  }
+
+  .advantages__item-boat {
+    margin: 0;
   }
 
   .cruises {

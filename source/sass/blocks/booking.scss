@@ -33,7 +33,7 @@
   @media (min-width: $mobile-width) {
     padding-left: 15px;
     padding-right: 15px;
-    padding-bottom: 71px;
+    padding-bottom: 67px;
     background-color: #d2e0f2;
     background-image: url("../img/content/booking-mobile.jpg");
     background-repeat: no-repeat;
@@ -188,14 +188,14 @@
     padding-left: 30px;
     padding-right: 30px;
     width: 79.4%;
-    height: 455px;
+    height: 459px;
   }
 }
 
 .booking__form input {
   width: 91%;
   height: 40px;
-  margin-bottom: 20px;
+  margin-bottom: 18px;
   padding-left: 16px;
 
   &:hover {
@@ -254,7 +254,7 @@
   margin: 0;
   position: relative;
   display: flex;
-  margin-bottom: 13px;
+  margin-bottom: 15px;
 
   @media (min-width: $desktop-width) {
     margin-bottom: 20px;
@@ -321,7 +321,7 @@
   background: #f9fbfd;
   border: none;
   padding: 10px 24px 10px 32px;
-  width: 101%;
+  width: 100%;
 
   &:hover {
     background: #b4b4c7;

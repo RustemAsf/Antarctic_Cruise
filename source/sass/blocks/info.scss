@@ -6,8 +6,8 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding-left: 45px;
-    padding-right: 45px;
+    padding-left: 47px;
+    padding-right: 40px;
     display: flex;
     justify-content: space-between;
     margin-bottom: 92px;
@@ -76,6 +76,10 @@
   @media (min-width: $tablet-width) {
     line-height: 150%;
     margin: 0;
+
+    br {
+      display: block;
+    }
   }
 }
 
@@ -88,7 +92,8 @@
 
   @media (min-width: $tablet-width) {
     margin: 0;
-    width: 48%;
+    padding-top: 9px;
+    width: 47.9%;
   }
 }
 
