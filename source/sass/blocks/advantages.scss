@@ -19,7 +19,7 @@
     background-image: url("../img/content/advantages-tablet.jpg");
     background-size: 100%, cover;
     margin-bottom: 91px;
-    padding-bottom: 95px;
+    padding-bottom: 98px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/content/advantages-tablet@2x.jpg");
@@ -54,7 +54,7 @@
 
   @media (min-width: $tablet-width) {
     grid-template-columns: auto auto auto;
-    gap: 30px;
+    gap: 27px;
   }
 
   @media (min-width: $desktop-width) {
@@ -68,8 +68,8 @@
   padding: 25px 15px 22px 20px;
 
   @media (min-width: $tablet-width) {
-    padding: 32px 16px 12px 20px;
-    min-width: 167px;
+    padding: 25px 15px 20px 23px;
+    min-width: 170px;
   }
 
   @media (min-width: $desktop-width) {
@@ -99,7 +99,7 @@
   @media (min-width: $tablet-width) {
     font-size: 26px;
     margin-bottom: 56px;
-    padding-top: 97px;
+    padding-top: 94px;
   }
 }
 
@@ -111,12 +111,12 @@
   font-weight: 500;
   align-items: center;
   color: #011c40;
-  margin-bottom: 5px;
+  margin-bottom: 8px;
   padding-top: 7px;
 
   @media (min-width: $tablet-width) {
     line-height: 140%;
-    padding-top: 12px;
+    padding-top: 13px;
     margin-bottom: 10px;
 
     br {
@@ -137,7 +137,7 @@
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
-  line-height: 145%;
+  line-height: 141%;
   align-items: center;
   color: #011c40;
 
@@ -156,14 +156,22 @@
 
 .advantages__item-check {
   margin-bottom: 8px;
+
   @media (min-width: $tablet-width) {
-    margin: 0;
+    margin: 3px;
   }
 }
 
 .advantages__item-boat {
   margin-bottom: 14px;
+
   @media (min-width: $tablet-width) {
-    margin: 0;
+    padding-top: 5px;
+    margin-bottom: 5px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+    margin-bottom: 5px;
   }
 }

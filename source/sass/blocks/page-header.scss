@@ -16,10 +16,10 @@
 
   @media (min-width: $tablet-width) {
     background-image: url("../img/content/sky-header-tablet.jpg");
-    min-height: 650px;
+    min-height: 638px;
     margin-bottom: 91px;
     display: grid;
-    row-gap: 223px;
+    row-gap: 212px;
     grid-template-rows: 9% auto;
 
     @media (min-resolution: 2dppx) {
@@ -53,8 +53,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding: 0;
-    padding-left: 56px;
+    padding: 0 0 0 50px;
   }
 
   @media (min-width: $mobile-width) {
@@ -74,7 +73,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    font-size: 54px;
+    font-size: 55px;
     line-height: 61px;
     margin-bottom: 9px;
 

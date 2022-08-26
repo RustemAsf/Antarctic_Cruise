@@ -100,12 +100,12 @@
     grid-template-columns: 15% 10%;
     height: 35px;
     column-gap: 75%;
-    padding: 20px 15px 0 15px;
+    padding: 15px 15px 0 15px;
 
     @media (min-width: $tablet-width) {
-      grid-template-columns: 7% 106%;
-      column-gap: 131px;
-      padding: 35px 45px 0 45px;
+      grid-template-columns: 7% auto;
+      column-gap: 132px;
+      padding: 23px 45px 0 45px;
     }
 
     @media (min-width: $desktop-width) {
@@ -129,12 +129,11 @@
 
     @media (min-width: $tablet-width) {
       display: grid;
-      grid-template-columns: auto auto auto auto;
+      grid-template-columns: 37% 35% 47% 21%;
     }
   }
 
   &--closed .main-nav__logo-open {
-    display: block;
     cursor: pointer;
 
     &:hover {
