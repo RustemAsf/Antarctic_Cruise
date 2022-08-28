@@ -4,7 +4,7 @@
     padding-right: 103px;
     background-image: url("../img/content/advantages-desktop.jpg");
     background-size: 100%, cover;
-    margin-bottom: 108px;
+    margin-bottom: 109px;
     padding-bottom: 120px;
 
     @media (min-resolution: 2dppx) {
@@ -65,7 +65,7 @@
 
 .advantages__item {
   background-color: #f9fbfd;
-  padding: 25px 15px 22px 20px;
+  padding: 25px 15px 21px 20px;
 
   @media (min-width: $tablet-width) {
     padding: 25px 15px 20px 23px;
@@ -73,8 +73,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 38px 34px 32px 30px;
-    min-width: 296px;
+    padding: 38px 34px 25px 30px;
   }
 }
 
@@ -146,12 +145,6 @@
       display: none;
     }
   }
-
-  @media (min-width: $desktop-width) {
-    br {
-      display: none;
-    }
-  }
 }
 
 .advantages__item-check {
@@ -163,7 +156,7 @@
 }
 
 .advantages__item-boat {
-  margin-bottom: 14px;
+  margin-bottom: 15px;
 
   @media (min-width: $tablet-width) {
     padding-top: 5px;
@@ -172,6 +165,6 @@
 
   @media (min-width: $desktop-width) {
     padding: 0;
-    margin-bottom: 5px;
+    margin-bottom: 12px;
   }
 }

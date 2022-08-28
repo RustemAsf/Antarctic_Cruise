@@ -95,6 +95,10 @@
     padding-top: 9px;
     width: 47.9%;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+  }
 }
 
 .info__block {

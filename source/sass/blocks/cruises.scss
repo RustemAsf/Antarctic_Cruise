@@ -1,12 +1,12 @@
 .cruises {
   padding-left: 25px;
   padding-right: 25px;
-  padding-bottom: 64px;
+  padding-bottom: 66px;
 
   @media (min-width: $desktop-width) {
     padding-left: 118px;
     padding-right: 118px;
-    padding-bottom: 131px;
+    padding-bottom: 124px;
   }
 
   @media (min-width: $tablet-width) {
@@ -34,7 +34,7 @@
 
   @media (min-width: $desktop-width) {
     font-size: 28px;
-    margin-bottom: 54px;
+    margin-bottom: 50px;
   }
 }
 
@@ -71,16 +71,17 @@
   padding-left: 25px;
 
   @media (min-width: $desktop-width) {
-    margin-top: -55px;
+    display: grid;
+    grid-template-rows: 63%;
+    row-gap: 20%;
     padding-left: 30px;
   }
 
   @media (min-width: $tablet-width) {
-   display: grid;
-   grid-template-rows: 50%;
-   row-gap: 20%;
-   padding-left: 39px;
-
+    display: grid;
+    grid-template-rows: 50%;
+    row-gap: 20%;
+    padding-left: 39px;
   }
 }
 
@@ -102,8 +103,8 @@
   padding-top: 27px;
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 4px;
-    padding-top: 15px;
+    margin-bottom: 12px;
+    padding-top: 29px;
   }
 
   @media (min-width: $tablet-width) {
@@ -124,7 +125,7 @@
   margin-bottom: 12px;
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 16px;
+    margin-bottom: 6px;
   }
 
   @media (min-width: $tablet-width) {
@@ -161,9 +162,7 @@
 
   @media (min-width: $desktop-width) {
     &--back {
-      position: absolute;
-      top: 0;
-      left: 0;
+      width: calc(100% - 50px);
       padding: 0 25px;
     }
   }
@@ -172,7 +171,6 @@
     &--back {
       width: calc(100% - 73px);
       min-height: 386px;
-      padding: 0;
       padding: 0 35px 0 38px;
     }
   }
@@ -197,6 +195,10 @@
   margin: 0;
   list-style-type: none;
   margin-bottom: auto;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 8px;
+  }
 }
 
 .cruises__img-wrapper img {
@@ -236,6 +238,7 @@
   @media (min-width: $desktop-width) {
     text-decoration: none;
     background-color: #f9fbfd;
+    margin-top: 8px;
     width: 100%;
   }
 
@@ -244,7 +247,6 @@
     padding: 12px 0 12px 0;
     background-color: #f9fbfd;
     width: 100%;
-    margin-bottom: 17px;
   }
 }
 
