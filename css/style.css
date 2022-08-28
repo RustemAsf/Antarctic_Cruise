@@ -922,7 +922,7 @@ img {
   }
 
   .site-list__link--contacts {
-    padding-bottom: 235px;
+    padding-bottom: 300px;
   }
 
   .site-list__link:hover {
@@ -1483,10 +1483,9 @@ img {
   }
 
   .booking__form input {
-    width: 93%;
     height: 43px;
     margin-bottom: 14px;
-    padding-left: 16px;
+    padding-left: 24px;
   }
 
   .booking__control {
